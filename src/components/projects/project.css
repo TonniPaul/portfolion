@@ -1,0 +1,27 @@
+.project-container {
+   display: flex;
+   flex-wrap: wrap;
+   width: 80%;
+   margin: auto;
+   gap: 2rem;
+   justify-content: center;
+}
+.project-cont {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+}
+.project-desc {
+   z-index: 2;
+}
+.project-hr {
+   width: 70%;
+   font-family: 'Lobster Two', cursive;
+}
+.project-head-text {
+   font-size: 30px;
+}
+

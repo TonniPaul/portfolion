@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavBar from "./components/navbar/NavBar";
+import { useEffect, useState } from "react";
+import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
+import Project from "./components/projects/Project";
+import Skills from "./components/skills/Skills";
+import ContactForm from "./components/contactForm/ContactForm";
 
 function App() {
+  // Toggle Theme Function
+  // const [isDark, setIsDark] = useState(false);
+
+  // useEffect(() => {
+  //   const darkTheme = window.matchMedia("(prefers-color-scheme: dark)");
+  //   setIsDark(darkTheme.matches);
+  // }, []);
+  const [theme, setTheme] = useState(
+    localStorage.getItem("themeColor")
+      ? localStorage.getItem("themeColor").toString()
+      : "dark"
+  );
+
+  const toggleTheme = () => {
+    setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
+  };
+
+  useEffect(() => {
+    localStorage.setItem("themeColor", theme);
+  }, [theme]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" id={theme}>
+      <NavBar onChange={toggleTheme} checked={theme === "light"} />
+      <Hero />
+      <About />
+      <Project />
+      <Skills />
+      <ContactForm />
     </div>
   );
 }

@@ -1,0 +1,106 @@
+.contact-form-cont {
+   background: var(--primary-text);
+   padding: 1rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+   color: var(--primary-bg);
+   border-radius: inherit;
+}
+.purple {
+   box-shadow: var(--purple-box-shadow) !important;
+}
+.contact-sub-div {
+   flex: 1;
+}
+.contact-sub-div-2 {
+   flex: 1;
+}
+.my-form{
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   padding: 2rem;
+   background-size: cover;
+   background-repeat: no-repeat;
+   overflow: hidden;
+   position: relative;
+   z-index: 3;
+}
+.my-form::after {
+   content: "";
+   position: absolute;
+   background: url(../../assets/hero.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 100%;
+   height:  100%;
+   border-radius: 5px;
+   z-index: -1;
+   opacity: 0.2;
+   padding: 2rem;
+}
+.form-div {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+.form-div label {
+   position: absolute;
+   top: -25px;
+   left: 10px;
+   width: max-content;
+   padding: .5rem 24px;
+   background: var(--primary-text);
+}
+.form-div input, .form-div textarea {
+   border: none;
+   outline: none;
+   box-shadow: var(--purple-inset-box);
+   padding: 1.5rem;
+   border-radius: 5px;
+   background: inherit;
+   color: var(--primary-bg);
+   font-size: 13px;
+}
+.submit-btn {
+   width: max-content;
+   box-shadow: var(--purple-box-shadow) !important;
+   padding: 1rem 32px !important;
+   background: var(--primary-text) !important;
+   color: var(--primary-bg) !important;
+   font-size: 16px;
+   font-weight: 600;
+   border-radius: 5px;
+   border: none;
+}
+@media (max-width : 900px) {
+   .contact-form-cont {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 3rem 1rem;
+      display: block;
+   }
+   .contact-sub-div {
+      justify-content: center !important;
+      text-align: center !;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      gap: 2rem;
+      text-align: center;
+      margin-bottom: 48px;
+   }
+   .my-form {
+      padding: 1rem !important;
+   }
+   .purple {
+      margin: auto;
+   }
+}
