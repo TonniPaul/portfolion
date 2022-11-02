@@ -7,3 +7,9 @@
 #dark .flatCard-main {
    box-shadow: var(--box-shadow-dark);
 }
+
+@media (max-width : 600px) {
+   .flatCard-main {
+     width: 100%;
+   }
+}
