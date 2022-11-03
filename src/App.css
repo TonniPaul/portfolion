@@ -16,7 +16,6 @@ body #light {
 body #dark {
   background: var(--primary-bg-dark);
   background-image: url(../public/assets/bgdark.png);
-  background-repeat: no-repeat;
   background-size: contain;
   padding: 16px;
   backdrop-filter: blur(100%) ;
