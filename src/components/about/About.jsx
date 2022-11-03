@@ -2,7 +2,6 @@ import "./about.css";
 import about from "../../assets/about01.png";
 import microphone from "../../assets/about.png";
 import ImageCard from "../../cards/imageCard/ImageCard";
-import cv from "../../cv/paulcv.pdf";
 
 const About = () => {
   return (
@@ -30,7 +29,11 @@ const About = () => {
               currently perusing a software engineering course at ALX in order
               to enhance my knowledge.
             </p>
-            <a href={cv} className="btn alt-text">
+            <a
+              href="https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl"
+              target="blank"
+              className="btn alt-text"
+            >
               Download CV
               <i className="fa-solid fa-download"></i>
             </a>

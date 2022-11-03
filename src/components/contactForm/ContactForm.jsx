@@ -19,14 +19,16 @@ const ContactForm = () => {
       <FlatCard className="contact-form-cont">
         <div className="contact-sub-div">
           <h1 className="contact-head-text">
-            I'd love to <span className="alt-text-yellow">build </span> your
+            Interested in<span className="alt-text-yellow"> collaborating</span>
+            ? Let's <span className="alt-text-yellow">build </span>
+            your
             <span className="alt-text-yellow"> Next project</span>
           </h1>
           <p className="btn purple">
             Contact Me
             <i className="fa-solid fa-forward"></i>
           </p>
-          <div className="flex project-links-cont">
+          <div className="flex project-links-cont center-it">
             {myLinks.map((items) => {
               return (
                 <a
@@ -42,9 +44,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="contact-sub-div-2">
-          <h4 className=" alt-text-yellow Message-me">
-            Message me (I respond within 24 hours){" "}
-          </h4>
+          <h4 className=" alt-text-yellow Message-me">Drop me a message</h4>
           <form className="my-form" onSubmit={handleSubmit}>
             <div className="form-div">
               <label htmlFor="name"> Your Name </label>
@@ -65,7 +65,12 @@ const ContactForm = () => {
               ></textarea>
             </div>
 
-            <input type="submit" value="Send" className="submit-btn" />
+            <input
+              type="submit"
+              disabled={state.submitting}
+              value="Send"
+              className="submit-btn"
+            />
           </form>
         </div>
       </FlatCard>

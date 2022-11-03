@@ -1,6 +1,5 @@
 import "./hero.css";
 import hero from "../../assets/hero.png";
-import cv from "../../cv/paulcv.pdf";
 
 const Hero = () => {
   return (
@@ -20,7 +19,11 @@ const Hero = () => {
               <a href="#about" className="btn">
                 Explore More
               </a>
-              <a href={cv} className="btn">
+              <a
+                href="https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl"
+                target="blank"
+                className="btn"
+              >
                 Download CV
                 <i className="fa-solid fa-download"></i>
               </a>
