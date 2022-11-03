@@ -8,12 +8,12 @@ const myLinks = [
   },
   {
     id: uuid(),
-    links: "https://limkedin.com/in/tonnipaul",
+    links: "https://linkedin.com/in/tonnipaul",
     icons: "fa-brands fa-linkedin class-purple",
   },
   {
     id: uuid(),
-    links: "https://twitter.com",
+    links: "https://twitter.com/tonnipaul",
     icons: "fa-brands fa-twitter class-purple",
   },
   {

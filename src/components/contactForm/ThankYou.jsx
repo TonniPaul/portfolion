@@ -19,6 +19,7 @@ const ThankYou = () => {
                   key={items.id}
                   href={items.links}
                   className="project-links contact-links"
+                  target=" blank"
                 >
                   <i className={items.icons}></i>
                 </a>

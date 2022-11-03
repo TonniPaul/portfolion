@@ -1,7 +1,7 @@
 import FlatCard from "../../cards/flatcard/FlatCard";
 import "./contactForm.css";
 import myLinks from "../../Object Files/links";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import ThankYou from "./ThankYou";
 
 const ContactForm = () => {
@@ -33,6 +33,7 @@ const ContactForm = () => {
                   key={items.id}
                   href={items.links}
                   className="project-links contact-links"
+                  target="blank"
                 >
                   <i className={items.icons}></i>
                 </a>
