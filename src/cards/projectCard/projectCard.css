@@ -20,6 +20,9 @@
    border-bottom: 6px inset var(--white) ;
    border-radius: 5px;
 }
+.icons-link {
+   width: 100%;
+}
 .project-links-cont::after, .project-links-cont::before {
    content: "";
    position: absolute;
@@ -72,4 +75,6 @@
 #dark .project-links {
    background-color: var(--primary-bg-dark);
    box-shadow: var(--box-shadow-dark);
+}.class-purple {
+   color: var(--primary-text);
 }

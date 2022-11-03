@@ -8,10 +8,10 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
       <p className="project-desc">{description}</p>
       <div className="flex project-links-cont">
         <a href={github} className="project-links">
-          <i className="fa-brands fa-github"></i>
+          <i className="fa-brands fa-github class-purple"></i>
         </a>
         <a href={liveSite} className="project-links">
-          <i className="fa-solid fa-link"></i>
+          <i className="fa-solid fa-link class-purple"></i>
         </a>
       </div>
     </div>
