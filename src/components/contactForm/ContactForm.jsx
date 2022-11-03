@@ -19,8 +19,8 @@ const ContactForm = () => {
       <FlatCard className="contact-form-cont">
         <div className="contact-sub-div">
           <h1 className="contact-head-text">
-            I'd love to build your{" "}
-            <span className="alt-text-yellow">next project</span>
+            I'd love to <span className="alt-text-yellow">build </span> your
+            <span className="alt-text-yellow"> Next project</span>
           </h1>
           <p className="btn purple">
             Contact Me

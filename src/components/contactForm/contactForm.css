@@ -179,4 +179,9 @@
       font-size: 14px;
    }
 }
+@media (max-width : 600px) {
+   .Message-me {
+      font-size: 12px;
+   }
+}
 
