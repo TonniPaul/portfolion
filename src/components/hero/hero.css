@@ -25,9 +25,11 @@
    width: 100%;
 }
 .hero-sub-cont-1 {
+   display: flex;
+   flex-direction: column;
    font-weight: 600;
    font-size: 18px;
-   gap: 5px;
+   gap: 10px;
 }
 .hero-subtext {
    color: var(--black);

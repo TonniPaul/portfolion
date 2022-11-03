@@ -7,8 +7,8 @@ const ThankYou = () => {
       <div className="thank-you-home">
         <h1> Your message is greatly appreciated!</h1>
         <p className="thank-you-desc">
-          TonniPaul typically responds within 24 hours. Please make sure you
-          input a valid email address.
+          Typically, TonniPaul responds in 24 hours. Please ensure that your
+          email address is correct; if not, refresh the page and resubmit.
         </p>
         <div className="connect">
           <div className="connect-text"> Connect with me on my socials:</div>

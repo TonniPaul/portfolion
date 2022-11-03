@@ -41,6 +41,9 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="contact-sub-div-2">
+          <h4 className=" alt-text-yellow Message-me">
+            Message me (I respond within 24 hours){" "}
+          </h4>
           <form className="my-form" onSubmit={handleSubmit}>
             <div className="form-div">
               <label htmlFor="name"> Your Name </label>
