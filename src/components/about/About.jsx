@@ -1,5 +1,5 @@
 import "./about.css";
-import about from "../../assets/about01.png";
+import about from "../../assets/about__.png";
 import microphone from "../../assets/about.png";
 import ImageCard from "../../cards/imageCard/ImageCard";
 

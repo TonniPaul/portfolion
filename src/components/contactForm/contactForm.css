@@ -110,7 +110,7 @@
 }
 .Message-me {
    text-align: right;
-   padding: 2rem 2rem 0;
+   padding: 2rem 2rem 1rem;
    font-size: 18px;
 }
 
@@ -212,6 +212,7 @@
 @media (max-width : 600px) {
    .Message-me {
       font-size: 12px;
+      padding: 1rem;
    }
 }
 

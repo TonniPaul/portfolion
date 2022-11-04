@@ -24,10 +24,10 @@ const ContactForm = () => {
             your
             <span className="alt-text-yellow"> Next project</span>
           </h1>
-          <p className="btn purple">
+          <a href="tel:+2348162325194" className="btn purple">
             Contact Me
             <i className="fa-solid fa-forward"></i>
-          </p>
+          </a>
           <div className="flex project-links-cont center-it">
             {myLinks.map((items) => {
               return (
