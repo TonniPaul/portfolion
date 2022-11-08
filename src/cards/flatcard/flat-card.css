@@ -4,6 +4,7 @@
    box-shadow: var(--box-shadow);
    border-radius: 5px;
    transition: var(--transition);
+   margin: auto;
 }
 #dark .flatCard-main {
    box-shadow: var(--box-shadow-dark);

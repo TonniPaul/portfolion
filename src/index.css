@@ -56,7 +56,7 @@ section {
   align-items: center;
   justify-content: center;
   user-select: none;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 @media (min-width : 1440px) {
   section {
@@ -67,6 +67,7 @@ section {
 @media (max-width : 1440px) {
   section {
     min-height: 100vh;
+    padding: 5rem 2rem;
   }
 }
 @media (max-width : 600px) {

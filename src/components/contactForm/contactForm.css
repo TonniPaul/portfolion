@@ -16,6 +16,7 @@
 .contact-head-text {
    font-size: 40px;
    text-transform: capitalize;
+   z-index: 2;
 }
 .contact-sub-div {
    flex: 1;
@@ -85,15 +86,19 @@
 .form-div input, .form-div textarea {
    border: none;
    outline: none;
-   box-shadow: var(--purple-inset-box);
+   box-shadow: var(--purple-box-shadow);
    padding: 1.5rem;
    border-radius: 5px;
    background: inherit;
    color: var(--primary-bg);
    font-size: 13px;
+   font-family: inherit !important;
+   font-size: 14px;
 }
-.form-div input:focus .form-div textarea:focus {
+.form-div input:focus, .form-div textarea:focus,
+.form-div input:hover, .form-div textarea:hover {
    outline: none;
+   box-shadow: var(--purple-inset-box);
    background: inherit;
 }
 .submit-btn {
@@ -108,9 +113,11 @@
    border: none;
    cursor: pointer;
 }
+.submit-btn:hover {
+   box-shadow: var(--purple-inset-box) !important;
+}
 .Message-me {
    text-align: right;
-   padding: 2rem 2rem 1rem;
    font-size: 18px;
 }
 
@@ -211,8 +218,7 @@
 }
 @media (max-width : 600px) {
    .Message-me {
-      font-size: 12px;
-      padding: 1rem;
+      font-size: 13px;
    }
 }
 

@@ -11,7 +11,9 @@ const NavBar = ({ onChange, checked }) => {
 
   return (
     <div className="nav-cont">
-      <h1 className="logo"> {"<> TonniPaul </>"} </h1>
+      <a href="/" className="logo">
+        {"<> TonniPaul </>"}
+      </a>
       <div className="switch">
         <ReactSwitch onChange={onChange} checked={checked} />
       </div>

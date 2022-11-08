@@ -22,3 +22,26 @@ body #dark {
   backdrop-filter: blur(100%) ;
   transition: var(--transition);
 }
+.max-width {
+  max-width: 1440px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  height: 3px;
+  background: var(--primary-text);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
+}
