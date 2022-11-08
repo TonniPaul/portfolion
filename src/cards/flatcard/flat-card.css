@@ -12,6 +12,7 @@
 
 @media (max-width : 600px) {
    .flatCard-main {
-     width: 100%;
+     width: 95vw;
+     padding: .5rem;
    }
 }
