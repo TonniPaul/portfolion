@@ -26,7 +26,7 @@ const ContactForm = () => {
               your
               <span className="alt-text-yellow"> Next project</span>!
             </h1>
-            <a href="tel:+2348162325194" className="btn purple">
+            <a href="#name" className="btn purple">
               Contact Me
               <i className="fa-solid fa-forward"></i>
             </a>
