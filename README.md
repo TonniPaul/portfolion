@@ -4,7 +4,7 @@ Source code of my new portfolio.
 
 ## Portfolio website
 
-[See it live! :rocket:](https://tonnipaul.vercel.app/#contact) 
+[See it live! :rocket:](https://tonnipaul.live/) 
 
 ## Technologies
 * HTML5
@@ -15,6 +15,7 @@ Source code of my new portfolio.
 * Responsive Design (RD)
 * Fonts obtained from Google Fonts
 * Icons obtained from Font Awesome 
+* Images from dribble, IconScout and Pinterest.
 
 ## Authors
 
