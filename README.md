@@ -4,7 +4,7 @@ Source code of my new portfolio.
 
 ## Portfolio website
 
-[See it live! :rocket:](https://tonnipaul.live/) 
+[See it live! :rocket:](https://tonnipaul.com) 
 
 ## Technologies
 * HTML5
@@ -20,6 +20,3 @@ Source code of my new portfolio.
 ## Authors
 
 - Ariyo-Adeoye Paul => [@TonniPaul](https://www.github.com/tonnipaul)
-
-
-
