@@ -1,4 +1,6 @@
-
+#home {
+   padding: 0;
+}
 .hero-main-cont {
    width: 100%;
    display: flex;

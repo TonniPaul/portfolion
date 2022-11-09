@@ -25,17 +25,48 @@ body #dark {
 .max-width {
   max-width: 1440px;
 }
+.scroll_to_top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 30px;
+  animation: bouncing 2s infinite ;
+  cursor: pointer;
+  color: var(--yellow);
+  height: min-content;
+  z-index: 4;
+}
+#dark .scroll_to_top {
+  color: var(--alt-text) !important;
+}
+@keyframes bouncing {
+	0% {
+		transform: translateY(0px);
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+
+	}
+	50% {
+		transform: translateY(-10px);
+    --yellowfilter : invert(70%) sepia(65%) saturate(332%) hue-rotate(0deg) brightness(104%) contrast(96%);
+  
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: var(--white);
 }
-
-::-webkit-scrollbar-thumb {
+body #dark::-webkit-scrollbar-track {
+  background: var(--primary-bg-dark) !important;
+}
+body::-webkit-scrollbar-thumb {
   height: 3px;
   background: var(--primary-text);
   border-radius: 10px;
@@ -44,4 +75,17 @@ body #dark {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--yellow);
+}
+.active {
+  box-shadow: var(--inset-box);
+}
+#dark .active {
+  box-shadow: var(--inset-box-dark) !important;
+}
+@media (width <= 600px) {
+  .scroll_to_top {
+    font-size: 15px;
+    bottom: 20px;
+    right: 20px;
+  }
 }

@@ -4,7 +4,7 @@
    justify-content: space-between;
    width: 100%;
    align-items: center;
-   padding: 1.5rem;
+   padding: 1rem 1.5rem;
    user-select: none;
    position: fixed;
    top: 0;
@@ -20,7 +20,6 @@
 }
 .logo {
    font-size: 20px;
-   z-index: 10;
    font-weight: 600;
    text-decoration: none;
    color: inherit;
@@ -86,13 +85,13 @@
       align-items: center;
       justify-content: center;
       gap: 30px;
-      top: 0%;
+      top: 10vh;
       right: 0%;
-      width: 90%;
-      height: 100vh;
+      width: 88.5%;
+      height: 90vh;
       background: var(--primary-bg);
       opacity: 0;
-      transform: scale(0);
+      transform: translateX(100%);
       padding: 2rem;
       box-shadow: var(--box-shadow);
    }
@@ -102,7 +101,8 @@
    }
    .show-tab {
       opacity: 1;
-      transform: scale(1) ;
+      transform: translateY(0) scale(1) ;
+      z-index: 0 !important;
    }
    .links {
       width: 50%;
@@ -111,6 +111,9 @@
    }
 }
 @media (max-width : 600px) {
+   .nav-cont {
+      padding: .5rem .9rem;
+   }
    .logo {
       font-size: 15px;
    }

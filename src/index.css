@@ -21,33 +21,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-/* ====== TOGGLE SWITCH STYLING ====== */
-#dark .react-switch-bg{
-  background-color: var(--primary-bg-dark) !important ;
-  border: 2px solid var(--primary-text) !important;
-  transition: all .2s linear !important;
-}
-#dark .react-switch-handle{
-  background-color: white !important;
-  border: 2px solid var(--primary-text) !important;
-  border-left: 2px solid var(--primary-bg) !important ;
-  box-shadow: none !important;
-  color: red;
-}
-#light .react-switch-bg{
-  background-color: var(--primary-text) !important ;
-  border: 2px solid var(--primary-text) !important;
-  transition: all .2s step-end !important;
-}
-#light .react-switch-handle{
-  background-color: white !important;
-  border-bottom: 2px solid var(--white)!important;
-  border-top: 2px solid var(--white)!important;
-  border-right: 2px solid var(--primary-bg) !important ;
-  border-left: 2px solid var(--primary-text)!important;
-  box-shadow: none !important;
+  transition: var(--transition);
 }
 
 section {
@@ -58,6 +32,15 @@ section {
   user-select: none;
   padding: 3rem 0;
 }
+.switch {
+  font-size: 20px;
+  cursor: pointer;
+  transform: rotate(45deg) translateY(5px);
+
+}
+#dark .switch {
+  color: var(--white);
+}
 @media (min-width : 1440px) {
   section {
     padding: 5rem 0 5rem;
@@ -67,26 +50,11 @@ section {
 @media (max-width : 1440px) {
   section {
     min-height: 100vh;
-    padding: 5rem 2rem;
+    padding: 7rem 2rem;
   }
 }
 @media (max-width : 600px) {
-  .react-switch-bg {
-    width: 50px !important;
-  }
-  .react-switch-handle {
-    width: 20px !important;
-    height: 20px!important;
-    top: 0px !important;
-  }
-  .react-switch-bg, .react-switch-handle,  .react-switch-bg > div, .react-switch-handle > div {
-    height: 20px !important;
-    color: red !important;
-  }
-  .react-switch-handle > div  {
-    top: -10px !important;
-    color: red !important;
-  }
+
   section {
     padding: 3rem 0;
   }

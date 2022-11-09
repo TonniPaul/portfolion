@@ -1,8 +1,8 @@
 import "./navBar.css";
-import ReactSwitch from "react-switch";
 import { useState } from "react";
-import navData from "../../Object Files/nav";
-const NavBar = ({ onChange, checked }) => {
+import Scrollspy from "react-scrollspy";
+
+const NavBar = ({ onClick, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleIsOpen = () => {
@@ -14,21 +14,38 @@ const NavBar = ({ onChange, checked }) => {
       <a href="/" className="logo">
         {"<> TonniPaul </>"}
       </a>
-      <div className="switch">
-        <ReactSwitch onChange={onChange} checked={checked} />
+      <div className="switch" onClick={onClick}>
+        {children}
       </div>
-      <ul
-        className={`links-container ${isOpen && "show-tab"} `}
-        onClick={handleIsOpen}
-      >
-        {navData.map((items) => {
-          return (
-            <a key={items.id} href={items.link} className="links">
-              <i className={items.icon}></i> {items.description}
-            </a>
-          );
-        })}
-      </ul>
+      <>
+        <Scrollspy
+          items={["home", "about", "project", "skill", "contact"]}
+          currentClassName="active"
+          className={`links-container ${isOpen && "show-tab"} `}
+          onClick={handleIsOpen}
+        >
+          <a href="#home" className="links">
+            <i className="fa-solid fa-house"></i>
+            Home
+          </a>
+          <a href="#about" className="links">
+            <i className="fa-solid fa-address-card"></i>
+            About
+          </a>
+          <a href="#project" className="links">
+            <i className="fa-solid fa-code"></i>
+            Projects
+          </a>
+          <a href="#skill" className="links">
+            <i className="fa-solid fa-toolbox"></i>
+            Skills
+          </a>
+          <a href="#contact" className="links">
+            <i className="fa-solid fa-envelope"></i>
+            Contact
+          </a>
+        </Scrollspy>
+      </>
 
       <div
         className={`tab-icon ${isOpen && "dark-tab-icon"} `}
@@ -45,5 +62,3 @@ const NavBar = ({ onChange, checked }) => {
 };
 
 export default NavBar;
-
-// getting active states to id links in

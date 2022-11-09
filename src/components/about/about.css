@@ -1,10 +1,11 @@
 .about-main-container {max-width: 1440px;}
 .about-container {
-   display: grid;
-   grid-template-columns: auto auto;
+   display: flex;
+   flex-wrap: wrap;
    height: inherit;
    gap: 30px;
    align-items: center;
+   justify-content: center;
    color: var(--black);
 }
 #dark .about-container {

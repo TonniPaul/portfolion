@@ -3,6 +3,7 @@ import "./contactForm.css";
 import myLinks from "../../Object Files/links";
 import { useForm } from "@formspree/react";
 import ThankYou from "./ThankYou";
+import cont from "../../assets/cont.svg";
 
 const ContactForm = () => {
   // ======Function to return on submit success ======
@@ -16,7 +17,16 @@ const ContactForm = () => {
   }
   return (
     <section id="contact">
-      <div className="c">
+      <div className="flex column">
+        <div className="flex">
+          <div className="abt-image-div contact_img_div">
+            <img src={cont} alt="" className="about-image" />
+          </div>
+          <div>
+            <h1 className="project-head-text alt-text"> Contact Me</h1>
+            <hr className="short-hr project-hr right_hr" />
+          </div>
+        </div>
         <FlatCard className="contact-form-cont">
           <div className="contact-sub-div">
             <h1 className="contact-head-text">

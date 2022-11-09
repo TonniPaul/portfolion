@@ -9,6 +9,16 @@
    color: var(--primary-bg);
    border-radius: inherit;
 }
+#contact {
+   padding: 4rem 2rem;
+}
+.contact_img_div {
+   width: 150px !important;
+   height: 150px !important;
+}
+.right_hr {
+   float: right;
+}
 .purple {
    box-shadow: var(--purple-box-shadow) !important;
    z-index: 3 !important;
