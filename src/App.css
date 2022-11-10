@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media (width <= 600px) {
   .scroll_to_top {
-    font-size: 15px;
+    font-size: 20px;
     bottom: 20px;
     right: 20px;
   }
