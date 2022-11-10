@@ -11,14 +11,24 @@
 #dark .project-card-container {
    box-shadow: var(--box-shadow-dark);
 }
-.project-card-image {
-   width: 100%;
+.project_image_cont {
+   width: fit-content;
    height:200px ;
    border-top: 6px inset var(--yellow) ;
    border-right: 6px solid var(--alt-text) ;
    border-left: 6px solid var(--primary-text) ;
    border-bottom: 6px inset var(--white) ;
    border-radius: 5px;
+   overflow: hidden;
+   cursor: pointer;
+}
+.project-card-image {
+   width: 100%;
+   height:100%;
+}
+
+.project-card-image:hover {
+   transform: scale(1.1);
 }
 .icons-link {
    width: 100%;

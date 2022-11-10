@@ -3,7 +3,9 @@ import "./projectCard.css";
 const ProjectCard = ({ image, description, liveSite, github, title }) => {
   return (
     <div className="project-card-container">
-      <img src={image} alt={title} className="project-card-image" />
+      <div className="project_image_cont">
+        <img src={image} alt={title} className="project-card-image" />
+      </div>
       <p className="project--title">{title}</p>
       <p className="project-desc">{description}</p>
       <div className="flex project-links-cont">
