@@ -63,9 +63,6 @@ body #dark {
 body::-webkit-scrollbar-track {
   background: var(--white);
 }
-body #dark::-webkit-scrollbar-track {
-  background: var(--primary-bg-dark) !important;
-}
 body::-webkit-scrollbar-thumb {
   height: 3px;
   background: var(--primary-text);
