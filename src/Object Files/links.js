@@ -21,11 +21,11 @@ const myLinks = [
     links: "mailto:ariyoadeoyepaul@gmail.com",
     icons: "fa-solid fa-envelope class-purple",
   },
-  // {
-  //   id: uuid(),
-  //   links: "https://instagram.com/tonnipaul",
-  //   icons: "fa-brands fa-instagram class-purple",
-  // },
+  {
+    id: uuid(),
+    links: "https://instagram.com/tonnipaul",
+    icons: "fa-brands fa-instagram class-purple",
+  },
   {
     id: uuid(),
     links: "tel:+2348162325194",

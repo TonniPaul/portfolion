@@ -115,7 +115,7 @@
    width: max-content;
    box-shadow: var(--purple-box-shadow) !important;
    padding: 1rem 32px !important;
-   background: var(--primary-text) !important;
+   background: inherit !important;
    color: var(--primary-bg) !important;
    font-size: 16px;
    font-weight: 600;
