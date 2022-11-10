@@ -10,7 +10,7 @@ const NavBar = ({ onClick, children }) => {
   };
 
   return (
-    <div className="nav-cont">
+    <div className="nav-cont" onClick={handleIsOpen}>
       <a href="/" className="logo">
         {"<> TonniPaul </>"}
       </a>

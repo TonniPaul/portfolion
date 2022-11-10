@@ -85,10 +85,10 @@
       align-items: center;
       justify-content: center;
       gap: 30px;
-      top: 50px;
+      top: 53px;
       right: 0%;
-      width: 88.5%;
-      height: 90vh;
+      width: 93%;
+      height: 100vh;
       background: var(--primary-bg);
       opacity: 0;
       transform: translateX(100%);
