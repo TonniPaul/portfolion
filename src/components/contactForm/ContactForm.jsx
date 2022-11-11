@@ -1,20 +1,10 @@
 import FlatCard from "../../cards/flatcard/FlatCard";
 import "./contactForm.css";
 import myLinks from "../../Object Files/links";
-import { useForm } from "@formspree/react";
-import ThankYou from "./ThankYou";
 import cont from "../../assets/cont.svg";
+import Form from "./Form";
 
 const ContactForm = () => {
-  // ======Function to return on submit success ======
-  const [state, handleSubmit] = useForm("mvoyvdyb");
-  if (state.succeeded) {
-    return (
-      <div className="center-div">
-        <ThankYou />
-      </div>
-    );
-  }
   return (
     <section id="contact">
       <div className="flex column">
@@ -56,35 +46,7 @@ const ContactForm = () => {
             </div>
           </div>
           <div className="contact-sub-div-2">
-            <form className="my-form" onSubmit={handleSubmit}>
-              <h4 className=" alt-text-yellow Message-me">Drop me a message</h4>
-              <div className="form-div">
-                <label htmlFor="name"> Your Name </label>
-                <input type="text" name="name" id="name" required />
-              </div>
-              <div className="form-div">
-                <label htmlFor="Email"> Your Email</label>
-                <input type="email" name="email" id="email" required />
-              </div>
-              <div className="form-div">
-                <label htmlFor="message"> Your Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="5"
-                  spellCheck
-                  required
-                ></textarea>
-              </div>
-
-              <input
-                type="submit"
-                disabled={state.submitting}
-                value="Send"
-                className="submit-btn"
-              />
-            </form>
+            <Form />
           </div>
         </FlatCard>
       </div>

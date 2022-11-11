@@ -89,6 +89,7 @@
    position: absolute;
    top: -25px;
    left: 10px;
+   font-size: 16px;
    width: max-content;
    padding: .5rem 24px .2rem;
    background: var(--primary-text);
@@ -114,9 +115,11 @@
 .submit-btn {
    width: max-content;
    box-shadow: var(--purple-box-shadow) !important;
-   padding: 1rem 32px !important;
+   padding: 1rem 3rem !important;
    background: inherit !important;
    color: var(--primary-bg) !important;
+         transform: translateY(-20px);
+
    font-size: 16px;
    font-weight: 600;
    border-radius: 5px;
@@ -141,20 +144,27 @@
 
 /* ===========THANK YOU PAGE STYLING ========== */
 .thank-you {
-   background: url(../../assets/good.png);
-   background-repeat: no-repeat;
-   background-position-x: 100%;
-   background-size: contain;
+
    background-color: var(--yellow);
    border-radius: inherit;
-   padding: 1rem;
-   text-align: center;
+   padding: 1rem 2rem;
    overflow: hidden;
+   position: relative;
+   color: var(--alt-text) !important;
+   flex-wrap: wrap;
 }
 .thank-you-home {
    display: flex;
    flex-direction: column;
    gap: 20px;
+   flex: 1;
+}
+.thankyou_img {
+   width: 100%;
+   max-height: 400px;
+   object-fit: contain;
+   flex: 1;
+   z-index: 1;
 }
 .connect {
    display: flex;
@@ -162,8 +172,8 @@
 }
 .connect-text {
    text-align: left;
-   font-size: 20px;
-   font-weight: bold;
+   font-size: 15px;
+   font-weight: 600;
    z-index: 4;
 }
 .thank-you-desc {
@@ -174,14 +184,17 @@
    display: flex;
    justify-content: center;
 }
+#light .thankyou_link, #dark .thankyou_link {
+   box-shadow: inset 1px 1px 10px #f3cc77,inset -1px -1px 10px #cfab5f !important;
+   color: var(--alt-text) !important;
+}
+/* ----------THANK YOU PAGE STYLING END ========== */
 #name {
    text-transform: capitalize;
 }
 #email {
    text-transform:lowercase;
 }
-
-/* ----------THANK YOU PAGE STYLING END ========== */
 @media (max-width : 900px) {
    .contact-form-cont {
       flex-direction: column;
@@ -215,20 +228,46 @@
       .contact-head-text {
       font-size: 30px;
    }
-   .connect {
-      justify-content: center;
-      width: 100%;
-   }
-   .connect-text {
-      text-align: center;
-   }
    .Message-me {
       font-size: 14px;
    }
+   .thankyou_img {
+      max-height: 150px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateX(35%);
+      opacity: .3;
+      animation: bounce 3s infinite ;
+   }
+   .left__align {
+      justify-content: flex-start;
+   }
+      .thank-you-home h1 {
+      font-size: 18px;
+   }
+   .left__align {
+      justify-content: flex-start;
+   }
+   .thank-you-desc, .connect-text {
+      font-size: 13px;
+   }
+
 }
 @media (max-width : 600px) {
    .Message-me {
       font-size: 13px;
+   }
+   .form-div input, .form-div textarea {
+      padding: 1rem;
+   }
+   .form-div label {
+      font-size: 13px;
+      box-shadow: 0px -1px 1px #421c5f;
+      top: -18px;
+   }
+   .submit-btn {
+      padding: .5rem 2.5rem !important;
    }
 }
 

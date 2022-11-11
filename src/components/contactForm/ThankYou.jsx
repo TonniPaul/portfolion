@@ -1,34 +1,41 @@
 import FlatCard from "../../cards/flatcard/FlatCard";
 import myLinks from "../../Object Files/links";
+import thankyou from "../../assets/good.png";
 
 const ThankYou = () => {
   return (
-    <FlatCard className="thank-you">
-      <div className="thank-you-home">
-        <h1> Your message is greatly appreciated!</h1>
-        <p className="thank-you-desc">
-          Typically, TonniPaul responds in 24 hours. Please ensure that your
-          email address is correct; if not, refresh the page and resubmit.
-        </p>
-        <div className="connect">
-          <div className="connect-text"> Connect with me on my socials:</div>
-          <div className="flex project-links-cont">
-            {myLinks.map((items) => {
-              return (
-                <a
-                  key={items.id}
-                  href={items.links}
-                  className="project-links contact-links"
-                  target=" blank"
-                >
-                  <i className={items.icons}></i>
-                </a>
-              );
-            })}
+    <div className="max-width thank-main">
+      <FlatCard className="flex gap thank-you">
+        <div className="thank-you-home">
+          <h1> Your message is greatly appreciated!</h1>
+          <p className="thank-you-desc">
+            Typically, TonniPaul responds within 24 hours. Please ensure that
+            your email address is correct; if not, refresh the page and
+            resubmit.
+          </p>
+          <div className="connect">
+            <div className="connect-text"> Connect with me on my socials:</div>
+            <div className="flex project-links-cont left__align">
+              {myLinks.map((items) => {
+                return (
+                  <a
+                    key={items.id}
+                    href={items.links}
+                    className="project-links contact-links thankyou_link"
+                    target=" blank"
+                  >
+                    <i className={items.icons}></i>
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
-    </FlatCard>
+        <div className="thankyou__img__cont">
+          <img src={thankyou} alt="" className="thankyou_img" />
+        </div>
+      </FlatCard>
+    </div>
   );
 };
 

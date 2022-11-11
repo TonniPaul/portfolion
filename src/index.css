@@ -12,9 +12,9 @@
   --yellow : #fabb37;
 
   /* DARK THEME VARIABLE */
-  --primary-bg-dark : #372c2c;
-  --box-shadow-dark : 5px 5px 10px #211c1c,  -2px -2px 10px #1e1c1c;
-  --inset-box-dark : inset 5px 1px 15px #201c1c, inset -3px -5px 15px #1e1c1c;
+  --primary-bg-dark : #241e1e;
+  --box-shadow-dark : 5px 5px 10px #090808,  -2px -2px 10px #090808;
+  --inset-box-dark : inset 5px 1px 15px #090808, inset -3px -5px 15px #090808;
 }
 *, *::after, *::before {
   padding: 0;
@@ -41,9 +41,9 @@ section {
 #dark .switch {
   color: var(--white);
 }
-@media (min-width : 1440px) {
+@media (min-width : 1500px) {
   section {
-    padding: 5rem 0 5rem;
+    padding: 10rem 0 5rem;
     height: max-content !important;
   }
 }

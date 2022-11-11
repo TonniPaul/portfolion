@@ -88,3 +88,11 @@
 }.class-purple {
    color: var(--primary-text);
 }
+@media (width <= 900px) {
+   .project--title {
+      font-size: 15px;
+   }
+   .project-desc {
+      font-size: 13px;
+   }
+}

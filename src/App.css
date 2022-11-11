@@ -21,9 +21,11 @@ body #dark {
   padding: 16px;
   backdrop-filter: blur(100%) ;
   transition: var(--transition);
+  color: var(--white);
 }
 .max-width {
   max-width: 1440px;
+  margin: auto;
 }
 .scroll_to_top {
   position: fixed;
@@ -39,21 +41,7 @@ body #dark {
 #dark .scroll_to_top {
   color: var(--alt-text) !important;
 }
-@keyframes bouncing {
-	0% {
-		transform: translateY(0px);
-    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
 
-	}
-	50% {
-		transform: translateY(-10px);
-    --yellowfilter : invert(70%) sepia(65%) saturate(332%) hue-rotate(0deg) brightness(104%) contrast(96%);
-  
-	}
-	100% {
-		transform: translateY(0px);
-	}
-}
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -85,4 +73,34 @@ body::-webkit-scrollbar-thumb {
     bottom: 20px;
     right: 20px;
   }
+}
+
+/* ========== KEYFRAMES ========== */
+@keyframes bouncing {
+	0% {
+		transform: translateY(0px);
+    filter: grayscale(10%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+
+	}
+	50% {
+		transform: translateY(-10px);
+    filter : invert(70%) sepia(65%) saturate(332%) hue-rotate(0deg) brightness(104%) contrast(96%);
+  
+	}
+	100% {
+		transform: translateY(0px);
+    filter: invert(30%) sepia(30%) saturate(2132%) hue-rotate(241deg) brightness(96%) contrast(88%);
+	}
+}
+
+   @keyframes bounce {
+	0% {
+		transform: translateY(1px)translateX(35%);
+	}
+	50% {
+		transform: translateY(-7px)translateX(35%) rotate(10deg);  
+	}
+	100% {
+		transform: translateY(0px)translateX(35%);
+	}
 }

@@ -34,10 +34,11 @@
    transition: var(--transition);
 }
 .links {
-   padding: .3rem .8rem;
+   padding: .5rem .8rem;
    box-shadow:  var(--box-shadow);
    border-radius: 5px;
-   font-weight: 600;
+   font-weight: 400;
+   letter-spacing: 1px;
    display: flex; 
    align-items: center;
    gap: 10px;

@@ -7,7 +7,7 @@ import Project from "./components/projects/Project";
 import Skills from "./components/skills/Skills";
 import ContactForm from "./components/contactForm/ContactForm";
 import { WbSunny, Brightness2 } from "@material-ui/icons";
-import { FaArrowCircleUp } from "react-icons/fa";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   // Toggle Theme Function
@@ -31,27 +31,6 @@ function App() {
     localStorage.setItem("themeColor", theme);
   }, [theme]);
 
-  // ====== Scroll Button Styling ======
-  const [visible, setVisible] = useState(false);
-
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 200) {
-      setVisible(false);
-    }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-  window.addEventListener("scroll", toggleVisible);
-
-  // ==========Scroll Button Styling End ======
   return (
     <div className="App" id={theme}>
       <NavBar onClick={toggleTheme}>
@@ -62,9 +41,8 @@ function App() {
       <Project />
       <Skills />
       <ContactForm />
-      <div className="scroll_to_top">
-        {visible && <FaArrowCircleUp onClick={scrollToTop} />}
-      </div>
+      {/* SCROLL TO TOP ICON  */}
+      <ScrollToTop />
     </div>
   );
 }
