@@ -104,3 +104,14 @@ body::-webkit-scrollbar-thumb {
 		transform: translateY(0px)translateX(35%);
 	}
 }
+   @keyframes bounce_main {
+	0% {
+		transform: translateY(1px);
+	}
+	50% {
+		transform: translateY(-7px) rotate(10deg);  
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

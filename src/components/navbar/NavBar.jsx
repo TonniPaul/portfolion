@@ -1,6 +1,7 @@
 import "./navBar.css";
 import { useState } from "react";
 import Scrollspy from "react-scrollspy";
+import navData from "../../Object Files/nav";
 
 const NavBar = ({ onClick, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,26 +25,14 @@ const NavBar = ({ onClick, children }) => {
           className={`links-container ${isOpen && "show-tab"} `}
           onClick={handleIsOpen}
         >
-          <a href="#home" className="links">
-            <i className="fa-solid fa-house"></i>
-            Home
-          </a>
-          <a href="#about" className="links">
-            <i className="fa-solid fa-address-card"></i>
-            About
-          </a>
-          <a href="#project" className="links">
-            <i className="fa-solid fa-code"></i>
-            Projects
-          </a>
-          <a href="#skill" className="links">
-            <i className="fa-solid fa-toolbox"></i>
-            Skills
-          </a>
-          <a href="#contact" className="links">
-            <i className="fa-solid fa-envelope"></i>
-            Contact
-          </a>
+          {navData.map((items) => {
+            return (
+              <a href={items.link} key={items.id} className="links">
+                <i className={items.icon}></i>
+                {items.description}
+              </a>
+            );
+          })}
         </Scrollspy>
       </>
 

@@ -138,6 +138,9 @@
    background-color: var(--primary-bg);
    box-shadow: var(--purple-box-shadow);
 }
+.thankyou_link, #dark .thankyou_link {
+   color: red !important;
+}
 .alt-text-yellow {
    color: var(--yellow);
 }
@@ -165,6 +168,8 @@
    object-fit: contain;
    flex: 1;
    z-index: 1;
+   animation: bounce_main 3s infinite ;
+
 }
 .connect {
    display: flex;
