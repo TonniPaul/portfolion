@@ -24,14 +24,7 @@ const Form = () => {
       </div>
       <div className="form-div">
         <label htmlFor="message"> Your Message</label>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="5"
-          spellCheck
-          required
-        />
+        <textarea name="message" id="message" spellCheck required />
       </div>
 
       <input

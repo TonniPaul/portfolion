@@ -7,7 +7,7 @@ import Form from "./Form";
 const ContactForm = () => {
   return (
     <section id="contact">
-      <div className="flex column">
+      <div className="max-width flex column contact__cont_main">
         <div className="flex">
           <div className="abt-image-div contact_img_div">
             <img src={cont} alt="" className="about-image" />
@@ -17,7 +17,7 @@ const ContactForm = () => {
             <hr className="short-hr project-hr right_hr" />
           </div>
         </div>
-        <FlatCard className="contact-form-cont">
+        <FlatCard customClass="contact-form-cont">
           <div className="contact-sub-div">
             <h1 className="contact-head-text">
               Interested in

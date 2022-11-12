@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="hero-sub-cont-1">
             <h1 className="hero-main-text alt-text"> Hello,</h1>
             <h1 className="hero-main-text"> I am TonniPaul </h1>
-            <p className="alt-text"> A Frontend Developer</p>
+            <p className="alt-text what_am_i"> A Frontend Developer</p>
             <p className="hero-subtext">
               <span className="head-span-text">{"<>"}</span>
               How can I be of help ?

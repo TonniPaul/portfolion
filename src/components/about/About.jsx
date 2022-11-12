@@ -23,11 +23,11 @@ const About = () => {
             </div>
             <hr className="short-hr" />
             <p className="about-me-text">
-              As a FrontEnd developer, I am passionate about creating
-              eye-catching web applications, cross-platform mobile user
-              interfaces, and implementing web security practices. I am
-              currently perusing a software engineering course at ALX in order
-              to enhance my knowledge.
+              I enjoy creating eye-catching web applications, and cross-platform
+              mobile user interfaces as well as implementing web security
+              practices in my work as a Frontend developer. As part of my
+              efforts to enhance my knowledge, I am currently attending ALX for
+              a software engineering course.
             </p>
             <a
               href="https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl"

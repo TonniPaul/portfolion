@@ -106,6 +106,10 @@
    font-family: inherit !important;
    font-size: 14px;
 }
+
+.form-div textarea {
+   min-height: 100px;
+}
 .form-div input:focus, .form-div textarea:focus,
 .form-div input:hover, .form-div textarea:hover {
    outline: none;
@@ -147,7 +151,6 @@
 
 /* ===========THANK YOU PAGE STYLING ========== */
 .thank-you {
-
    background-color: var(--yellow);
    border-radius: inherit;
    padding: 1rem 2rem;
@@ -163,17 +166,29 @@
    flex: 1;
 }
 .thankyou_img {
-   width: 100%;
-   max-height: 400px;
-   object-fit: contain;
+   
    flex: 1;
    z-index: 1;
    animation: bounce_main 3s infinite ;
 
 }
+.thankyou_img {
+   width: 100%;
+   object-fit: contain;
+      max-height: 150px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateX(35%);
+      opacity: .3;
+      animation: bounce 3s infinite ;
+   }
 .connect {
    display: flex;
    flex-direction: column;
+}
+.contact__cont_main{
+   width: 80%;
 }
 .connect-text {
    text-align: left;
@@ -192,6 +207,13 @@
 #light .thankyou_link, #dark .thankyou_link {
    box-shadow: inset 1px 1px 10px #f3cc77,inset -1px -1px 10px #cfab5f !important;
    color: var(--alt-text) !important;
+}
+.thank_you_main, #dark .thank_you_main {
+   width: 80%;
+}
+.xxx {
+   box-shadow: var(--purple-box-shadow) !important;
+
 }
 /* ----------THANK YOU PAGE STYLING END ========== */
 #name {
@@ -236,15 +258,7 @@
    .Message-me {
       font-size: 14px;
    }
-   .thankyou_img {
-      max-height: 150px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      transform: translateX(35%);
-      opacity: .3;
-      animation: bounce 3s infinite ;
-   }
+   
    .left__align {
       justify-content: flex-start;
    }
@@ -273,6 +287,18 @@
    }
    .submit-btn {
       padding: .5rem 2.5rem !important;
+   }
+   .contact__cont_main {
+      width: 100%;
+   }
+   #contact {
+      padding: 2rem 0;
+   }
+   .thank-you {
+      padding: 1rem;
+   }
+   .connect-text {
+      text-align: center;
    }
 }
 

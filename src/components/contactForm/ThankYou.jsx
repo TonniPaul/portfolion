@@ -4,8 +4,8 @@ import thankyou from "../../assets/good.png";
 
 const ThankYou = () => {
   return (
-    <div className="max-width thank_you_main">
-      <FlatCard className="flex gap thank-you">
+    <div className="thank_you_main">
+      <FlatCard className="xxx" customClass="thank-you ">
         <div className="thank-you-home">
           <h1> Your message is greatly appreciated!</h1>
           <p className="thank-you-desc">
