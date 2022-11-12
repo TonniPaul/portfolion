@@ -8,7 +8,6 @@ import Skills from "./components/skills/Skills";
 import ContactForm from "./components/contactForm/ContactForm";
 import { WbSunny, Brightness2 } from "@material-ui/icons";
 import ScrollToTop from "./components/ScrollToTop";
-import ThankYou from "./components/contactForm/ThankYou";
 
 function App() {
   // Toggle Theme Function
@@ -44,7 +43,6 @@ function App() {
       <ContactForm />
       {/* SCROLL TO TOP ICON  */}
       <ScrollToTop />
-      <ThankYou />
     </div>
   );
 }
