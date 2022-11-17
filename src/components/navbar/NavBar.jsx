@@ -11,7 +11,7 @@ const NavBar = ({ onClick, children }) => {
   };
 
   return (
-    <div className="nav-cont" onClick={handleIsOpen}>
+    <div className="nav-cont">
       <a href="/" className="logo">
         {"<> TonniPaul </>"}
       </a>
@@ -27,7 +27,12 @@ const NavBar = ({ onClick, children }) => {
         >
           {navData.map((items) => {
             return (
-              <a href={items.link} key={items.id} className="links">
+              <a
+                href={items.link}
+                key={items.id}
+                className="links"
+                onClick={handleIsOpen}
+              >
                 <i className={items.icon}></i>
                 {items.description}
               </a>
@@ -41,7 +46,7 @@ const NavBar = ({ onClick, children }) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
-          <i className="fa-solid fa-x"></i>
+          <i className="fa-solid fa-x x"></i>
         ) : (
           <i className="fa-solid fa-bars "></i>
         )}
