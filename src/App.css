@@ -15,7 +15,7 @@ body #light {
 
 body #dark {
   background: var(--primary-bg-dark);
-  /* background-image: url(../public/assets/bgdark.png);
+  /* background-image: url(../public/assets/bgdark.png);  
   background-size: contain;
   background-repeat: no-repeat; */
   padding: 16px;

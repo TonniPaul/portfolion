@@ -15,16 +15,16 @@ const Form = () => {
     <form className="my-form" onSubmit={handleSubmit}>
       <h4 className=" alt-text-yellow Message-me">Drop me a message</h4>
       <div className="form-div">
-        <label htmlFor="name"> Your Name </label>
         <input type="text" name="name" id="name" required />
+        <label htmlFor="name"> Your Name </label>
       </div>
       <div className="form-div">
-        <label htmlFor="Email"> Your Email</label>
         <input type="email" name="email" id="email" required />
+        <label htmlFor="Email"> Your Email</label>
       </div>
       <div className="form-div">
-        <label htmlFor="message"> Your Message</label>
         <textarea name="message" id="message" spellCheck required />
+        <label htmlFor="message"> Your Message</label>
       </div>
 
       <input
