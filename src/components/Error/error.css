@@ -1,0 +1,14 @@
+.error_cont {
+   height: 100vh;
+   justify-content: center;
+   background: url(../../assets/404_.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   align-items: center;
+   text-align: center;
+   gap: 19rem !important;
+}
+.error_text {
+   font-size: 25px;
+}

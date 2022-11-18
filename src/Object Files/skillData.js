@@ -5,7 +5,7 @@ const skillData = [
     id: uuid(),
     skillImage: "./assets/react.png",
     logo: "react logo",
-    logo_text: "react",
+    logo_text: "react js",
   },
   {
     id: uuid(),

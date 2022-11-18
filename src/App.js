@@ -1,22 +1,14 @@
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
 import { useEffect, useState } from "react";
-import Hero from "./components/hero/Hero";
-import About from "./components/about/About";
-import Project from "./components/projects/Project";
-import Skills from "./components/skills/Skills";
-import ContactForm from "./components/contactForm/ContactForm";
 import { WbSunny, Brightness2 } from "@material-ui/icons";
 import ScrollToTop from "./components/ScrollToTop";
+import { Route, Routes } from "react-router-dom";
+import ErrorPage from "./components/Error/Error";
+import Main from "./pages/Main";
 
 function App() {
   // Toggle Theme Function
-  // const [isDark, setIsDark] = useState(false);
-
-  // useEffect(() => {
-  //   const darkTheme = window.matchMedia("(prefers-color-scheme: dark)");
-  //   setIsDark(darkTheme.matches);
-  // }, []);
   const [theme, setTheme] = useState(
     localStorage.getItem("themeColor")
       ? localStorage.getItem("themeColor").toString()
@@ -36,11 +28,10 @@ function App() {
       <NavBar onClick={toggleTheme}>
         {theme === "light" ? <Brightness2 /> : <WbSunny />}
       </NavBar>
-      <Hero />
-      <About />
-      <Project />
-      <Skills />
-      <ContactForm />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
       {/* SCROLL TO TOP ICON  */}
       <ScrollToTop />
     </div>
