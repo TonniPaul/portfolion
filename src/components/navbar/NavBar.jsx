@@ -28,7 +28,7 @@ const NavBar = ({ onClick, children }) => {
           {navData.map((items) => {
             return (
               <a
-                href={items.link}
+                href={`/${items.link}`}
                 key={items.id}
                 className="links"
                 onClick={handleIsOpen}
