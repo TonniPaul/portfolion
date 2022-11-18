@@ -8,6 +8,9 @@
    width: 100%;
    overflow: hidden;
 }
+.circle {
+   position: relative;
+}
 .circle-card-cont {
    width: 90px;
    height: 90px;
@@ -19,6 +22,22 @@
    align-items: center;
    padding: .4rem;
    transition: var(--transition);
+   cursor: pointer;
+}
+.logo_name {
+   position: absolute;
+   bottom: -29px;
+   left: 0;
+   right: 0;
+   text-transform: uppercase;
+   font-size: 11px;
+   text-align: center;
+   font-weight: 600;
+   display: none;
+   transition: all 1s ease-in-out;
+}
+.circle-card-cont:hover ~ .logo_name {
+   display: block;
 }
 #dark .circle-card-cont {
    background-color: var(--primary-bg-dark);
