@@ -36,7 +36,7 @@ section {
   font-size: 20px;
   cursor: pointer;
   transform: rotate(45deg) translateY(5px);
-
+  z-index: 10;
 }
 #dark .switch {
   color: var(--white);

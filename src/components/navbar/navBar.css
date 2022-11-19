@@ -91,7 +91,7 @@
       width: 100%;
       background: var(--primary-bg);
       opacity: 0;
-      transform: translateY(-100%);
+      transform: translateY(-200%);
       transition: all 1s ease-in-out;
       padding: 2rem;
       box-shadow: var(--box-shadow);
