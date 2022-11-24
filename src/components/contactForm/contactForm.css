@@ -150,8 +150,8 @@
 }
 
 .contact-links, #dark .contact-links {
-   background-color: var(--primary-bg);
-   box-shadow: var(--purple-box-shadow);
+   background-color: var(--primary-bg) !important;
+   box-shadow: var(--purple-box-shadow) !important;
 }
 .thankyou_link, #dark .thankyou_link {
    color: red !important;
