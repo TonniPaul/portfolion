@@ -109,6 +109,7 @@
    font-family: inherit !important;
    font-size: 14px;
 }
+:-webkit-is( input:focus, input:valid, textarea:focus, textarea:valid) ~ label,
 :is( input:focus, input:valid, textarea:focus, textarea:valid) ~ label {
    transform: translateY(-25px) translateX(-15px);
    display: flex;
@@ -149,8 +150,8 @@
 }
 
 .contact-links, #dark .contact-links {
-   background-color: var(--primary-bg);
-   box-shadow: var(--purple-box-shadow);
+   background-color: var(--primary-bg) !important;
+   box-shadow: var(--purple-box-shadow) !important;
 }
 .thankyou_link, #dark .thankyou_link {
    color: red !important;
@@ -308,6 +309,7 @@
    .connect-text {
       text-align: center;
    }
+   :-webkit-is( input:focus, input:valid, textarea:focus, textarea:valid) ~ label,
    :is( input:focus, input:valid, textarea:focus, textarea:valid) ~ label  {
       transform: translateY(-13px) translateX(-10px);
       font-size: 10px;

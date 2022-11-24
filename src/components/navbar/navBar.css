@@ -95,6 +95,7 @@
       transition: all 1s ease-in-out;
       padding: 2rem;
       box-shadow: var(--box-shadow);
+      pointer-events: none;
    }
    #dark .links-container {
       background: var(--primary-bg-dark);
@@ -104,6 +105,7 @@
       opacity: 1;
       transform: translateY(0) ;
       z-index: 0 !important;
+      pointer-events: all;
    }
    .links {
       width: 50%;
