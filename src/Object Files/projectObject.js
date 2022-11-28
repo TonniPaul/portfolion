@@ -7,9 +7,9 @@ export const projectData = [
     image: "./assets/portfoliodark.png",
     description: "My portfolio website was created to showcase my work",
     // stacks:'HTML, CSS, JAVASCRIPT, REACT and Adviceslip API',
-    liveSite: "https://advice-generator-rho-six.vercel.app/",
+    liveSite: "https://tonnipaul.com",
     github: "https://github.com/TonniPaul/adviceGenerator",
-    // design : 'FrontEnd Mentor'
+    // design : 'Dribble '
   },
   {
     id: uuid(),
