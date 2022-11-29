@@ -9,8 +9,9 @@ const Hero = () => {
         <div className="hero-flex">
           <motion.div
             className="hero-sub-cont-1"
-            initial={{ translateX: "-100%" }}
-            whileInView={{ translateX: 0 }}
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ ease: "backInOut", delay: 0.5 }}
           >
             <p>
               Hello <span className="wave">👋</span> ,
@@ -41,6 +42,7 @@ const Hero = () => {
             className="hero-sub-cont"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
+            transition={{ delay: 0.7, ease: "circInOut" }}
           >
             <img src={hero} alt="hero img" className="hero-img" />
           </motion.div>
