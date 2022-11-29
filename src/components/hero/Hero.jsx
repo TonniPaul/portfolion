@@ -1,6 +1,7 @@
 import "./hero.css";
 import hero from "../../assets/hero.png";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
@@ -10,14 +11,27 @@ const Hero = () => {
           <motion.div
             className="hero-sub-cont-1"
             initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ ease: "backInOut", delay: 0.5 }}
+            whileInView={{ scale: 1, rotate: 360 }}
+            transition={{
+              type: "tween",
+            }}
           >
             <p>
               Hello <span className="wave">👋</span> ,
             </p>
-            <p>
-              I am <span className="alt-text-yellow">TonniPaul</span>
+            <p className="flex">
+              I am
+              <span className="alt-text-yellow">
+                <Typewriter
+                  options={{
+                    strings: ["TonniPaul"],
+                    autoStart: true,
+                    loop: true,
+                    cursor: "✏️",
+                    skipAddStyles: false,
+                  }}
+                />
+              </span>
             </p>
             <h1 className="hero-main-text ">
               I create <span className="alt-text">beautiful</span> and
@@ -42,6 +56,7 @@ const Hero = () => {
             className="hero-sub-cont"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
+            exit={{ scale: 0 }}
             transition={{ delay: 0.7, ease: "circInOut" }}
           >
             <img src={hero} alt="hero img" className="hero-img" />

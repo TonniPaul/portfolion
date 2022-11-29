@@ -11,11 +11,13 @@ const Project = () => {
           <div className="abt-image-div">
             <img src={projectIcon} alt="" className="about-image" />
           </div>
+
           <div>
             <h1 className="project-head-text alt-text"> I Built These</h1>
             <hr className="short-hr project-hr" />
           </div>
         </div>
+
         <div className="project-container">
           {projectData.map((items) => {
             return <ProjectCard key={items.id} {...items} />;

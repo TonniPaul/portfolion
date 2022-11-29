@@ -2,11 +2,12 @@ import "./about.css";
 import about from "../../assets/about__.png";
 import microphone from "../../assets/about.png";
 import ImageCard from "../../cards/imageCard/ImageCard";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <section id="about">
-      <div className="about-main-container">
+      <motion.div className="about-main-container">
         <div className="about-container">
           <ImageCard img={about} alt="about-icon" />
 
@@ -39,7 +40,7 @@ const About = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

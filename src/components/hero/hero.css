@@ -19,6 +19,8 @@
    align-items: center;
    justify-content: center;  
    max-width: 1440px;
+   overflow: hidden;
+   transition: all 3s ease-in-out;
 }
 .hero-main-text {
    font-size : 54px;

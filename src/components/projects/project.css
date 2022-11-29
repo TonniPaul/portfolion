@@ -19,9 +19,13 @@
 }
 .project-hr {
    width: 70%;
-   font-family: 'Lobster Two', cursive;
 }
 .project-head-text {
    font-size: 30px;
+}
+@media (max-width: 768px) {
+   .project-container {
+      gap: 4rem !important;
+   }
 }
 
