@@ -1,20 +1,28 @@
 import "./hero.css";
 import hero from "../../assets/hero.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section id="home">
       <div className="hero-main-cont">
         <div className="hero-flex">
-          <div className="hero-sub-cont-1">
-            <h1 className="hero-main-text alt-text"> Hello,</h1>
-            <h1 className="hero-main-text"> I am TonniPaul </h1>
-            <p className="alt-text what_am_i"> A Frontend Developer</p>
-            <p className="hero-subtext">
-              <span className="head-span-text">{"<>"}</span>
-              How can I be of help ?
-              <span className="head-span-text">{"</>"} </span>
+          <motion.div
+            className="hero-sub-cont-1"
+            initial={{ translateX: "-100%" }}
+            whileInView={{ translateX: 0 }}
+          >
+            <p>
+              Hello <span className="wave">👋</span> ,
             </p>
+            <p>
+              I am <span className="alt-text-yellow">TonniPaul</span>
+            </p>
+            <h1 className="hero-main-text ">
+              I create <span className="alt-text">beautiful</span> and
+              <span className="alt-text"> interactive</span> user interfaces
+            </h1>
+
             <div className="btn-div">
               <a href="#about" className="btn">
                 Explore More
@@ -28,10 +36,14 @@ const Hero = () => {
                 <i className="fa-solid fa-download"></i>
               </a>
             </div>
-          </div>
-          <div className="hero-sub-cont">
+          </motion.div>
+          <motion.div
+            className="hero-sub-cont"
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+          >
             <img src={hero} alt="hero img" className="hero-img" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

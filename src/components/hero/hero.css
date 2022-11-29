@@ -21,7 +21,7 @@
    max-width: 1440px;
 }
 .hero-main-text {
-   font-size : 64px;
+   font-size : 54px;
 }
 .hero-img {
    width: 100%;
@@ -32,6 +32,7 @@
    font-weight: 600;
    font-size: 18px;
    gap: 10px;
+   flex: 1;
 }
 .hero-subtext {
    color: var(--black);
@@ -76,9 +77,12 @@
    margin-top: 1rem;
 
 }
+.wave {
+   font-size: 40px;
+}
 @media (max-width : 1000px) {
    .hero-main-text {
-      font-size: 40px;
+      font-size: 35px;
    }
    .hero-flex {
       display : grid;
