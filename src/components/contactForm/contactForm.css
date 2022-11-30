@@ -118,6 +118,8 @@
    font-size: 13px;
    font-family: inherit !important;
    font-size: 14px;
+   -webkit-appearance: none;
+   appearance: none;
 }
 .form-div textarea {
    min-height: 100px;
