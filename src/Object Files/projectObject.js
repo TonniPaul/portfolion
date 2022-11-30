@@ -60,7 +60,7 @@ export const projectData = [
     image: "./assets/dicegame.png",
     description:
       "The dice game generates random dice numbers and declares the winner when clicked",
-    // liveSite: 'https://tonnipaul.github.io/dice-game/',
+    liveSite: "https://tonnipaul.github.io/dice-game/",
     github: "https://github.com/TonniPaul/dice-game",
     // design : 'Angela Yu (UDEMY)'
   },

@@ -96,6 +96,16 @@
    z-index: -1;
    transition: all .6s ease-in-out;
 }
+option {
+   background: inherit !important;
+   -webkit-appearance: none;
+   appearance: none;
+}
+:is(.form-div input:valid, .form-div textarea:valid) {
+   background-color: i !important;
+   -webkit-appearance: none;
+   appearance: none;
+}
 
 :is( input:focus, input:valid, textarea:focus, textarea:valid) ~ label {
    transform: translateY(-25px) translateX(-15px);

@@ -23,9 +23,4 @@
 .project-head-text {
    font-size: 30px;
 }
-@media (max-width: 768px) {
-   .project-container {
-      gap: 4rem !important;
-   }
-}
 

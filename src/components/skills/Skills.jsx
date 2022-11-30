@@ -24,7 +24,7 @@ const Skills = () => {
                 key={items.id}
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.9, staggerChildren: 0.5 }}
                 viewport={{ once: false, amount: 1 }}
               >
                 <CircleCard {...items} />
