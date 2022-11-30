@@ -21,7 +21,7 @@ const About = () => {
       transition: {
         type: "spring",
         bounce: 0.2,
-        duration: 1,
+        duration: 2,
       },
     },
   };
@@ -92,7 +92,7 @@ const About = () => {
                     "🎵 Music",
                     "👔 Fashion",
                     "⚽ Football",
-                    "🎥 Movies",
+                    " Movies",
                     "🎮 Game",
                   ],
                   autoStart: true,

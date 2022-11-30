@@ -105,6 +105,9 @@
    background: var(--primary-text);
    font-size: 12px;
    z-index: 1;
+   -webkit-appearance : none;
+   -moz-appearance : none;
+   appearance : none;
 }
 .form-div input, .form-div textarea {
    border: none;
