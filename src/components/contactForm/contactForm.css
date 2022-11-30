@@ -98,7 +98,7 @@
 
 }
 
-:is( input:focus, input:valid, textarea:focus, textarea:valid) ~ label {
+:is( input:focus, input:valid, textarea:focus, textarea:valid) + label {
    transform: translateY(-25px) translateX(-15px);
    display: flex;
    align-items: center;
@@ -159,7 +159,13 @@
 .alt-text-yellow {
    color: var(--yellow);
 }
-
+.max_content {
+   overflow: hidden;
+   box-shadow: var(--box-shadow);
+}
+#dark .max_content {
+   box-shadow: var(--box-shadow-dark);
+}
 /* ===========THANK YOU PAGE STYLING ========== */
 .thank-you {
    background-color: var(--yellow);
@@ -309,9 +315,12 @@
    .connect-text {
       text-align: center;
    }
-   :is( input:focus, input:valid, textarea:focus, textarea:valid) ~ label  {
+   :is( input:focus, input:valid, textarea:focus, textarea:valid) + label  {
       transform: translateY(-13px) translateX(-10px);
       font-size: 10px;
+   }
+   input, textarea {
+      box-shadow: var(--box-shadow);
    }
 }
 

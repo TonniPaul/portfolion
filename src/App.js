@@ -28,10 +28,12 @@ function App() {
       <NavBar onClick={toggleTheme}>
         {theme === "light" ? <Brightness2 /> : <WbSunny />}
       </NavBar>
+
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+
       {/* SCROLL TO TOP ICON  */}
       <ScrollToTop />
     </div>

@@ -33,6 +33,7 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
       className="project-card-container"
       initial={"hidden"}
       whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
       transition={{ staggerChildren: 0.5 }}
     >
       <div className="project_image_cont">
@@ -43,12 +44,15 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
           variants={animateImage}
         />
       </div>
+
       <motion.p className="project--title" variants={headTextAnimate}>
         {title}
       </motion.p>
+
       <motion.p className="project-desc" variants={headTextAnimate}>
         {description}
       </motion.p>
+
       <motion.div className="flex project-links-cont">
         <a href={github} className="project-links">
           <i className="fa-brands fa-github class-purple"></i>

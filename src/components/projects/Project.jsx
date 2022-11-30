@@ -2,6 +2,7 @@ import ProjectCard from "../../cards/projectCard/ProjectCard";
 import "./project.css";
 import { projectData } from "../../Object Files/projectObject";
 import projectIcon from "../../assets/calander.png";
+import { motion } from "framer-motion";
 
 const Project = () => {
   return (
@@ -18,11 +19,21 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="project-container">
+        <motion.div className="project-container">
           {projectData.map((items) => {
-            return <ProjectCard key={items.id} {...items} />;
+            return (
+              <motion.div
+                key={items.id}
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: false, amount: 1 }}
+              >
+                <ProjectCard {...items} />
+              </motion.div>
+            );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

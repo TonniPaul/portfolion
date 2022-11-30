@@ -1,5 +1,6 @@
 import { useForm } from "@formspree/react";
 import ThankYou from "./ThankYou";
+import Typewriter from "typewriter-effect";
 
 const Form = () => {
   const [state, handleSubmit] = useForm("mvoyvdyb");
@@ -13,7 +14,17 @@ const Form = () => {
   }
   return (
     <form className="my-form" onSubmit={handleSubmit}>
-      <h4 className=" alt-text-yellow Message-me">Drop me a message</h4>
+      <h4 className=" alt-text-yellow Message-me">
+        <Typewriter
+          options={{
+            strings: ["Drop me a message"],
+            autoStart: true,
+            loop: true,
+            cursor: "📑",
+            pauseFor: 5000,
+          }}
+        />
+      </h4>
       <div className="form-div">
         <input type="text" name="name" id="name" required />
         <label htmlFor="name"> Your Name </label>

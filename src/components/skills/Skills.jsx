@@ -2,6 +2,7 @@ import "./skills.css";
 import projectIcon from "../../assets/tool.png";
 import CircleCard from "../../cards/circleCards/CircleCard";
 import skillData from "../../Object Files/skillData";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -18,7 +19,17 @@ const Skills = () => {
         </div>
         <div className="my-skills-container">
           {skillData.map((items) => {
-            return <CircleCard key={items.id} {...items} />;
+            return (
+              <motion.div
+                key={items.id}
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: false, amount: 1 }}
+              >
+                <CircleCard {...items} />
+              </motion.div>
+            );
           })}
         </div>
       </div>

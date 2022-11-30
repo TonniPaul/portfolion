@@ -27,6 +27,9 @@ body #dark {
   max-width: 1440px;
   margin: auto;
 }
+.left_align {
+  justify-content: flex-start !important;
+}
 .scroll_to_top {
   position: fixed;
   bottom: 40px;

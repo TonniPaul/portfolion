@@ -4,22 +4,51 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => {
+  //framer motion animation variants
+  const leftVariant = {
+    hidden: {
+      x: "-100%",
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.2,
+        duration: 3,
+      },
+    },
+  };
+  const rightVariant = {
+    hidden: {
+      x: "100%",
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+      },
+    },
+  };
+
   return (
     <section id="home">
       <div className="hero-main-cont">
-        <div className="hero-flex">
-          <motion.div
-            className="hero-sub-cont-1"
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1, rotate: 360 }}
-            transition={{
-              type: "tween",
-            }}
-          >
+        <motion.div
+          className="hero-flex"
+          initial={"hidden"}
+          whileInView={"show"}
+          transition={{ staggerChildren: 0.5 }}
+        >
+          <motion.div className="hero-sub-cont-1" variants={leftVariant}>
             <p>
               Hello <span className="wave">👋</span> ,
             </p>
-            <p className="flex">
+            <p className="flex left_align">
               I am
               <span className="alt-text-yellow">
                 <Typewriter
@@ -27,8 +56,8 @@ const Hero = () => {
                     strings: ["TonniPaul"],
                     autoStart: true,
                     loop: true,
-                    cursor: "✏️",
-                    skipAddStyles: false,
+                    cursor: "✍️",
+                    pauseFor: 5000,
                   }}
                 />
               </span>
@@ -52,16 +81,10 @@ const Hero = () => {
               </a>
             </div>
           </motion.div>
-          <motion.div
-            className="hero-sub-cont"
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            exit={{ scale: 0 }}
-            transition={{ delay: 0.7, ease: "circInOut" }}
-          >
+          <motion.div className="hero-sub-cont" variants={rightVariant}>
             <img src={hero} alt="hero img" className="hero-img" />
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
