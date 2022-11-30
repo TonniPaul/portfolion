@@ -15,9 +15,6 @@ body #light {
 
 body #dark {
   background: var(--primary-bg-dark);
-  /* background-image: url(../public/assets/bgdark.png);  
-  background-size: contain;
-  background-repeat: no-repeat; */
   padding: 16px;
   backdrop-filter: blur(100%) ;
   transition: var(--transition);
@@ -69,6 +66,22 @@ body::-webkit-scrollbar-thumb {
 }
 #dark .active {
   box-shadow: var(--inset-box-dark) !important;
+}
+.footer {
+  gap: 0 !important;
+  margin: 0;
+}
+.footer :nth-child(1) {
+  text-transform: capitalize;
+}
+.footer :nth-child(2) {
+  font-weight: 500;
+}
+.TNP {
+  font-weight: 700;
+}
+#dark .TNP {
+  color: var(--yellow);
 }
 @media (width <= 600px) {
   .scroll_to_top {
