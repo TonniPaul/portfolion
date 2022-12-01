@@ -27,15 +27,15 @@ const Form = () => {
       </div>
       <div className="form-div">
         <input type="text" name="name" id="name" required />
-        <label htmlFor="name"> Your Name </label>
+        <label htmlFor="name"> Name </label>
       </div>
       <div className="form-div">
         <input type="email" name="email" id="email" required />
-        <label htmlFor="email"> Your Email</label>
+        <label htmlFor="email"> Email</label>
       </div>
       <div className="form-div">
         <textarea name="message" id="message" spellCheck required />
-        <label htmlFor="message"> Your Message</label>
+        <label htmlFor="message"> Message</label>
       </div>
 
       <input
