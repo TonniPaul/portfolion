@@ -27,10 +27,9 @@ const NavBar = ({ onClick, children }) => {
         >
           {navData.map((items) => {
             return (
-              <li className="links">
+              <li className="links" key={items.id}>
                 <a
                   href={`/${items.link}`}
-                  key={items.id}
                   className="flex"
                   onClick={handleIsOpen}
                 >

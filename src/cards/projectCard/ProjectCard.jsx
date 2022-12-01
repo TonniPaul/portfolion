@@ -33,7 +33,6 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
       className="project-card-container"
       initial={"hidden"}
       whileInView={"show"}
-      // viewport={{ once: false, amount: 0.7 }}
       transition={{ staggerChildren: 0.5 }}
     >
       <div className="project_image_cont">

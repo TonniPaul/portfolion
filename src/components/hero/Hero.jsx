@@ -49,7 +49,7 @@ const Hero = () => {
             <p>
               Hello <span className="wave">👋</span> ,
             </p>
-            <p className="flex left_align">
+            <div className="flex left_align">
               I am
               <span className="alt-text-yellow">
                 <Typewriter
@@ -62,7 +62,7 @@ const Hero = () => {
                   }}
                 />
               </span>
-            </p>
+            </div>
             <h1 className="hero-main-text ">
               I create <span className="alt-text">beautiful</span> and
               <span className="alt-text"> interactive</span> user interfaces
