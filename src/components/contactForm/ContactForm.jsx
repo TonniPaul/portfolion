@@ -43,7 +43,7 @@ const ContactForm = () => {
       <div className="max-width flex column contact__cont_main">
         <div className="flex">
           <div className="abt-image-div contact_img_div">
-            <img src={cont} alt="" className="about-image" />
+            <img src={cont} alt="3d contact icon" className="about-image" />
           </div>
           <div>
             <h1 className="project-head-text alt-text"> Contact Me</h1>

@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
           </motion.div>
           <motion.div className="hero-sub-cont" variants={rightVariant}>
-            <img src={hero} alt="hero img" className="hero-img" />
+            <img src={hero} alt="3D-Image" className="hero-img" />
           </motion.div>
         </motion.div>
       </div>

@@ -10,7 +10,11 @@ const Skills = () => {
       <div className="skills-container">
         <div className="flex">
           <div className="abt-image-div">
-            <img src={projectIcon} alt="" className="about-image" />
+            <img
+              src={projectIcon}
+              alt="bulb toolbox icon"
+              className="about-image"
+            />
           </div>
           <div>
             <h1 className="project-head-text alt-text"> Skills and Tools</h1>

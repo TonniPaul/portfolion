@@ -10,7 +10,11 @@ const Project = () => {
       <div className="project-cont">
         <div className="flex">
           <div className="abt-image-div">
-            <img src={projectIcon} alt="" className="about-image" />
+            <img
+              src={projectIcon}
+              alt="3d calender icon"
+              className="about-image"
+            />
           </div>
 
           <div>

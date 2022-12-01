@@ -53,7 +53,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.5 }}
             variants={leftAboutVariant}
           >
-            <ImageCard img={about} alt="about-icon" />
+            <ImageCard img={about} alt="3D image" />
           </motion.div>
 
           <motion.div
@@ -63,7 +63,11 @@ const About = () => {
           >
             <div className="flex">
               <div className="abt-image-div">
-                <img src={microphone} alt="" className="about-image" />
+                <img
+                  src={microphone}
+                  alt="note book icon"
+                  className="about-image"
+                />
               </div>
 
               <h1 className="abt-header alt-text">About Me</h1>
