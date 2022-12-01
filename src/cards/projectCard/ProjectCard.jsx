@@ -54,10 +54,14 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
       </motion.p>
 
       <motion.div className="flex project-links-cont">
-        <a href={github} className="project-links">
+        <a href={github} className="project-links" aria-label="view code base">
           <i className="fa-brands fa-github class-purple"></i>
         </a>
-        <a href={liveSite} className="project-links">
+        <a
+          href={liveSite}
+          className="project-links"
+          aria-label="view live site"
+        >
           <i className="fa-solid fa-link class-purple"></i>
         </a>
       </motion.div>

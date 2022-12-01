@@ -70,7 +70,7 @@ const Hero = () => {
 
             <div className="btn-div">
               <a href="#about" className="btn">
-                Explore More
+                Contact Me
               </a>
               <a
                 href="https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl"
@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
           </motion.div>
           <motion.div className="hero-sub-cont" variants={rightVariant}>
-            <img src={hero} alt="3D-Image" className="hero-img" />
+            <img src={hero} alt="3D icon" className="hero-img" />
           </motion.div>
         </motion.div>
       </div>

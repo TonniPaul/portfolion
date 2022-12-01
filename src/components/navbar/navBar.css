@@ -45,6 +45,10 @@
    text-decoration: none;
    color: inherit;
 }
+a {
+   color: inherit;
+   text-decoration: none;
+}
 #dark .links {
    box-shadow: var(--box-shadow-dark);
 }

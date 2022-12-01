@@ -88,7 +88,7 @@ const About = () => {
               a software engineering course.
             </p>
 
-            <p className="flex left_align">
+            <div className="flex left_align">
               Interests:
               <Typewriter
                 options={{
@@ -105,7 +105,7 @@ const About = () => {
                   pauseFor: 3000,
                 }}
               />
-            </p>
+            </div>
 
             <a
               href="https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl"

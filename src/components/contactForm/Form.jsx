@@ -14,7 +14,7 @@ const Form = () => {
   }
   return (
     <form className="my-form" onSubmit={handleSubmit}>
-      <h4 className=" alt-text-yellow Message-me">
+      <div className=" alt-text-yellow Message-me">
         <Typewriter
           options={{
             strings: ["Drop me a message"],
@@ -24,18 +24,18 @@ const Form = () => {
             pauseFor: 5000,
           }}
         />
-      </h4>
+      </div>
       <div className="form-div">
         <input type="text" name="name" id="name" required />
-        <label htmlFor="name"> Your Name </label>
+        <label for="name"> Your Name </label>
       </div>
       <div className="form-div">
         <input type="email" name="email" id="email" required />
-        <label htmlFor="Email"> Your Email</label>
+        <label for="email"> Your Email</label>
       </div>
       <div className="form-div">
         <textarea name="message" id="message" spellCheck required />
-        <label htmlFor="message"> Your Message</label>
+        <label for="message"> Your Message</label>
       </div>
 
       <input

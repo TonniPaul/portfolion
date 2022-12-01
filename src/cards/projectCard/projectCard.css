@@ -7,13 +7,18 @@
    box-shadow: var(--box-shadow);
    border-radius: 5px;
    overflow: hidden;
+   transition: var(--transition);
+}
+.project-card-container:hover{
+   scale: 1.05;
+   transition: var(--transition);
 }
 #dark .project-card-container {
    box-shadow: var(--box-shadow-dark);
 }
 .project_image_cont {
-   width: fit-content;
-   height:200px ;
+   width: auto;
+   height:auto ;
    border-top: 6px inset var(--yellow) ;
    border-right: 6px solid var(--alt-text) ;
    border-left: 6px solid var(--primary-text) ;

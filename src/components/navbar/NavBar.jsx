@@ -11,7 +11,7 @@ const NavBar = ({ onClick, children }) => {
   };
 
   return (
-    <div className="nav-cont">
+    <nav className="nav-cont">
       <a href="/" className="logo">
         {"<> TonniPaul </>"}
       </a>
@@ -27,15 +27,17 @@ const NavBar = ({ onClick, children }) => {
         >
           {navData.map((items) => {
             return (
-              <a
-                href={`/${items.link}`}
-                key={items.id}
-                className="links"
-                onClick={handleIsOpen}
-              >
-                <i className={items.icon}></i>
-                {items.description}
-              </a>
+              <li className="links">
+                <a
+                  href={`/${items.link}`}
+                  key={items.id}
+                  className="flex"
+                  onClick={handleIsOpen}
+                >
+                  <i className={items.icon}></i>
+                  {items.description}
+                </a>
+              </li>
             );
           })}
         </Scrollspy>
@@ -51,7 +53,7 @@ const NavBar = ({ onClick, children }) => {
           <i className="fa-solid fa-bars "></i>
         )}
       </div>
-    </div>
+    </nav>
   );
 };
 

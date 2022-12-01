@@ -79,6 +79,7 @@ const ContactForm = () => {
                       key={items.id}
                       href={items.links}
                       className="project-links contact-links"
+                      aria-label={items.label}
                       target="blank"
                     >
                       <i className={items.icons}></i>
