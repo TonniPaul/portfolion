@@ -35,14 +35,12 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
       whileInView={"show"}
       transition={{ staggerChildren: 0.5 }}
     >
-      <div className="project_image_cont">
-        <motion.img
-          src={image}
-          alt={title}
-          className="project-card-image"
-          variants={animateImage}
-        />
-      </div>
+      <div
+        className="project_image_cont"
+        style={{
+          background: `url(${image})`,
+        }}
+      ></div>
 
       <motion.p className="project--title" variants={headTextAnimate}>
         {title}

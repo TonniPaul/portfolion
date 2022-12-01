@@ -19,8 +19,7 @@ const CircleCard = ({ skillImage, logo_text, logo }) => {
         transition={{
           type: "spring",
           babel: 1,
-          duration: 1,
-          delay: 1,
+          duration: 0.5,
         }}
       >
         <img src={skillImage} alt={logo} className="circle-img" />

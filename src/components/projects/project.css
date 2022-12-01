@@ -5,6 +5,7 @@
    margin: auto;
    gap: 2rem;
    justify-content: center;
+   align-items: center;
 }
 .project-cont {
    display: flex;

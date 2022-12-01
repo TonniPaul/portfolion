@@ -17,8 +17,8 @@
    box-shadow: var(--box-shadow-dark);
 }
 .project_image_cont {
-   width: fit-content;
-   height: 200px;
+   width: 100%;
+   min-height: 200px;
    border-top: 6px inset var(--yellow) ;
    border-right: 6px solid var(--alt-text) ;
    border-left: 6px solid var(--primary-text) ;
@@ -26,15 +26,12 @@
    border-radius: 5px;
    overflow: hidden;
    cursor: pointer;
+   background-size: 100% 100% !important;
+   background-repeat: no-repeat !important;
 }
 .project-card-image {
    width: 100%;
-   height: auto;
-   object-fit: contain;
-}
-
-.project-card-image:hover {
-   transform: scale(1.1);
+   height: 100%;
 }
 .icons-link {
    width: 100%;
