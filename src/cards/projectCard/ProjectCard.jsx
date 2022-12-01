@@ -2,19 +2,7 @@ import { motion } from "framer-motion";
 import "./projectCard.css";
 
 const ProjectCard = ({ image, description, liveSite, github, title }) => {
-  const animateImage = {
-    hidden: {
-      y: "-100%",
-    },
-    show: {
-      y: 0,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 0.6,
-      },
-    },
-  };
+
   const headTextAnimate = {
     hidden: {
       x: "-100%",
@@ -67,3 +55,17 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
 };
 
 export default ProjectCard;
+
+  // const animateImage = {
+  //   hidden: {
+  //     y: "-100%",
+  //   },
+  //   show: {
+  //     y: 0,
+  //     transition: {
+  //       type: "spring",
+  //       bounce: 0.4,
+  //       duration: 0.6,
+  //     },
+  //   },
+  // };
