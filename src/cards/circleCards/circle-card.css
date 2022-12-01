@@ -34,15 +34,15 @@
    font-size: 11px;
    text-align: center;
    font-weight: 600;
-   display: none;
-   transition: all .3s ease-in-out;
+   transition: all .5s ease-in-out;
+   opacity: 0;
 }
 .circle-card-cont:hover {
    scale: 1.2;
-   transition: all .3s ease-in-out;
+   transition: all .5s ease-in-out;
 }
 .circle-card-cont:hover ~ .logo_name {
-   display: block;
+   opacity: 1;
 }
 #dark .circle-card-cont {
    background-color: var(--primary-bg-dark);
