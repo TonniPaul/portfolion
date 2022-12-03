@@ -28,10 +28,9 @@ const Project = () => {
             return (
               <motion.div
                 key={items.id}
-                initial={{ scale: 0, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
+                initial={{ y: "100%", opacity: 0 }}
+                whileInView={{ y: "0", opacity: 1 }}
                 transition={{ duration: 1 }}
-                viewport={{ once: false, amount: 1 }}
               >
                 <ProjectCard {...items} />
               </motion.div>

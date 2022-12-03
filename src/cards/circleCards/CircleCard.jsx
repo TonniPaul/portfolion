@@ -3,7 +3,7 @@ import "./circle-card.css";
 
 const CircleCard = ({ skillImage, logo_text, logo }) => {
   return (
-    <motion.div className="circle">
+    <div className="circle">
       <motion.div
         className=" flex column circle-card-cont"
         initial={{
@@ -18,14 +18,14 @@ const CircleCard = ({ skillImage, logo_text, logo }) => {
         }}
         transition={{
           type: "spring",
-          babel: 1,
+          bounce: 100,
           duration: 0.5,
         }}
       >
         <img src={skillImage} alt={logo} className="circle-img" />
       </motion.div>
       <p className="logo_name">{logo_text}</p>
-    </motion.div>
+    </div>
   );
 };
 
