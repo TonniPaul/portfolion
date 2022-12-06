@@ -6,6 +6,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/Error/Error";
 import Main from "./pages/Main";
+import Loader from "./components/Loader";
 
 function App() {
   // Toggle Theme Function
@@ -39,10 +40,11 @@ function App() {
       <footer className="flex column footer">
         <small> &copy; 2022, all rights reserved</small>
         <small>
-          Designed & Built by{" "}
-          <span className="alt-text TNP">TonniPaul&#xae;</span>{" "}
+          Designed & Built by
+          <span className="alt-text TNP">TonniPaul&#xae;</span>
         </small>
       </footer>
+      <Loader />
     </div>
   );
 }
