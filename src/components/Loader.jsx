@@ -1,7 +1,7 @@
 import Bag from "../assets/bag.png";
 
 const Loader = () => {
-  if (document.readyState === "complete") {
+  if (document.readyState !== "complete") {
     return (
       <div
         className="loader"
