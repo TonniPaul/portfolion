@@ -1,20 +1,6 @@
-import { motion } from "framer-motion";
 import "./projectCard.css";
 
 const ProjectCard = ({ image, description, liveSite, github, title }) => {
-  const headTextAnimate = {
-    hidden: {
-      x: "-100%",
-    },
-    show: {
-      x: 0,
-      transition: {
-        type: "spring",
-        bounce: 0.2,
-        duration: 0.6,
-      },
-    },
-  };
   return (
     <div className="project-card-container">
       <div
