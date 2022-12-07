@@ -37,12 +37,12 @@ const skillData = [
     logo: "react logo",
     logo_text: "bootstrap",
   },
-  {
-    id: uuid(),
-    skillImage: "./assets/git.png",
-    logo: "react logo",
-    logo_text: "git/ version control",
-  },
+  // {
+  //   id: uuid(),
+  //   skillImage: "./assets/git.png",
+  //   logo: "react logo",
+  //   logo_text: "git/ version control",
+  // },
   {
     id: uuid(),
     skillImage: "./assets/github.png",
