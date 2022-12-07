@@ -9,25 +9,31 @@
    color: var(--primary-bg);
    border-radius: inherit;
 }
+
 #contact {
    padding: 4rem 2rem;
 }
+
 .contact_img_div {
    width: 150px !important;
    height: 150px !important;
 }
+
 .right_hr {
    float: right;
 }
+
 .purple {
    box-shadow: var(--purple-box-shadow) !important;
    z-index: 3 !important;
 }
+
 .contact-head-text {
    font-size: 40px;
    text-transform: capitalize;
    z-index: 2;
 }
+
 .contact-sub-div {
    flex: 1;
    display: flex;
@@ -36,6 +42,7 @@
    position: relative;
    z-index: 3;
 }
+
 .contact-sub-div::after {
    content: "";
    display: block;
@@ -52,10 +59,12 @@
    opacity: .2;
 
 }
+
 .contact-sub-div-2 {
    flex: 1;
 }
-.my-form{
+
+.my-form {
    display: flex;
    flex-direction: column;
    gap: 40px;
@@ -66,6 +75,7 @@
    position: relative;
    z-index: 3;
 }
+
 .my-form::after {
    content: "";
    position: absolute;
@@ -74,17 +84,19 @@
    background-repeat: no-repeat;
    background-position: center;
    width: 100%;
-   height:  100%;
+   height: 100%;
    border-radius: 5px;
    z-index: -1;
    opacity: 0.2;
    padding: 2rem;
 }
+
 .form-div {
    display: flex;
    flex-direction: column;
    position: relative;
 }
+
 .form-div label {
    position: absolute;
    top: 0px;
@@ -96,18 +108,20 @@
    z-index: -1;
    transition: all .6s ease-in-out;
 }
+
 option {
    background: inherit !important;
    -webkit-appearance: none;
    appearance: none;
 }
+
 :is(.form-div input:valid, .form-div textarea:valid) {
    background-color: i !important;
    -webkit-appearance: none;
    appearance: none;
 }
 
-:is( input:focus, input:valid, textarea:focus, textarea:valid) ~ label {
+:is(input:focus, input:valid, textarea:focus, textarea:valid)~label {
    transform: translateY(-25px) translateX(-15px);
    display: flex;
    align-items: center;
@@ -117,7 +131,9 @@ option {
    -webkit-appearance: none;
    appearance: none;
 }
-.form-div input, .form-div textarea {
+
+.form-div input,
+.form-div textarea {
    border: none;
    outline: none;
    box-shadow: var(--purple-box-shadow);
@@ -131,17 +147,22 @@ option {
    -webkit-appearance: none;
    appearance: none;
 }
+
 .form-div textarea {
    min-height: 100px;
 }
-.form-div input:focus, .form-div textarea:focus,
-.form-div input:valid, .form-div textarea:valid {
+
+.form-div input:focus,
+.form-div textarea:focus,
+.form-div input:valid,
+.form-div textarea:valid {
    outline: none;
    box-shadow: var(--purple-inset-box);
    background: inherit;
    -webkit-appearance: none;
    appearance: none;
 }
+
 .submit-btn {
    width: max-content;
    box-shadow: var(--purple-box-shadow) !important;
@@ -155,31 +176,40 @@ option {
    border: none;
    cursor: pointer;
 }
+
 .submit-btn:hover {
    box-shadow: var(--purple-inset-box) !important;
 }
+
 .Message-me {
    text-align: right;
    font-size: 18px;
 }
 
-.contact-links, #dark .contact-links {
+.contact-links,
+#dark .contact-links {
    background-color: var(--primary-bg) !important;
    box-shadow: var(--purple-box-shadow) !important;
 }
-.thankyou_link, #dark .thankyou_link {
+
+.thankyou_link,
+#dark .thankyou_link {
    color: red !important;
 }
+
 .alt-text-yellow {
    color: var(--yellow);
 }
+
 .max_content {
    overflow: hidden;
    box-shadow: var(--box-shadow);
 }
+
 #dark .max_content {
    box-shadow: var(--box-shadow-dark);
 }
+
 /* ===========THANK YOU PAGE STYLING ========== */
 .thank-you {
    background-color: var(--yellow);
@@ -187,72 +217,90 @@ option {
    padding: 1rem 2rem;
    overflow: hidden;
    position: relative;
-   color: var(--alt-text) !important;
+   color: #1b60a9 !important;
    flex-wrap: wrap;
 }
+
 .thank-you-home {
    display: flex;
    flex-direction: column;
    gap: 20px;
    flex: 1;
 }
+
 .thankyou_img {
-   
+
    flex: 1;
    z-index: 1;
-   animation: bounce_main 3s infinite ;
-
+   animation: bounce_main 3s infinite;
+   -webkit-animation: bounce_main 3s infinite;
+   -webkit-appearance: none;
+   appearance: none;
 }
+
 .thankyou_img {
    width: 100%;
    object-fit: contain;
-      max-height: 150px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      transform: translateX(35%);
-      opacity: .3;
-      animation: bounce 3s infinite ;
-   }
+   max-height: 150px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   transform: translateX(35%);
+   opacity: .3;
+   animation: bounce 3s infinite;
+}
+
 .connect {
    display: flex;
    flex-direction: column;
 }
-.contact__cont_main{
+
+.contact__cont_main {
    width: 80%;
 }
+
 .connect-text {
    text-align: left;
    font-size: 15px;
    font-weight: 600;
    z-index: 4;
 }
+
 .thank-you-desc {
    z-index: 3;
    font-size: 18px;
 }
+
 .center-div {
    display: flex;
    justify-content: center;
 }
-#light .thankyou_link, #dark .thankyou_link {
-   box-shadow: inset 1px 1px 10px #f3cc77,inset -1px -1px 10px #cfab5f !important;
+
+#light .thankyou_link,
+#dark .thankyou_link {
+   box-shadow: inset 1px 1px 10px #f3cc77, inset -1px -1px 10px #cfab5f !important;
    color: var(--alt-text) !important;
 }
-.thank_you_main, #dark .thank_you_main {
+
+.thank_you_main,
+#dark .thank_you_main {
    width: 80%;
 }
+
 .xxx {
    box-shadow: var(--purple-box-shadow) !important;
 
 }
+
 /* ----------THANK YOU PAGE STYLING END ========== */
 #name {
    text-transform: capitalize;
 }
+
 #email {
-   text-transform:lowercase;
+   text-transform: lowercase;
 }
+
 @media (max-width : 900px) {
    .contact-form-cont {
       flex-direction: column;
@@ -261,6 +309,7 @@ option {
       padding: 3rem 1rem;
       display: block;
    }
+
    .contact-sub-div {
       justify-content: center !important;
       text-align: center !;
@@ -273,66 +322,84 @@ option {
       text-align: center;
       margin-bottom: 48px;
    }
+
    .center-it {
       justify-content: center;
       text-align: center;
    }
+
    .my-form {
       padding: 1rem !important;
    }
+
    .purple {
       margin: auto;
    }
-      .contact-head-text {
+
+   .contact-head-text {
       font-size: 30px;
    }
+
    .Message-me {
       font-size: 14px;
    }
-   
+
    .left__align {
       justify-content: flex-start;
    }
-      .thank-you-home h1 {
+
+   .thank-you-home h1 {
       font-size: 18px;
    }
+
    .left__align {
       justify-content: flex-start;
    }
-   .thank-you-desc, .connect-text {
+
+   .thank-you-desc,
+   .connect-text {
       font-size: 13px;
    }
 
 }
+
 @media (max-width : 600px) {
    .Message-me {
       font-size: 13px;
    }
-   .form-div input, .form-div textarea {
+
+   .form-div input,
+   .form-div textarea {
       padding: 1rem;
    }
+
    .form-div label {
       font-size: 13px;
    }
+
    .submit-btn {
       padding: .5rem 2.5rem !important;
    }
+
    .contact__cont_main {
       width: 100%;
    }
+
    #contact {
       padding: 2rem 0;
    }
+
    .thank-you {
       padding: 1rem;
    }
+
    .connect-text {
       text-align: center;
    }
-   :is( input:focus, input:valid, textarea:focus, textarea:valid) ~ label  {
+
+   :is(input:focus, input:valid, textarea:focus, textarea:valid)~label {
       transform: translateY(-13px) translateX(-10px);
       font-size: 10px;
-      
+
    }
 }
-

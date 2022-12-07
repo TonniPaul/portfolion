@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import "./projectCard.css";
 
 const ProjectCard = ({ image, description, liveSite, github, title }) => {
-
   const headTextAnimate = {
     hidden: {
       x: "-100%",
@@ -17,12 +16,7 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
     },
   };
   return (
-    <motion.div
-      className="project-card-container"
-      initial={"hidden"}
-      whileInView={"show"}
-      transition={{ staggerChildren: 0.5 }}
-    >
+    <div className="project-card-container">
       <div
         className="project_image_cont"
         style={{
@@ -30,15 +24,11 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
         }}
       ></div>
 
-      <motion.p className="project--title" variants={headTextAnimate}>
-        {title}
-      </motion.p>
+      <p className="project--title">{title}</p>
 
-      <motion.p className="project-desc" variants={headTextAnimate}>
-        {description}
-      </motion.p>
+      <p className="project-desc">{description}</p>
 
-      <motion.div className="flex project-links-cont">
+      <div className="flex project-links-cont">
         <a href={github} className="project-links" aria-label="view code base">
           <i className="fa-brands fa-github class-purple"></i>
         </a>
@@ -49,23 +39,9 @@ const ProjectCard = ({ image, description, liveSite, github, title }) => {
         >
           <i className="fa-solid fa-link class-purple"></i>
         </a>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 
 export default ProjectCard;
-
-  // const animateImage = {
-  //   hidden: {
-  //     y: "-100%",
-  //   },
-  //   show: {
-  //     y: 0,
-  //     transition: {
-  //       type: "spring",
-  //       bounce: 0.4,
-  //       duration: 0.6,
-  //     },
-  //   },
-  // };

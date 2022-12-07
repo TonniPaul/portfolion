@@ -1,33 +1,40 @@
 #home {
    padding: 0;
 }
+
 .hero-main-cont {
    width: 100%;
    display: flex;
    padding: 1.5rem;
    align-self: start;
-   margin-top: 6rem;   justify-content: center;
-   box-shadow: var(--inset-box); 
+   margin-top: 6rem;
+   justify-content: center;
+   box-shadow: var(--inset-box);
    border-radius: 20px;
 }
+
 #dark .hero-main-cont {
-   box-shadow: var(--inset-box-dark); 
+   box-shadow: var(--inset-box-dark);
 }
+
 .hero-flex {
    display: flex;
    width: 100%;
    align-items: center;
-   justify-content: center;  
+   justify-content: center;
    max-width: 1440px;
    overflow: hidden;
    transition: all 3s ease-in-out;
 }
+
 .hero-main-text {
-   font-size : 54px;
+   font-size: 54px;
 }
+
 .hero-img {
    width: 100%;
 }
+
 .hero-sub-cont-1 {
    display: flex;
    flex-direction: column;
@@ -36,22 +43,27 @@
    gap: 10px;
    flex: 1;
 }
+
 .hero-subtext {
    color: var(--black);
    display: flex;
    gap: 5px;
    font-size: 15px;
 }
+
 #dark .hero-subtext {
    color: var(--yellow);
 }
+
 .what_am_i {
    font-size: 20px;
 }
+
 .head-span-text {
    color: var(--alt-text);
    font-size: 13px;
 }
+
 .btn {
    text-decoration: none;
    color: inherit;
@@ -64,51 +76,66 @@
    gap: 10px;
    width: max-content;
 }
+
 #dark .btn {
    box-shadow: var(--box-shadow-dark);
 }
-.btn:visited,  .btn:focus {
+
+.btn:visited,
+.btn:focus {
    box-shadow: var(--inset-box);
 }
-#dark .btn:visited,  #dark .btn:focus {
-    box-shadow: var(--inset-box-dark);
+
+#dark .btn:visited,
+#dark .btn:focus {
+   box-shadow: var(--inset-box-dark);
 }
+
 .btn-div {
    display: flex;
    gap: 20px;
    margin-top: 1rem;
 
 }
+
 .wave {
    font-size: 40px;
 }
+
 @media (max-width : 1000px) {
    .hero-main-text {
       font-size: 35px;
    }
+
    .hero-flex {
-      display : grid;
-      grid-template-columns: repeat(2,1fr);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
    }
 }
+
 @media (max-width : 600px) {
    .hero-flex {
       grid-template-columns: 1fr;
       padding: 4rem 0 0;
 
    }
+
    .wave {
       font-size: 20px;
    }
+
    .hero-main-text {
       font-size: 25px;
    }
+
    .btn {
       font-size: 13px;
    }
+
    .what_am_i {
       font-size: 15px;
    }
+
    .hero-subtext {
       font-size: 12px;
    }

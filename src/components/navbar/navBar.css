@@ -19,6 +19,7 @@
    box-shadow: var(--box-shadow-dark);
 }
 .logo {
+   font-family: var(--font_clash);
    font-size: 20px;
    font-weight: 600;
    text-decoration: none;

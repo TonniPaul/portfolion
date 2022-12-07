@@ -25,16 +25,7 @@ const Project = () => {
 
         <motion.div className="project-container">
           {projectData.map((items) => {
-            return (
-              <motion.div
-                key={items.id}
-                initial={{ y: "100%", opacity: 0 }}
-                whileInView={{ y: "0", opacity: 1 }}
-                transition={{ duration: 1 }}
-              >
-                <ProjectCard {...items} />
-              </motion.div>
-            );
+            return <ProjectCard key={items.id} {...items} />;
           })}
         </motion.div>
       </div>
