@@ -100,7 +100,6 @@ a {
       transition: all 1s ease-in-out;
       padding: 2rem;
       box-shadow: var(--box-shadow);
-      pointer-events: none;
    }
    #dark .links-container {
       background: var(--primary-bg-dark);
@@ -109,8 +108,7 @@ a {
    .show-tab {
       opacity: 1;
       transform: translateY(0) ;
-      z-index: 0 !important;
-      pointer-events: all;
+      z-index: 50 !important;
    }
    .links {
       width: 50%;
@@ -129,6 +127,7 @@ a {
       top: 56px;
    }
    .links {
-      width: 100%;
+      width: 90vw;
+      justify-content: flex-start !important;
    }
 }

@@ -17,7 +17,7 @@
   /* DARK THEME VARIABLE */
   --primary-bg-dark: #241e1e;
   --box-shadow-dark: 5px 5px 5px #171414, -2px -2px 5px #171414;
-  --inset-box-dark: inset 5px 1px 10px #171414, inset -3px -5px 10px #171414;
+  --inset-box-dark: inset 5px 1px 15px #110d0d, inset -3px -5px 15px #110d0d;
 }
 
 *,
@@ -25,7 +25,7 @@
 *::before {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   scroll-behavior: smooth;
 }
 

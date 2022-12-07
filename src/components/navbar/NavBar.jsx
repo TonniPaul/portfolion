@@ -27,10 +27,10 @@ const NavBar = ({ onClick, children }) => {
         >
           {navData.map((items) => {
             return (
-              <li className="links" key={items.id}>
+              <li key={items.id}>
                 <a
                   href={`/${items.link}`}
-                  className="flex"
+                  className="flex links"
                   onClick={handleIsOpen}
                 >
                   <i className={items.icon}></i>
