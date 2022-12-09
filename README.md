@@ -2,6 +2,9 @@
 # Paul Oluwatoni Ariyo-Adeoye 
 Source code of my new portfolio.
 
+## Design Preview
+![Design preview for the Portfolio Website](./public/assets/Screenshot.png)
+
 ## Portfolio website
 
 [See it live! :rocket:](https://tonnipaul.com) 
