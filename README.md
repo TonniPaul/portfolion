@@ -9,9 +9,12 @@ Source code of my new portfolio.
 ## Design Preview
 ![Design preview for the Portfolio Website](./public/assets/Screenshot.png)
 
+* Design Inspiration from Dribble, Twitter, Upwork
+
 ## Technologies
 * HTML5
 * CSS3
+* Framer Motion
 * ReactJS
 
 ## Features
