@@ -2,6 +2,7 @@ import "./hero.css";
 import hero from "../../assets/hero.png";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
+import Button from "../../cards/buttons/Button";
 
 const Hero = () => {
   //framer motion animation variants
@@ -69,17 +70,15 @@ const Hero = () => {
             </h1>
 
             <div className="btn-div">
-              <a href="#about" className="btn">
-                Contact Me
-              </a>
-              <a
+              <Button href={"#about"} children={"Hire Me"} className="btn" />
+              <Button
                 href="https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl"
-                target="blank"
                 className="btn"
+                target="blank"
               >
                 Download CV
                 <i className="fa-solid fa-download"></i>
-              </a>
+              </Button>
             </div>
           </motion.div>
           <motion.div className="hero-sub-cont" variants={rightVariant}>

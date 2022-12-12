@@ -4,6 +4,7 @@ import myLinks from "../../Object Files/links";
 import cont from "../../assets/cont.svg";
 import Form from "./Form";
 import { motion } from "framer-motion";
+import Button from "../../cards/buttons/Button";
 
 const ContactForm = () => {
   //framer motion animation variants
@@ -45,6 +46,7 @@ const ContactForm = () => {
           <div className="abt-image-div contact_img_div">
             <img src={cont} alt="3d contact icon" className="about-image" />
           </div>
+
           <div>
             <h1 className="project-head-text alt-text"> Contact Me</h1>
             <hr className="short-hr project-hr right_hr" />
@@ -63,15 +65,17 @@ const ContactForm = () => {
             <motion.div className="contact-sub-div" variants={rightVariant}>
               <h1 className="contact-head-text">
                 Interested in
-                <span className="alt-text-yellow"> collaborating</span>? Let's{" "}
+                <span className="alt-text-yellow"> collaborating</span>? Let's
                 <span className="alt-text-yellow">build </span>
                 your
                 <span className="alt-text-yellow"> Next project</span>!
               </h1>
-              <a href="#name" className="btn purple">
+
+              <Button href="#name" className="btn purple">
                 Contact Me
                 <i className="fa-solid fa-forward"></i>
-              </a>
+              </Button>
+
               <div className="flex project-links-cont center-it">
                 {myLinks.map((items) => {
                   return (
@@ -88,6 +92,7 @@ const ContactForm = () => {
                 })}
               </div>
             </motion.div>
+
             <motion.div className="contact-sub-div-2" variants={leftVariant}>
               <Form />
             </motion.div>

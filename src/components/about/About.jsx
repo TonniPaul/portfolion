@@ -4,6 +4,7 @@ import microphone from "../../assets/about.png";
 import ImageCard from "../../cards/imageCard/ImageCard";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
+import Button from "../../cards/buttons/Button";
 
 const About = () => {
   //framer motion animation variants
@@ -107,14 +108,14 @@ const About = () => {
               />
             </div>
 
-            <a
+            <Button
               href="https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl"
-              target="blank"
               className="btn alt-text"
+              target="blank"
             >
               Download CV
               <i className="fa-solid fa-download"></i>
-            </a>
+            </Button>
           </motion.div>
         </div>
       </motion.div>
