@@ -25,7 +25,17 @@ const Project = () => {
 
         <motion.div className="project-container">
           {projectData.map((items) => {
-            return <ProjectCard key={items.id} {...items} />;
+            return (
+              <ProjectCard key={items.id} {...items}>
+                {items.stacks.map((item) => {
+                  return (
+                    <span key={item} className="btn stacks_description">
+                      {item}
+                    </span>
+                  );
+                })}
+              </ProjectCard>
+            );
           })}
         </motion.div>
       </div>

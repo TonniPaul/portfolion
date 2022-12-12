@@ -1,0 +1,18 @@
+.btn {
+   text-decoration: none;
+   color: inherit;
+   box-shadow: var(--box-shadow);
+   padding: .5rem 1rem;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   width: max-content;
+}
+
+@media (max-width :600px) {
+   .btn {
+      font-size: 13px;
+   }
+}

@@ -64,18 +64,6 @@
    font-size: 13px;
 }
 
-.btn {
-   text-decoration: none;
-   color: inherit;
-   box-shadow: var(--box-shadow);
-   padding: .5rem 1rem;
-   border-radius: 5px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
-   width: max-content;
-}
 
 #dark .btn {
    box-shadow: var(--box-shadow-dark);
@@ -126,10 +114,6 @@
 
    .hero-main-text {
       font-size: 25px;
-   }
-
-   .btn {
-      font-size: 13px;
    }
 
    .what_am_i {

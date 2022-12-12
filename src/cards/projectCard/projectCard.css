@@ -117,6 +117,16 @@
    font-size: 14px;
    text-justify: distribute-all-lines;
 }
+.stacks_description_cont {
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   font-size: 13px;
+   font-weight: 500;
+}
+.stacks_description {
+   font-size: 12px;
+   font-weight: 600;
+}
 
 @media (width <=900px) {
    .project--title {

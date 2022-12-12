@@ -6,53 +6,52 @@ export const projectData = [
     title: "PORTFOLIO WEBSITE",
     image: "./assets/portfoliodark.png",
     description: "My portfolio website was created to showcase my work",
-    // stacks:'HTML, CSS, JAVASCRIPT, REACT and Adviceslip API',
+    stacks: ["React", "CSS", "Framer Motion", "MUI"],
     liveSite: "https://tonnipaul.com",
     github: "https://github.com/TonniPaul/portfolion",
-    // design : 'Dribble '
+    design: "TonniPaul, Twitter, Dribble",
   },
   {
     id: uuid(),
     title: "MUSICA (Music App Template)",
     image: "./assets/musica.png",
     description:
-      "Built A Music Application template, (A #360CODINGCHALLENGE TASK) implemented the search feature ",
-    // stacks:'HTML, CSS, JAVASCRIPT, REACT and Adviceslip API',
+      "A Music Application template, (Implemented the search feature )",
+    stacks: ["React", "CSS", "Rapid API", "Framer Motion"],
     liveSite: "https://musicabytonnipaul.vercel.app/",
     github: "https://github.com/tonniPaul/musica",
-    // design : 'FrontEnd Mentor'
+    design: "#360CODINGCHALLENGE 0n Twitter",
   },
   {
     id: uuid(),
     title: "ADVICE GENERATOR",
     image: "./assets/advicegen.jpg",
-    description: "An API-driven web application that generates random advice",
-    // stacks:'HTML, CSS, JAVASCRIPT, REACT and Adviceslip API',
+    description: "An API-driven advice generator web application",
+    stacks: ["React", "CSS", "API"],
     liveSite: "https://advice-generator-rho-six.vercel.app/",
     github: "https://github.com/TonniPaul/adviceGenerator",
-    // design : 'FrontEnd Mentor'
+    design: "FrontEnd Mentor",
   },
   {
     id: uuid(),
     title: "CHATSCRUM",
     image: "./assets/chatscrum.png",
     description:
-      "This web-based task organization application features drag-and-drop functionality",
-    // stacks:'HTML, CSS, JAVASCRIPT, REACT and Mockaroo API',
+      "Web-based task organization application features drag-and-drop functionality",
+    stacks: ["React", "CSS", "API"],
     liveSite: "http://prello-six.vercel.app/",
     github: "https://github.com/tonniPaul/prello",
-    // design : 'LinuxJobber'
+    design: "LinuxJobber",
   },
   {
     id: uuid(),
     title: "MEME GENERATOR",
     image: "./assets/memelarge.png",
-    description:
-      "Meme Images are generated randomly and captions can be entered for the Header and Footer",
-    // stacks:'HTML, CSS, JAVASCRIPT and REACT',
+    description: "Generate Random Meme Image and Add your personalized caption",
+    stacks: ["React", "CSS"],
     liveSite: "https://tonnimeme.vercel.app",
     github: "https://github.com/TonniPaul/meme",
-    // design : 'Scrimba'
+    design: "Scrimba",
   },
   {
     id: uuid(),
@@ -60,9 +59,10 @@ export const projectData = [
     image: "./assets/dicegame.png",
     description:
       "The dice game generates random dice numbers and declares the winner when clicked",
+    stacks: ["HTML", "CSS", "JavaScript"],
     liveSite: "https://tonnipaul.github.io/dice-game/",
     github: "https://github.com/TonniPaul/dice-game",
-    // design : 'Angela Yu (UDEMY)'
+    design: "Angela Yu (UDEMY)",
   },
   {
     id: uuid(),
@@ -70,8 +70,18 @@ export const projectData = [
     image: "./assets/fitnesssite.png",
     description: "This is a fitness website template.",
     liveSite: "https://tonnipaul.github.io/My-gridisite/",
-    // stacks: 'HTML, CSS, Images(Unsplash)',
+    stacks: ["React", "CSS", "UnSplash Images"],
     github: "https://github.com/TonniPaul/My-gridisite",
-    // design : 'Travasery Media (Youtube)'
+    design: "Travasery Media (Youtube)",
+  },
+  {
+    id: uuid(),
+    title: "Landing Page",
+    image: "./assets/web-dev.png",
+    description: "Landing Page for a web developer",
+    stacks: ["HTML", "CSS", "BootStrap"],
+    liveSite: "https://tonnipaulweb.vercel.app/",
+    github: "https://github.com/TonniPaul/tonnipaulweb",
+    design: "Angela Yu (UDEMY)",
   },
 ];
