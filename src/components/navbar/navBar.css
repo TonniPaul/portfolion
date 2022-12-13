@@ -27,6 +27,7 @@
 }
 .active {
    box-shadow: var(--inset-box) !important;
+   border-radius: 10px 30px 10px 30px;
 }
 .links-container {
    display: flex;
@@ -126,8 +127,10 @@ a {
    .links-container {
       top: 56px;
    }
+ 
    .links {
       width: 90vw;
       justify-content: flex-start !important;
+      border-radius: 0;
    }
 }

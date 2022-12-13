@@ -9,7 +9,7 @@ export const projectData = [
     stacks: ["React", "CSS", "Framer Motion", "MUI"],
     liveSite: "https://tonnipaul.com",
     github: "https://github.com/TonniPaul/portfolion",
-    design: "TonniPaul, Twitter, Dribble",
+    design: "TonniPaul (Inspiration from Twitter & Dribble)",
   },
   {
     id: uuid(),

@@ -38,7 +38,7 @@ const ProjectCard = ({
           className="flex links__cont"
         >
           <span className="project-links">
-            <i className="fa-brands fa-github class-purple"></i>
+            <i className="fa-brands fa-github"></i>
           </span>
           <p className="btn link_text">GitHub</p>
         </a>
@@ -48,9 +48,9 @@ const ProjectCard = ({
           className="flex links__cont"
         >
           <span className="project-links">
-            <i className="fa-solid fa-link class-purple"></i>
+            <i className="fa-solid fa-link"></i>
           </span>
-          <p className="btn link_text">Live Link</p>
+          <p className="btn link_text">Live Site</p>
         </a>
       </div>
     </div>
