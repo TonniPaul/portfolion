@@ -83,6 +83,7 @@
 .project-links-cont {
    padding: 8px 0;
    position: relative;
+   justify-content: space-between;
 }
 
 .project-links {
@@ -95,9 +96,8 @@
    justify-content: center;
    align-items: center;
    background-color: var(--primary-bg);
-   cursor: pointer;
    text-decoration: none;
-   z-index: 2;
+   z-index: 3;
 }
 
 #dark .project-links {
@@ -122,10 +122,21 @@
    flex-wrap: wrap;
    font-size: 13px;
    font-weight: 500;
+   z-index: 2;
 }
 .stacks_description {
    font-size: 12px;
    font-weight: 600;
+   position: relative;
+}
+.link_text {
+   font-size: 10px;
+   position: relative;
+   left: -18px;
+   z-index: 2;
+   padding: .3rem .3rem .3rem 1rem !important;
+   align-items: center;
+   display: flex;
 }
 
 @media (width <=900px) {
@@ -141,8 +152,8 @@
       align-items: center;
       justify-content: center;
       padding: 0;
-      height: 25px;
-      width: 25px;
+      height: 29px;
+      width: 29px;
       flex-wrap: wrap;
       font-size: 13px;
    }

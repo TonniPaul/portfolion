@@ -22,7 +22,7 @@ const About = () => {
       transition: {
         type: "spring",
         bounce: 0.2,
-        duration: 2,
+        duration: 1,
       },
     },
   };
@@ -47,7 +47,7 @@ const About = () => {
         className="about-main-container"
         initial={"hidden"}
         whileInView={"show"}
-        transition={{ staggerChildren: 0.5 }}
+        transition={{ staggerChildren: 0.2 }}
       >
         <div className="about-container">
           <motion.div

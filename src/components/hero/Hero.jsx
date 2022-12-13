@@ -32,7 +32,7 @@ const Hero = () => {
       transition: {
         type: "spring",
         bounce: 0.4,
-        duration: 2,
+        duration: 1,
       },
     },
   };
@@ -44,7 +44,7 @@ const Hero = () => {
           className="hero-flex"
           initial={"hidden"}
           whileInView={"show"}
-          transition={{ staggerChildren: 0.5 }}
+          transition={{ staggerChildren: 0.2 }}
         >
           <motion.div className="hero-sub-cont-1" variants={leftVariant}>
             <p>

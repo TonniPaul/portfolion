@@ -32,15 +32,25 @@ const ProjectCard = ({
       </div>
 
       <div className="flex project-links-cont">
-        <a href={github} className="project-links" aria-label="view code base">
-          <i className="fa-brands fa-github class-purple"></i>
+        <a
+          href={github}
+          aria-label="view code base on github"
+          className="flex links__cont"
+        >
+          <span className="project-links">
+            <i className="fa-brands fa-github class-purple"></i>
+          </span>
+          <p className="btn link_text">GitHub</p>
         </a>
         <a
           href={liveSite}
-          className="project-links"
           aria-label="view live site"
+          className="flex links__cont"
         >
-          <i className="fa-solid fa-link class-purple"></i>
+          <span className="project-links">
+            <i className="fa-solid fa-link class-purple"></i>
+          </span>
+          <p className="btn link_text">Live Link</p>
         </a>
       </div>
     </div>
