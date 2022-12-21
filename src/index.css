@@ -34,7 +34,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  user-select: none;
   padding: 3rem 0;
   overflow: hidden;
 }
