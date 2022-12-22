@@ -1,4 +1,3 @@
-
 .nav-cont {
    display: flex;
    justify-content: space-between;
@@ -14,10 +13,12 @@
    transition: var(--transition);
    z-index: 100;
 }
+
 #dark .nav-cont {
    background: var(--primary-bg-dark);
    box-shadow: var(--box-shadow-dark);
 }
+
 .logo {
    font-family: var(--font_clash);
    font-size: 20px;
@@ -25,49 +26,60 @@
    text-decoration: none;
    color: inherit;
 }
+
 .active {
    box-shadow: var(--inset-box) !important;
    border-radius: 10px 30px 10px 30px;
 }
+
 .links-container {
    display: flex;
    gap: 1.25rem;
    list-style: none;
    transition: var(--transition);
 }
+
 .links {
    padding: .5rem .8rem;
-   box-shadow:  var(--box-shadow);
+   box-shadow: var(--box-shadow);
    border-radius: 5px;
    font-weight: 400;
    letter-spacing: 1px;
-   display: flex; 
+   display: flex;
    align-items: center;
    gap: 10px;
    text-decoration: none;
    color: inherit;
 }
+
 a {
    color: inherit;
    text-decoration: none;
 }
+
 #dark .links {
    box-shadow: var(--box-shadow-dark);
 }
-.links:focus, .links:active {
+
+.links:focus,
+.links:active {
    box-shadow: var(--inset-box);
 }
-#dark .links:focus, #dark .links:active {
+
+#dark .links:focus,
+#dark .links:active {
    box-shadow: var(--inset-box-dark);
 }
+
 .tab-icon {
-   display : none;
+   display: none;
    cursor: pointer;
 
 }
+
 @media (max-width : 1000px) {
    .tab-icon {
-      display : flex;
+      display: flex;
       z-index: 10;
       box-shadow: var(--box-shadow);
       padding: 10px;
@@ -76,15 +88,19 @@ a {
       transition: var(--transition);
       font-weight: 900;
    }
+
    #dark .tab-icon {
       box-shadow: var(--box-shadow-dark);
    }
+
    .dark-tab-icon {
       box-shadow: var(--inset-box) !important;
    }
-   #dark  .dark-tab-icon {
+
+   #dark .dark-tab-icon {
       box-shadow: var(--inset-box-dark) !important;
    }
+
    .links-container {
       position: absolute;
       display: flex;
@@ -102,32 +118,38 @@ a {
       padding: 2rem;
       box-shadow: var(--box-shadow);
    }
+
    #dark .links-container {
       background: var(--primary-bg-dark);
       box-shadow: var(--box-shadow-dark);
    }
+
    .show-tab {
       opacity: 1;
-      transform: translateY(0) ;
+      transform: translateY(0);
       z-index: 50 !important;
    }
+
    .links {
       width: 50%;
       text-align: center;
       padding: 1rem;
    }
 }
+
 @media (max-width : 600px) {
    .nav-cont {
       padding: .5rem .9rem;
    }
+
    .logo {
       font-size: 15px;
    }
+
    .links-container {
       top: 56px;
    }
- 
+
    .links {
       width: 90vw;
       justify-content: flex-start !important;

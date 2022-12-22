@@ -1,4 +1,4 @@
-.skills-container{
+.skills-container {
    display: flex;
    flex-direction: column;
    gap: 50px;
@@ -8,9 +8,11 @@
    width: 100%;
    overflow: hidden;
 }
+
 .circle {
    position: relative;
 }
+
 .circle-card-cont {
    width: 90px;
    height: 90px;
@@ -22,9 +24,11 @@
    align-items: center;
    padding: .4rem;
    transition: var(--transition);
-   cursor: pointer;   transition: all 1s ease-in-out;
+   cursor: pointer;
+   transition: all 1s ease-in-out;
 
 }
+
 .logo_name {
    position: absolute;
    bottom: -29px;
@@ -37,17 +41,21 @@
    transition: all .5s ease-in-out;
    opacity: 0;
 }
+
 .circle-card-cont:hover {
    scale: 1.2;
    transition: all .5s ease-in-out;
 }
-.circle-card-cont:hover ~ .logo_name {
+
+.circle-card-cont:hover~.logo_name {
    opacity: 1;
 }
+
 #dark .circle-card-cont {
    background-color: var(--primary-bg-dark);
    box-shadow: var(--box-shadow-dark);
 }
+
 .circle-img {
    width: 80%;
    height: 80%;

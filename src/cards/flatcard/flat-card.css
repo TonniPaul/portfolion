@@ -5,13 +5,14 @@
    transition: var(--transition);
    margin: auto;
 }
+
 #dark .flatCard-main {
    box-shadow: var(--box-shadow-dark);
 }
 
 @media (max-width : 600px) {
    .flatCard-main {
-     width: 100%;
-     padding: .5rem;
+      width: 100%;
+      padding: .5rem;
    }
 }

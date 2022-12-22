@@ -113,6 +113,7 @@
    font-size: 14px;
    text-justify: distribute-all-lines;
 }
+
 .stacks_description_cont {
    justify-content: flex-start;
    flex-wrap: wrap;
@@ -120,11 +121,13 @@
    font-weight: 500;
    z-index: 2;
 }
+
 .stacks_description {
    font-size: 12px;
    font-weight: 600;
    position: relative;
 }
+
 .link_text {
    font-size: 10px;
    position: relative;
