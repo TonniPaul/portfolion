@@ -8,6 +8,7 @@ const ProjectCard = ({
   title,
   children,
   design,
+  hiddenClass,
 }) => {
   return (
     <div className="project-card-container">
@@ -35,7 +36,7 @@ const ProjectCard = ({
         <a
           href={github}
           aria-label="view code base on github"
-          className="flex links__cont"
+          className={`flex links__cont ${hiddenClass}`}
         >
           <span className="project-links">
             <i className="fa-brands fa-github"></i>
@@ -50,7 +51,7 @@ const ProjectCard = ({
           <span className="project-links">
             <i className="fa-solid fa-link"></i>
           </span>
-          <p className="btn link_text">Live Site</p>
+          <p className="btn link_text">Live Link</p>
         </a>
       </div>
     </div>

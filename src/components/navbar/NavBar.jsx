@@ -2,6 +2,7 @@ import "./navBar.css";
 import { useState } from "react";
 import Scrollspy from "react-scrollspy";
 import navData from "../../Object Files/nav";
+import tonnipaul from "../../assets/tonnipaul_.png";
 
 const NavBar = ({ onClick, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,12 @@ const NavBar = ({ onClick, children }) => {
   return (
     <nav className="nav-cont">
       <a href="/" className="logo">
-        {"<> TonniPaul </>"}
+        <img
+          src={tonnipaul}
+          alt="TonniPaul"
+          className=" circle-card-cont logo_img"
+        />
+        <span className="logo_text">TonniPaul</span>
       </a>
       <div className="switch" onClick={onClick}>
         {children}

@@ -3,6 +3,17 @@ import { v4 as uuid } from "uuid";
 export const projectData = [
   {
     id: uuid(),
+    title: "E-COMMERCE WEBSITE",
+    image: "./assets/ltbws.png",
+    description: "An online store selling baby and kids wears and accessories",
+    stacks: ["WordPress", "CSS"],
+    liveSite: "https://babywears.ng",
+    github: "",
+    hiddenClass: "hiddenClass",
+    design: "TonniPaul",
+  },
+  {
+    id: uuid(),
     title: "PORTFOLIO WEBSITE",
     image: "./assets/portfoliodark.png",
     description: "My portfolio website was created to showcase my work",
