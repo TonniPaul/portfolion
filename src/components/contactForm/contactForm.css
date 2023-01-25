@@ -190,6 +190,7 @@ option {
 #dark .contact-links {
    background-color: var(--primary-bg) !important;
    box-shadow: var(--purple-box-shadow) !important;
+   color: var(--primary-text) ;
 }
 
 .thankyou_link,
