@@ -15,7 +15,7 @@ export const projectData = [
   {
     id: uuid(),
     title: "PORTFOLIO WEBSITE",
-    image: "./assets/portfoliodark.png",
+    image: "./assets/portfolio.png",
     description: "My portfolio website was created to showcase my work",
     stacks: ["React", "CSS", "Framer Motion", "MUI"],
     liveSite: "https://tonnipaul.com",
