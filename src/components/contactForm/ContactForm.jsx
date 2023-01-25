@@ -64,9 +64,9 @@ const ContactForm = () => {
           >
             <motion.div className="contact-sub-div" variants={rightVariant}>
               <h1 className="contact-head-text">
-                Interested in
-                <span className="alt-text-yellow"> collaborating</span>? Let's
-                <span className="alt-text-yellow">build </span>
+                {/* Interested in
+                <span className="alt-text-yellow"> collaborating</span>?  */}
+                Let's <span className="alt-text-yellow">build </span>
                 your
                 <span className="alt-text-yellow"> Next project</span>!
               </h1>
