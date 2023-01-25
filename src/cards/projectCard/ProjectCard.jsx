@@ -35,6 +35,7 @@ const ProjectCard = ({
       <div className="flex project-links-cont">
         <a
           href={github}
+          target="blank"
           aria-label="view code base on github"
           className={`flex links__cont ${hiddenClass}`}
         >
@@ -45,6 +46,7 @@ const ProjectCard = ({
         </a>
         <a
           href={liveSite}
+          target="blank"
           aria-label="view live site"
           className="flex links__cont"
         >

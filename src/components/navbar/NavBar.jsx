@@ -21,7 +21,7 @@ const NavBar = ({ onClick, children }) => {
         />
         <span className="logo_text">TonniPaul</span>
       </a>
-      <div className="switch" onClick={onClick}>
+      <div className="switch" title="Toggle Theme" onClick={onClick}>
         {children}
       </div>
       <>
