@@ -3,6 +3,16 @@ import { v4 as uuid } from "uuid";
 export const projectData = [
   {
     id: uuid(),
+    title: "COUNTRY DATA FETCHER ",
+    image: "./assets/country-data-app.png",
+    description: "Find important data about any country",
+    stacks: ["TypeScript", "React", "CSS"],
+    liveSite: "https://country-data.tonnipaul.com/",
+    github: "https://github.com/TonniPaul/Country-Data",
+    design: "FrontEndMentor, TonniPaul",
+  },
+  {
+    id: uuid(),
     title: "E-COMMERCE WEBSITE",
     image: "./assets/ltbws.png",
     description: "An online store selling baby and kids wears and accessories",
@@ -10,6 +20,16 @@ export const projectData = [
     liveSite: "https://babywears.ng",
     github: "",
     hiddenClass: "hiddenClass",
+    design: "TonniPaul",
+  },
+  {
+    id: uuid(),
+    title: "TO-DO WEB",
+    image: "./assets/todo.png",
+    description: "Create and manage Tasks or to-do lists. ",
+    stacks: ["React", "CSS", "FontAwesome Icons"],
+    liveSite: "https://todo.tonnipaul.com",
+    github: "https://github.com/TonniPaul/Todo-App-/",
     design: "TonniPaul",
   },
   {
@@ -22,16 +42,7 @@ export const projectData = [
     github: "https://github.com/TonniPaul/portfolion",
     design: "TonniPaul (Inspo: Twitter & Dribble)",
   },
-  {
-    id: uuid(),
-    title: "TO-DO WEB",
-    image: "./assets/todo.png",
-    description: "Create and manage Tasks or to-do lists. ",
-    stacks: ["React", "CSS", "FontAwesome Icons"],
-    liveSite: "https://todo.tonnipaul.com/",
-    github: "https://github.com/TonniPaul/Todo-App-/",
-    design: "TonniPaul",
-  },
+
   {
     id: uuid(),
     title: "ADVICE GENERATOR",
