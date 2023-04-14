@@ -45,6 +45,12 @@ const skillData = [
   },
   {
     id: uuid(),
+    skillImage: "./assets/nextjs.png",
+    logo: "NextJS logo",
+    logo_text: "next js",
+  },
+  {
+    id: uuid(),
     skillImage: "./assets/github.png",
     logo: "github logo",
     logo_text: "github",

@@ -3,17 +3,27 @@ import { v4 as uuid } from "uuid";
 export const projectData = [
   {
     id: uuid(),
-    title: "COUNTRY DATA FETCHER ",
+    title: "COUNTRY DATA ",
     image: "./assets/country-data-app.png",
     description: "Find important data about any country",
-    stacks: ["TypeScript", "React", "CSS"],
+    stacks: ["TypeScript", "React", "CSS", "API"],
     liveSite: "https://country-data.tonnipaul.com/",
     github: "https://github.com/TonniPaul/Country-Data",
     design: "FrontEndMentor, TonniPaul",
   },
   {
     id: uuid(),
-    title: "E-COMMERCE WEBSITE",
+    title: "SHORTLY (URL SHORTENER) ",
+    image: "./assets/url-shortener.png",
+    description: "The quickest way to shorten your URLs.",
+    stacks: ["TypeScript", "Next JS", "CSS Module", "API"],
+    liveSite: "https://shorturl.tonnipaul.com",
+    github: "https://github.com/TonniPaul/url-shortener",
+    design: "FrontEndMentor, TonniPaul",
+  },
+  {
+    id: uuid(),
+    title: "BABYWEARS NG",
     image: "./assets/ltbws.png",
     description: "An online store selling baby and kids wears and accessories",
     stacks: ["WordPress", "CSS"],
@@ -24,7 +34,7 @@ export const projectData = [
   },
   {
     id: uuid(),
-    title: "TO-DO WEB",
+    title: "TODO WEB",
     image: "./assets/todo.png",
     description: "Create and manage Tasks or to-do lists. ",
     stacks: ["React", "CSS", "FontAwesome Icons"],
@@ -55,7 +65,7 @@ export const projectData = [
   },
   {
     id: uuid(),
-    title: "MUSICA (Music App Template)",
+    title: "MUSICA ",
     image: "./assets/musica.png",
     description:
       "A Music Application template, (Implemented the search feature )",
