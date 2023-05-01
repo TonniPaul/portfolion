@@ -1,6 +1,7 @@
 body {
   color: var(--primary-text);
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Play", sans-serif;
 }
 
 body #light {
@@ -106,33 +107,34 @@ body::-webkit-scrollbar-thumb {
 @keyframes bouncing {
   0% {
     transform: translateY(0px);
-    filter: grayscale(10%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-
+    filter: grayscale(10%) brightness(40%) sepia(100%) hue-rotate(-50deg)
+      saturate(600%) contrast(0.8);
   }
 
   50% {
     transform: translateY(-10px);
-    filter: invert(70%) sepia(65%) saturate(332%) hue-rotate(0deg) brightness(104%) contrast(96%);
-
+    filter: invert(70%) sepia(65%) saturate(332%) hue-rotate(0deg)
+      brightness(104%) contrast(96%);
   }
 
   100% {
     transform: translateY(0px);
-    filter: invert(30%) sepia(30%) saturate(2132%) hue-rotate(241deg) brightness(96%) contrast(88%);
+    filter: invert(30%) sepia(30%) saturate(2132%) hue-rotate(241deg)
+      brightness(96%) contrast(88%);
   }
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(1px)translateX(35%);
+    transform: translateY(1px) translateX(35%);
   }
 
   50% {
-    transform: translateY(-7px)translateX(35%) rotate(10deg);
+    transform: translateY(-7px) translateX(35%) rotate(10deg);
   }
 
   100% {
-    transform: translateY(0px)translateX(35%);
+    transform: translateY(0px) translateX(35%);
   }
 }
 

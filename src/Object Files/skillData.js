@@ -51,6 +51,18 @@ const skillData = [
   },
   {
     id: uuid(),
+    skillImage: "./assets/sc.png",
+    logo: "Styled-Components logo",
+    logo_text: "Styled Component",
+  },
+  {
+    id: uuid(),
+    skillImage: "./assets/framer-motion.png",
+    logo: "Framer Motion",
+    logo_text: "Framer Motion",
+  },
+  {
+    id: uuid(),
     skillImage: "./assets/github.png",
     logo: "github logo",
     logo_text: "github",

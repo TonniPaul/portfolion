@@ -44,17 +44,21 @@ const ProjectCard = ({
           </span>
           <p className="btn link_text">GitHub</p>
         </a>
-        <a
-          href={liveSite}
-          target="blank"
-          aria-label="view live site"
-          className="flex links__cont"
-        >
-          <span className="project-links">
-            <i className="fa-solid fa-link"></i>
-          </span>
-          <p className="btn link_text">Live Link</p>
-        </a>
+        {title !== "PORTFOLIO WEBSITE" ? (
+          <a
+            href={liveSite}
+            target="blank"
+            aria-label="view live site"
+            className="flex links__cont"
+          >
+            <span className="project-links">
+              <i className="fa-solid fa-link"></i>
+            </span>
+            <p className="btn link_text">Live Link</p>
+          </a>
+        ) : (
+          <p className="btn link_text">This Page</p>
+        )}
       </div>
     </div>
   );

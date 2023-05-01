@@ -13,6 +13,16 @@ export const projectData = [
   },
   {
     id: uuid(),
+    title: "COMMENT SECTION ",
+    image: "./assets/icm.png",
+    description: "Interactive comment section  ",
+    stacks: ["TypeScript", "Next JS", "Styled Component"],
+    liveSite: "https://comment-section.tonnipaul.com",
+    github: "https://github.com/TonniPaul/interactive-comment",
+    design: "FrontEndMentor",
+  },
+  {
+    id: uuid(),
     title: "SHORTLY (URL SHORTENER) ",
     image: "./assets/url-shortener.png",
     description: "The quickest way to shorten your URLs.",
