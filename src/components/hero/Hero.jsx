@@ -70,7 +70,7 @@ const Hero = () => {
             </h1>
 
             <div className="btn-div">
-              <Button href={"#about"} children={"Hire Me"} className="btn" />
+              <Button href={"#contact"} children={"Hire Me"} className="btn" />
               <Button
                 href="https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl"
                 className="btn"

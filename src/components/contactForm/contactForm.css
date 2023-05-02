@@ -198,6 +198,13 @@ option {
    color: red !important;
 }
 
+.error_message {
+   color: var(--yellow);
+   font-style: italic;
+   padding: .3rem 0;
+  animation: pulse 1s infinite;
+}
+
 .alt-text-yellow {
    color: var(--yellow);
 }
