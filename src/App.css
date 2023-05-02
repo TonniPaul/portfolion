@@ -6,7 +6,8 @@ body {
 
 body #light {
   background: var(--primary-bg);
-  background-image: url(../public/assets/bgdark.png);
+  background-image: url(../public/assets/bgdark.png),
+    url(../public/assets/bubbles.png);
   background-size: contain;
   padding: 16px;
   transition: var(--transition);
@@ -18,6 +19,8 @@ body #dark {
   backdrop-filter: blur(100%);
   transition: var(--transition);
   color: var(--white);
+  background-image: url(../public/assets/bubbles.png);
+  background-size: contain;
 }
 
 .max-width {
@@ -100,6 +103,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
     bottom: 20px;
     right: 20px;
+  }
+
+  body #dark {
+    background-size: 180%;
   }
 }
 

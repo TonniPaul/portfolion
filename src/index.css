@@ -57,7 +57,7 @@ section {
 
 @media (max-width : 1440px) {
   section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 7rem 2rem;
   }
 }
