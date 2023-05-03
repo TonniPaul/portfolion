@@ -4,9 +4,14 @@ import myLinks from "../../Object Files/links";
 import cont from "../../assets/cont.svg";
 import Form from "./Form";
 import { motion } from "framer-motion";
-import Button from "../../cards/buttons/Button";
+import { useRef } from "react";
 
 const ContactForm = () => {
+  const nameRef = useRef();
+
+  const handleClick = () => {
+    nameRef.current.focus();
+  };
   //framer motion animation variants
   const leftVariant = {
     hidden: {
@@ -71,10 +76,10 @@ const ContactForm = () => {
                 <span className="alt-text-yellow"> Next project</span>!
               </h1>
 
-              <Button href="#name" className="btn purple">
+              <button onClick={handleClick} className="btn purple">
                 Contact Me
                 <i className="fa-solid fa-forward"></i>
-              </Button>
+              </button>
 
               <div className="flex project-links-cont center-it">
                 {myLinks.map((items) => {
@@ -94,7 +99,7 @@ const ContactForm = () => {
             </motion.div>
 
             <motion.div className="contact-sub-div-2" variants={leftVariant}>
-              <Form />
+              <Form nameRef={nameRef} />
             </motion.div>
           </FlatCard>
         </motion.div>

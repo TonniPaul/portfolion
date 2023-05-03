@@ -26,6 +26,8 @@
 .purple {
    box-shadow: var(--purple-box-shadow) !important;
    z-index: 3 !important;
+   background: inherit;
+   border: none;
 }
 
 .contact-head-text {

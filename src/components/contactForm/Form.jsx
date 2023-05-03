@@ -3,7 +3,7 @@ import ThankYou from "./ThankYou";
 import emailjs from "@emailjs/browser";
 import Typewriter from "typewriter-effect";
 
-const Form = () => {
+const Form = ({ nameRef }) => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -110,6 +110,7 @@ const Form = () => {
           id="name"
           value={username}
           onChange={handleNameChange}
+          ref={nameRef}
           required
         />
         <label htmlFor="name"> Name </label>
