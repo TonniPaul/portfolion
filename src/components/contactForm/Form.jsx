@@ -8,7 +8,7 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isEmailSent, setIsEmailSent] = useState(false);
-  const [isDisabled, setIsDisabled] = useState(true);
+  const [isDisabled, setIsDisabled] = useState(false);
   const [errors, setErrors] = useState({
     username: "",
     email: "",
@@ -32,6 +32,7 @@ const Form = () => {
 
   const sendMail = (e) => {
     e.preventDefault();
+
     if (!username.trim()) {
       setErrors((prevState) => ({
         ...prevState,
@@ -71,14 +72,15 @@ const Form = () => {
         (result) => {
           console.log(result.text);
           setIsEmailSent(true);
-          setEmail("");
-          setUsername("");
-          setMessage("");
+          setIsDisabled(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
+    setEmail("");
+    setUsername("");
+    setMessage("");
   };
   if (isEmailSent) {
     return (
@@ -146,7 +148,7 @@ const Form = () => {
 
       <input
         type="submit"
-        disabled={!isDisabled}
+        disabled={isDisabled}
         value="Send"
         className="submit-btn"
       />
