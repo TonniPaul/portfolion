@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import Button from "../../cards/buttons/Button";
 
-const Hero = () => {
+const Hero = ({ onClick }) => {
   //framer motion animation variants
   const leftVariant = {
     hidden: {
@@ -70,7 +70,9 @@ const Hero = () => {
             </h1>
 
             <div className="btn-div">
-              <Button href={"#contact"} children={"Hire Me"} className="btn" />
+              <button className="btn" onClick={onClick}>
+                Hire Me
+              </button>
               <Button
                 href="https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl"
                 className="btn"

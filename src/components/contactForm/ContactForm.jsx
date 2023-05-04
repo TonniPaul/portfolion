@@ -6,7 +6,7 @@ import Form from "./Form";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 
-const ContactForm = () => {
+const ContactForm = ({ contact }) => {
   const nameRef = useRef();
 
   const handleClick = () => {
@@ -45,7 +45,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" ref={contact}>
       <div className="max-width flex column contact__cont_main">
         <div className="flex">
           <div className="abt-image-div contact_img_div">

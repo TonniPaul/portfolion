@@ -63,7 +63,13 @@
   color: var(--alt-text);
   font-size: 13px;
 }
-
+.btn {
+   background: inherit;
+   font-family: inherit;
+   font-size: inherit;
+   border: none;
+   cursor: pointer;
+}
 #dark .btn {
   box-shadow: var(--box-shadow-dark);
 }
