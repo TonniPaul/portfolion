@@ -7,6 +7,11 @@ import Typewriter from "typewriter-effect";
 import Button from "../../cards/buttons/Button";
 
 const About = () => {
+
+  const handleClick = () => {
+    window.location.hash = "#name";
+  };
+
   //framer motion animation variants
   const leftAboutVariant = {
     hidden: {
@@ -82,11 +87,16 @@ const About = () => {
             <hr className="short-hr" />
 
             <p className="about-me-text">
-              I enjoy creating eye-catching web applications, and cross-platform
-              mobile user interfaces as well as implementing web security
-              practices in my work as a Frontend developer. As part of my
-              efforts to enhance my knowledge, I am currently attending ALX for
-              a software engineering course.
+              I have a degree in Library and Information Science, I have over a
+              year of experience using frontend technologies.I am passionate
+              about creating beautiful, functional websites that provide a great
+              user experience. I am constantly learning and pushing myself to
+              improve my skills and stay up-to-date with the latest web
+              development trends. If you're looking for a skilled and dedicated
+              frontend developer, please don't hesitate to{" "}
+              <span className="get-in-touch-btn" onClick={handleClick}>
+                get in touch!
+              </span>
             </p>
 
             <div className="flex left_align">

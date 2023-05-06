@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import "./circle-card.css";
 
+
+
 const CircleCard = ({ skillImage, logo_text, logo }) => {
   return (
     <div className="circle">

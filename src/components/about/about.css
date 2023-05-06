@@ -71,6 +71,18 @@
 
 }
 
+.get-in-touch-btn {
+   cursor: pointer;
+   animation: buttonPulse 1s infinite ;
+}
+@keyframes buttonPulse {
+   
+   50% {
+      /* opacity: 0.5; */
+      color: var(--alt-text);
+   }
+   
+}
 @media (max-width : 600px) {
    .about-container {
       display: flex;
