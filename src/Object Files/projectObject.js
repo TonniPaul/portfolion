@@ -13,7 +13,7 @@ export const projectData = [
   },
   {
     id: uuid(),
-    title: "COMMENT SECTION ",
+    title: "NESTED COMMENT SECTION ",
     image: "./assets/icm.png",
     description: "Interactive comment section  ",
     stacks: ["TypeScript", "Next JS", "Styled Component"],
