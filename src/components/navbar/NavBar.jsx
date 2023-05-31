@@ -35,7 +35,7 @@ const NavBar = ({ onClick, children }) => {
             return (
               <li key={items.id}>
                 <a
-                  href={`/${items.link}`}
+                  href={`${items.link}`}
                   className="flex links"
                   onClick={handleIsOpen}
                 >

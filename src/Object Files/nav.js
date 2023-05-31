@@ -5,31 +5,37 @@ const navData = [
     id: uuid(),
     icon: "fa-solid fa-house",
     description: "Home",
-    link: "#home",
+    link: "/#home",
+  },
+  {
+    id: uuid(),
+    icon: "fa-brands fa-blogger",
+    description: "Blog",
+    link: "https://blog.tonnipaul.com",
   },
   {
     id: uuid(),
     icon: "fa-solid fa-address-card",
     description: "About",
-    link: "#about",
+    link: "/#about",
   },
   {
     id: uuid(),
     icon: "fa-solid fa-code",
     description: "Projects",
-    link: "#project",
+    link: "/#project",
   },
   {
     id: uuid(),
     icon: "fa-solid fa-toolbox",
     description: "Skills",
-    link: "#skill",
+    link: "/#skill",
   },
   {
     id: uuid(),
     icon: "fa-solid fa-envelope",
     description: "Contact",
-    link: "#contact",
+    link: "/#contact",
   },
 ];
 export default navData;
