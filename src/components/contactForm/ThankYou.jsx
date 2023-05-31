@@ -32,7 +32,7 @@ const ThankYou = () => {
           </div>
         </div>
         <div className="thankyou__img__cont">
-          <img src={thankyou} alt="3d thumb image" className="thankyou_img" />
+          <img src={thankyou} alt="3d thumb" className="thankyou_img" />
         </div>
       </FlatCard>
     </div>
