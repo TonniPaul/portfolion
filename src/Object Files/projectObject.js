@@ -3,6 +3,16 @@ import { v4 as uuid } from "uuid";
 export const projectData = [
   {
     id: uuid(),
+    title: "TONNIPAUL's BLOG",
+    image: "./assets/blog.png",
+    description: "Find important data about any country",
+    stacks: ["TypeScript", "Next JS", "Styled Component", "Sanity CLI"],
+    liveSite: "https://blog.tonnipaul.com/",
+    github: "https://github.com/TonniPaul/blog",
+    design: "TonniPaul",
+  },
+  {
+    id: uuid(),
     title: "COUNTRY DATA ",
     image: "./assets/country-data-app.png",
     description: "Find important data about any country",
