@@ -1,7 +1,6 @@
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
 import { useEffect, useState } from "react";
-import { WbSunny, Brightness2 } from "@material-ui/icons";
 import ScrollToTop from "./components/ScrollToTop";
 import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/Error/Error";
@@ -26,7 +25,12 @@ function App() {
   return (
     <div className="App" id={theme}>
       <NavBar onClick={toggleTheme}>
-        {theme === "light" ? <Brightness2 /> : <WbSunny />}
+        <img 
+          src={theme === "light" ? "/assets/sun.png" : "/assets/moon.png"} 
+          alt="" className="switchIcon" 
+          width={20} 
+          height={20} 
+        />
       </NavBar>
 
       <Routes>
