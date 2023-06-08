@@ -67,7 +67,7 @@ export const projectData = [
     title: "PORTFOLIO WEBSITE",
     image: "./assets/portfolio.png",
     description: "My personal website",
-    stacks: ["React", "CSS", "Framer Motion", "MUI Icons"],
+    stacks: ["React", "CSS", "Framer Motion", "Flaticons"],
     liveSite: "https://tonnipaul.com",
     github: "https://github.com/TonniPaul/portfolion",
     design: "TonniPaul (Inspo: Twitter & Dribble)",
