@@ -23,6 +23,17 @@ export const projectData = [
   },
   {
     id: uuid(),
+    title: "CRYPTO TRACK",
+    image: "./assets/crypto-track.png",
+    description:
+      "Get realtime updates on the current market price of all crypto coins.",
+    stacks: ["TypeScript", "Next JS", "Styled Component", "Coingecko API"],
+    liveSite: "https://cryptotrack.tonnipaul.com/",
+    github: "https://github.com/TonniPaul/crypto",
+    design: "TonniPaul",
+  },
+  {
+    id: uuid(),
     title: "NESTED COMMENT SECTION ",
     image: "./assets/icm.png",
     description: "Interactive comment section  ",
