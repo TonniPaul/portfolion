@@ -148,6 +148,7 @@ option {
   font-size: 14px;
   -webkit-appearance: none;
   appearance: none;
+  resize: none;
 }
 
 .form-div textarea {
