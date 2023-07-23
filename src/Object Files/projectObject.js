@@ -13,6 +13,16 @@ export const projectData = [
   },
   {
     id: uuid(),
+    title: "THRIFTS BY RONN",
+    image: "./assets/tbr.png",
+    description: "E-commerce website for a thrift store",
+    stacks: ["TypeScript", "Next JS", "Styled Component", "Zustand"],
+    liveSite: "https://tbr.tonnipaul.com/",
+    github: "https://github.com/TonniPaul/tbr",
+    design: "TonniPaul",
+  },
+  {
+    id: uuid(),
     title: "COUNTRY DATA ",
     image: "./assets/country-data-app.png",
     description: "Find important data about any country",
