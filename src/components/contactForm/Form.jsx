@@ -16,6 +16,9 @@ const Form = ({ nameRef }) => {
   });
 
   const form = useRef();
+  const emailJsUserId = process.env.REACT_APP_EMAILJS_USER_ID;
+  const emailJsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const emailJsServiceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 
   const handleNameChange = (e) => {
     setUsername(e.target.value);
@@ -62,10 +65,10 @@ const Form = ({ nameRef }) => {
     }
     emailjs
       .sendForm(
-        "service_ecmjeo4",
-        "template_o0cc06o",
+        emailJsUserId,
+        emailJsTemplateId,
         form.current,
-        "6TapqbYUbWDSDnGeW"
+        emailJsServiceId
       )
 
       .then(
