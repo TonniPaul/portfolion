@@ -5,6 +5,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import { Route, Routes } from "react-router-dom";
 import ErrorPage from "./components/Error/Error";
 import Main from "./pages/Main";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   // Toggle Theme Function
@@ -25,11 +26,12 @@ function App() {
   return (
     <div className="App" id={theme}>
       <NavBar onClick={toggleTheme}>
-        <img 
-          src={theme === "light" ? "/assets/sun.png" : "/assets/moon.png"} 
-          alt="" className="switchIcon" 
-          width={20} 
-          height={20} 
+        <img
+          src={theme === "light" ? "/assets/sun.png" : "/assets/moon.png"}
+          alt=""
+          className="switchIcon"
+          width={20}
+          height={20}
         />
       </NavBar>
 
@@ -47,6 +49,7 @@ function App() {
           <span className="alt-text TNP">TonniPaul&#xae;</span>{" "}
         </small>
       </footer>
+      <Analytics />
     </div>
   );
 }
