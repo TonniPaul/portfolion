@@ -104,10 +104,10 @@ const About = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "🎵 Music",
-                    "👔 Fashion",
+                    "🎶 Music",
+                    "🕴️ Fashion",
                     "⚽ Football",
-                    " Movies",
+                    "🎥 Movies",
                     "🎮 Game",
                   ],
                   autoStart: true,
