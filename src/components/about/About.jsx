@@ -87,8 +87,8 @@ const About = () => {
             <hr className="short-hr" />
 
             <p className="about-me-text">
-              I have a degree in Library and Information Science, I have over a
-              year of experience using frontend technologies.I am passionate
+              I have a degree in Library and Information Science, I have over 19
+              months experience using frontend technologies.I am passionate
               about creating beautiful, functional websites that provide a great
               user experience. I am constantly learning and pushing myself to
               improve my skills and stay up-to-date with the latest web
@@ -104,10 +104,10 @@ const About = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "🎵 Music",
-                    "👔 Fashion",
+                    "🎶 Music",
+                    "🕴️ Fashion",
                     "⚽ Football",
-                    " Movies",
+                    "🎥 Movies",
                     "🎮 Game",
                   ],
                   autoStart: true,

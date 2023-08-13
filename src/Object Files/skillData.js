@@ -3,9 +3,33 @@ import { v4 as uuid } from "uuid";
 const skillData = [
   {
     id: uuid(),
+    skillImage: "./assets/nextjs.png",
+    logo: "NextJS logo",
+    logo_text: "next js",
+  },
+  {
+    id: uuid(),
     skillImage: "./assets/react.png",
     logo: "react logo",
     logo_text: "react js",
+  },
+  {
+    id: uuid(),
+    skillImage: "./assets/js.png",
+    logo: "javascript logo",
+    logo_text: "javascript",
+  },
+  {
+    id: uuid(),
+    skillImage: "./assets/typescript.png",
+    logo: "typescript logo",
+    logo_text: "typescript",
+  },
+  {
+    id: uuid(),
+    skillImage: "./assets/sc.png",
+    logo: "Styled-Components logo",
+    logo_text: "Styled Component",
   },
   {
     id: uuid(),
@@ -19,12 +43,7 @@ const skillData = [
     logo: "css logo",
     logo_text: "css",
   },
-  {
-    id: uuid(),
-    skillImage: "./assets/js.png",
-    logo: "javascript logo",
-    logo_text: "javascript",
-  },
+
   {
     id: uuid(),
     skillImage: "./assets/wordpress.png",
@@ -33,27 +52,9 @@ const skillData = [
   },
   {
     id: uuid(),
-    skillImage: "./assets/bootstrap.png",
-    logo: "bootstrap logo",
-    logo_text: "bootstrap",
-  },
-  {
-    id: uuid(),
-    skillImage: "./assets/typescript.png",
-    logo: "typescript logo",
-    logo_text: "typescript",
-  },
-  {
-    id: uuid(),
-    skillImage: "./assets/nextjs.png",
-    logo: "NextJS logo",
-    logo_text: "next js",
-  },
-  {
-    id: uuid(),
-    skillImage: "./assets/sc.png",
-    logo: "Styled-Components logo",
-    logo_text: "Styled Component",
+    skillImage: "./assets/zustand.png",
+    logo: "zustand logo",
+    logo_text: "zustand state management",
   },
   {
     id: uuid(),
@@ -66,6 +67,12 @@ const skillData = [
     skillImage: "./assets/github.png",
     logo: "github logo",
     logo_text: "github",
+  },
+  {
+    id: uuid(),
+    skillImage: "./assets/bootstrap.png",
+    logo: "bootstrap logo",
+    logo_text: "bootstrap",
   },
 ];
 
