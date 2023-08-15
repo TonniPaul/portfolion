@@ -43,7 +43,7 @@ function App() {
       {/* SCROLL TO TOP ICON  */}
       <ScrollToTop />
       <footer className="flex column footer">
-        <small> &copy; 2022, all rights reserved</small>
+        <small> &copy; {new Date().getFullYear()}, all rights reserved</small>
         <small>
           Designed & Built by{" "}
           <span className="alt-text TNP">TonniPaul&#xae;</span>{" "}
