@@ -16,7 +16,8 @@ export const projectData = [
     id: uuid(),
     title: "THRIFTS BY RONN",
     image: "./assets/tbr.png",
-    description: "E-commerce website for a thrift store",
+    description:
+      "Crafted a sleek e-commerce platform for a thrift store, allowing effortless shopping, cart management, and a delightful user experience.",
     stacks: ["TypeScript", "Next JS", "Styled Component", "Zustand"],
     liveSite: "https://tbr.tonnipaul.com/",
     github: "https://github.com/TonniPaul/tbr",
