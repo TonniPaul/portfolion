@@ -87,7 +87,7 @@ const About = () => {
             <hr className="short-hr" />
 
             <p className="about-me-text">
-              I have a degree in Library and Information Science, I have over 19
+              I have a degree in Library and Information Science, I have over 22
               months experience using frontend technologies.I am passionate
               about creating beautiful, functional websites that provide a great
               user experience. I am constantly learning and pushing myself to
