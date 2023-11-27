@@ -6,7 +6,7 @@ export const projectData = [
     title: "TONNIPAUL's BLOG",
     image: "./assets/blog.png",
     description:
-      "A website dedicated to educating about various aspects of web technology through insightful blog content.",
+      "A blog dedicated to educating about various aspects of web technology through insightful blog content.",
     stacks: ["TypeScript", "Next JS", "Styled Component", "Sanity CLI"],
     liveSite: "https://blog.tonnipaul.com/",
     github: "https://github.com/TonniPaul/blog",
