@@ -1,8 +1,7 @@
-import { v4 as uuid } from "uuid";
 
 export const projectData = [
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "TONNIPAUL's BLOG",
     image: "./assets/blog.png",
     description:
@@ -13,7 +12,7 @@ export const projectData = [
     design: "TonniPaul",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "THRIFTS BY RONN",
     image: "./assets/tbr.png",
     description:
@@ -24,7 +23,7 @@ export const projectData = [
     design: "TonniPaul",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "COUNTRY DATA ",
     image: "./assets/country-data-app.png",
     description: "Find important data about any country",
@@ -34,7 +33,7 @@ export const projectData = [
     design: "FrontEndMentor, TonniPaul",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "CRYPTO TRACK",
     image: "./assets/crypto-track.png",
     description:
@@ -45,7 +44,7 @@ export const projectData = [
     design: "TonniPaul",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "NESTED COMMENT SECTION ",
     image: "./assets/icm.png",
     description: "Interactive comment section  ",
@@ -55,7 +54,7 @@ export const projectData = [
     design: "FrontEndMentor",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "SHORTLY (URL SHORTENER) ",
     image: "./assets/url-shortener.png",
     description: "The quickest way to shorten your URLs.",
@@ -65,7 +64,7 @@ export const projectData = [
     design: "FrontEndMentor, TonniPaul",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "BABYWEARS NG",
     image: "./assets/ltbws.png",
     description: "An online store selling baby and kids wears and accessories",
@@ -76,7 +75,7 @@ export const projectData = [
     design: "TonniPaul",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "TODO WEB",
     image: "./assets/todo.png",
     description: "Create and manage Tasks or to-do lists. ",
@@ -86,7 +85,7 @@ export const projectData = [
     design: "TonniPaul",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "PORTFOLIO WEBSITE",
     image: "./assets/portfolio.png",
     description: "My personal website",
@@ -97,7 +96,7 @@ export const projectData = [
   },
 
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "ADVICE GENERATOR",
     image: "./assets/advicegen.jpg",
     description: "An API-driven advice generator web application",
@@ -107,7 +106,7 @@ export const projectData = [
     design: "FrontEnd Mentor",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "MUSICA ",
     image: "./assets/musica.png",
     description:
@@ -118,7 +117,7 @@ export const projectData = [
     design: "#360CODINGCHALLENGE 0n Twitter",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "CHATSCRUM",
     image: "./assets/chatscrum.png",
     description:
@@ -129,7 +128,7 @@ export const projectData = [
     design: "LinuxJobber",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "MEME GENERATOR",
     image: "./assets/memelarge.png",
     description: "Generate Random Meme Image and Add your personalized caption",
@@ -139,7 +138,7 @@ export const projectData = [
     design: "Scrimba",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "DICE GAME",
     image: "./assets/dicegame.png",
     description:
@@ -150,7 +149,7 @@ export const projectData = [
     design: "Angela Yu (UDEMY)",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "FITNESS WEBSITE TEMPLATE",
     image: "./assets/fitnesssite.png",
     description: "This is a fitness website template.",
@@ -160,7 +159,7 @@ export const projectData = [
     design: "Travasery Media (Youtube)",
   },
   {
-    id: uuid(),
+    id: crypto.randomUUID(),
     title: "Landing Page",
     image: "./assets/web-dev.png",
     description: "Landing Page for a web developer",
