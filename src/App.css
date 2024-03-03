@@ -169,3 +169,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+
+#shadow-host-companion {
+  display: none;
+}

@@ -55,7 +55,7 @@
   bottom: 0%;
   z-index: 1;
   border-radius: inherit;
-  background: url(../../assets/teambuild.png);
+  background: url(../../../public/assets/teambuild.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -81,7 +81,7 @@
 .my-form::after {
   content: "";
   position: absolute;
-  background: url(../../assets/hero.png);
+  background: url(../../../public/assets/hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -155,7 +155,13 @@ option {
   min-height: 100px;
 }
 
+.form-div > input:-webkit-autofill {
+  background-color: red;
+}
+
 .form-div input:focus,
+.form-div input:-webkit-autofill,
+.form-div input:-webkit-autofill:focus
 .form-div textarea:focus,
 .form-div input:valid,
 .form-div textarea:valid {
