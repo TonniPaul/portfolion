@@ -28,10 +28,6 @@ const Form = ({ nameRef }: IFormProps) => {
   const emailJsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID as string;
   const emailJsPublicKey = process.env.REACT_APP_EMAILJS_PUBLIC_K as string;
 
-  console.log('PKID:', emailJsPublicKey);
-  console.log('TIID:', emailJsTemplateId);
-  console.log('SIID:', emailJsServiceId);
-
   const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
     setUsername(e.target.value);
     setErrors((prevState) => ({ ...prevState, username: '' }));
