@@ -1,9 +1,13 @@
-import { motion } from "framer-motion";
-import "./circle-card.css";
+import { motion } from 'framer-motion';
+import './circle-card.css';
 
+interface ICircleCArdProps {
+  skillImage: string;
+  logo_text: string;
+  logo: string;
+}
 
-
-const CircleCard = ({ skillImage, logo_text, logo }) => {
+const CircleCard = ({ skillImage, logo_text, logo }: ICircleCArdProps) => {
   return (
     <div className="circle">
       <motion.div
@@ -11,7 +15,7 @@ const CircleCard = ({ skillImage, logo_text, logo }) => {
         initial={{
           opacity: 0,
           rotate: 360,
-          x: "100%",
+          x: '100%',
         }}
         whileInView={{
           opacity: 1,
@@ -19,7 +23,7 @@ const CircleCard = ({ skillImage, logo_text, logo }) => {
           x: 0,
         }}
         transition={{
-          type: "spring",
+          type: 'spring',
           bounce: 100,
           duration: 0.5,
         }}

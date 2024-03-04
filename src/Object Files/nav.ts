@@ -1,5 +1,3 @@
-import { v4 as uuid } from "uuid";
-
 const navData = [
   {
     id: crypto.randomUUID(),

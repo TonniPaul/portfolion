@@ -1,15 +1,14 @@
-import { ReactNode } from "react";
-import "./projectCard.css";
+import './projectCard.css';
 
 interface IProjectCardProps {
-  image: string
-  description: string
-  liveSite?: string
-  github?: string
-  title: string
-  stacks: string[]
-  design: string
-  hiddenClass?: string
+  image: string;
+  description: string;
+  liveSite?: string;
+  github?: string;
+  title: string;
+  stacks: string[];
+  design: string;
+  hiddenClass?: string;
 }
 
 const ProjectCard = ({
@@ -43,7 +42,7 @@ const ProjectCard = ({
         STACKS USED:
         {stacks.map((item) => {
           return (
-            <span key={item} className='btn stacks_description'>
+            <span key={item} className="btn stacks_description">
               {item}
             </span>
           );
@@ -62,7 +61,7 @@ const ProjectCard = ({
           </span>
           <p className="btn link_text">GitHub</p>
         </a>
-        {title !== "PORTFOLIO WEBSITE" ? (
+        {title !== 'PORTFOLIO WEBSITE' ? (
           <a
             href={liveSite}
             target="blank"

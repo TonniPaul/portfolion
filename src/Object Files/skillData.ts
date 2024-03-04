@@ -1,4 +1,3 @@
-
 const skillData = [
   {
     id: crypto.randomUUID(),
