@@ -1,27 +1,26 @@
-import "./skills.css";
-import projectIcon from "../../assets/tool.png";
-import CircleCard from "../../cards/circleCards/CircleCard";
-import skillData from "../../Object Files/skillData";
-import { motion } from "framer-motion";
+import './skills.css';
+import CircleCard from '../../cards/circleCards/CircleCard';
+import skillData from '../../Object Files/skillData';
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   return (
-    <section id="skill">
-      <div className="skills-container">
-        <div className="flex">
-          <div className="abt-image-div">
+    <section id='skill'>
+      <div className='skills-container'>
+        <div className='flex'>
+          <div className='abt-image-div'>
             <img
-              src={projectIcon}
-              alt="bulb toolbox icon"
-              className="about-image"
+              src='/assets/tool.png'
+              alt='bulb toolbox icon'
+              className='about-image'
             />
           </div>
           <div>
-            <h1 className="project-head-text alt-text"> Skills and Tools</h1>
-            <hr className="short-hr project-hr" />
+            <h1 className='project-head-text alt-text'> Skills and Tools</h1>
+            <hr className='short-hr project-hr' />
           </div>
         </div>
-        <div className="my-skills-container">
+        <div className='my-skills-container'>
           {skillData.map((items) => {
             return (
               <motion.div

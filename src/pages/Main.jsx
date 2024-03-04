@@ -13,13 +13,13 @@ const Main = () => {
   };
 
   return (
-    <div>
+    <>
       <Hero onClick={handleClick} />
       <About />
       <Project />
       <Skills />
       <ContactForm contact={contactClick} />
-    </div>
+    </>
   );
 };
 

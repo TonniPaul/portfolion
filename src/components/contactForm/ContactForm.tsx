@@ -1,28 +1,28 @@
-import FlatCard from "../../cards/flatcard/FlatCard";
-import "./contactForm.css";
-import myLinks from "../../Object Files/links";
-import cont from "../../assets/cont.svg";
-import Form from "./Form";
-import { motion } from "framer-motion";
-import { useRef } from "react";
+import FlatCard from '../../cards/flatcard/FlatCard';
+import './contactForm.css';
+import myLinks from '../../Object Files/links';
+import Form from './Form';
+import { motion } from 'framer-motion';
+import { useRef } from 'react';
 
-const ContactForm = ({ contact }) => {
-  const nameRef = useRef();
+const ContactForm = () => {
+  const nameRef = useRef<HTMLInputElement>(null);
 
   const handleClick = () => {
-    nameRef.current.focus();
+    nameRef?.current?.focus();
   };
+
   //framer motion animation variants
   const leftVariant = {
     hidden: {
-      x: "-100%",
+      x: '-100%',
       opacity: 0,
     },
     show: {
       x: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: 'spring',
         bounce: 0.2,
         duration: 3,
       },
@@ -30,14 +30,14 @@ const ContactForm = ({ contact }) => {
   };
   const rightVariant = {
     hidden: {
-      x: "100%",
+      x: '100%',
       opacity: 0,
     },
     show: {
       x: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: 'spring',
         bounce: 0.1,
         duration: 2,
       },
@@ -45,11 +45,15 @@ const ContactForm = ({ contact }) => {
   };
 
   return (
-    <section id="contact" ref={contact}>
+    <section id="contact">
       <div className="max-width flex column contact__cont_main">
         <div className="flex">
           <div className="abt-image-div contact_img_div">
-            <img src={cont} alt="3d contact icon" className="about-image" />
+            <img
+              src="/assets/cont.svg"
+              alt="3d contact icon"
+              className="about-image"
+            />
           </div>
 
           <div>
@@ -59,13 +63,13 @@ const ContactForm = ({ contact }) => {
         </div>
         <motion.div
           className="max_content"
-          initial={"hidden"}
-          whileInView={"show"}
+          initial={'hidden'}
+          whileInView={'show'}
           transition={{ staggerChildren: 0.5 }}
         >
           <FlatCard
             customClass="contact-form-cont"
-            style={{ overflow: "hidden" }}
+            style={{ overflow: 'hidden' }}
           >
             <motion.div className="contact-sub-div" variants={rightVariant}>
               <h1 className="contact-head-text">

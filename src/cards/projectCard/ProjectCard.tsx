@@ -1,4 +1,15 @@
-import "./projectCard.css";
+import './projectCard.css';
+
+interface IProjectCardProps {
+  image: string;
+  description: string;
+  liveSite?: string;
+  github?: string;
+  title: string;
+  stacks: string[];
+  design: string;
+  hiddenClass?: string;
+}
 
 const ProjectCard = ({
   image,
@@ -6,10 +17,10 @@ const ProjectCard = ({
   liveSite,
   github,
   title,
-  children,
+  stacks,
   design,
   hiddenClass,
-}) => {
+}: IProjectCardProps) => {
   return (
     <div className="project-card-container">
       <div
@@ -29,7 +40,13 @@ const ProjectCard = ({
 
       <div className="flex stacks_description_cont">
         STACKS USED:
-        {children}
+        {stacks.map((item) => {
+          return (
+            <span key={item} className="btn stacks_description">
+              {item}
+            </span>
+          );
+        })}
       </div>
 
       <div className="flex project-links-cont">
@@ -44,7 +61,7 @@ const ProjectCard = ({
           </span>
           <p className="btn link_text">GitHub</p>
         </a>
-        {title !== "PORTFOLIO WEBSITE" ? (
+        {title !== 'PORTFOLIO WEBSITE' ? (
           <a
             href={liveSite}
             target="blank"

@@ -1,6 +1,11 @@
-import "./ImageCard.css";
+import './ImageCard.css';
 
-const ImageCard = ({ img, alt }) => {
+interface IImageCardProps {
+  img: string;
+  alt: string;
+}
+
+const ImageCard = ({ img, alt }: IImageCardProps) => {
   return (
     <div className="card-image-div">
       <img src={img} alt={alt} className="card-img" />

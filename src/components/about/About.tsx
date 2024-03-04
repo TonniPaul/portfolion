@@ -1,6 +1,4 @@
 import "./about.css";
-import about from "../../assets/about__.png";
-import microphone from "../../assets/about.png";
 import ImageCard from "../../cards/imageCard/ImageCard";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
@@ -59,7 +57,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.5 }}
             variants={leftAboutVariant}
           >
-            <ImageCard img={about} alt="3D image" />
+            <ImageCard img='/assets/about__.png' alt="3D image" />
           </motion.div>
 
           <motion.div
@@ -70,7 +68,7 @@ const About = () => {
             <div className="flex">
               <div className="abt-image-div">
                 <img
-                  src={microphone}
+                  src='/assets/about.png'
                   alt="note book icon"
                   className="about-image"
                 />
@@ -113,7 +111,6 @@ const About = () => {
                   autoStart: true,
                   loop: true,
                   cursor: "✍️",
-                  pauseFor: 3000,
                 }}
               />
             </div>
