@@ -22,13 +22,13 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  max-width: 1440px;
+  max-width: 144rem;
   overflow: hidden;
   transition: var(--transition);
 }
 
 .hero-main-text {
-  font-size: 54px;
+  font-size: 5.4rem;
 }
 
 .hero-img {
@@ -39,8 +39,8 @@
   display: flex;
   flex-direction: column;
   font-weight: 600;
-  font-size: 18px;
-  gap: 10px;
+  font-size: 1.8rem;
+  gap: 1rem;
   flex: 1;
 }
 
@@ -48,7 +48,7 @@
   color: var(--black);
   display: flex;
   gap: 5px;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 #dark .hero-subtext {
@@ -56,19 +56,19 @@
 }
 
 .what_am_i {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .head-span-text {
   color: var(--alt-text);
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 .btn {
-   background: inherit;
-   font-family: inherit;
-   font-size: inherit;
-   border: none;
-   cursor: pointer;
+  background: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
 }
 #dark .btn {
   box-shadow: var(--box-shadow-dark);
@@ -86,17 +86,17 @@
 
 .btn-div {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   margin-top: 1rem;
 }
 
 .wave {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5em) {
   .hero-main-text {
-    font-size: 35px;
+    font-size: 3.5rem;
   }
 
   .hero-flex {
@@ -105,25 +105,24 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .hero-flex {
     grid-template-columns: 1fr;
     padding: 4rem 0 0;
   }
 
   .wave {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .hero-main-text {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
-
-  .what_am_i {
-    font-size: 15px;
+  x .what_am_i {
+    font-size: 1.5rem;
   }
 
   .hero-subtext {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }

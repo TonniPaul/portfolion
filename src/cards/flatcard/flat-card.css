@@ -1,18 +1,18 @@
 .flatCard-main {
-   padding: 1rem;
-   box-shadow: var(--box-shadow);
-   border-radius: 5px;
-   transition: var(--transition);
-   margin: auto;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  transition: var(--transition);
+  margin: auto;
 }
 
 #dark .flatCard-main {
-   box-shadow: var(--box-shadow-dark);
+  box-shadow: var(--box-shadow-dark);
 }
 
-@media (max-width : 600px) {
-   .flatCard-main {
-      width: 100%;
-      padding: .5rem;
-   }
+@media (max-width: 37.5em) {
+  .flatCard-main {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }

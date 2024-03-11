@@ -3,11 +3,10 @@ import './circle-card.css';
 
 interface ICircleCArdProps {
   skillImage: string;
-  logo_text: string;
-  logo: string;
+  name: string;
 }
 
-const CircleCard = ({ skillImage, logo_text, logo }: ICircleCArdProps) => {
+const CircleCard = ({ skillImage, name }: ICircleCArdProps) => {
   return (
     <div className="circle">
       <motion.div
@@ -28,9 +27,9 @@ const CircleCard = ({ skillImage, logo_text, logo }: ICircleCArdProps) => {
           duration: 0.5,
         }}
       >
-        <img src={skillImage} alt={logo} className="circle-img" />
+        <img src={skillImage} alt={`${name} logo`} className="circle-img" />
       </motion.div>
-      <p className="logo_name">{logo_text}</p>
+      <p className="logo_name">{name}</p>
     </div>
   );
 };

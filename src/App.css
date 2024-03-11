@@ -1,19 +1,33 @@
+html {
+  box-sizing: border-box;
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 body {
   color: var(--primary-text);
-  font-family: "Play", sans-serif;
+  font-family: 'Play', sans-serif;
+  line-height: 1.5;
 }
 
 body #light {
   background: var(--primary-bg);
-  background-image: 
-    url(../public/assets/bubbles.png);
+  background-image: url(../public/assets/bubbles.png);
   background-size: contain;
-  padding: 16px;
+  padding: 1.6rem;
 }
 
 body #dark {
   background: var(--primary-bg-dark);
-  padding: 16px;
+  padding: 1.6rem;
   backdrop-filter: blur(100%);
   color: var(--white);
   background-image: url(../public/assets/bubbles.png);
@@ -21,7 +35,7 @@ body #dark {
 }
 
 .max-width {
-  max-width: 1440px;
+  max-width: 144rem;
   margin: auto;
 }
 
@@ -31,9 +45,9 @@ body #dark {
 
 .scroll_to_top {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
-  font-size: 30px;
+  bottom: 4rem;
+  right: 4rem;
+  font-size: 3rem;
   animation: bouncing 2s infinite;
   cursor: pointer;
   color: var(--yellow);
@@ -58,7 +72,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   height: 3px;
   background: var(--primary-text);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 /* Handle on hover */
@@ -97,9 +111,9 @@ body::-webkit-scrollbar-thumb {
 
 @media (width <=600px) {
   .scroll_to_top {
-    font-size: 20px;
-    bottom: 20px;
-    right: 20px;
+    font-size: 2rem;
+    bottom: 2rem;
+    right: 2rem;
   }
 
   body #dark {
@@ -110,19 +124,19 @@ body::-webkit-scrollbar-thumb {
 /* ========== KEYFRAMES ========== */
 @keyframes bouncing {
   0% {
-    transform: translateY(0px);
+    transform: translateY(0);
     filter: grayscale(10%) brightness(40%) sepia(100%) hue-rotate(-50deg)
       saturate(600%) contrast(0.8);
   }
 
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-1.6rem);
     filter: invert(70%) sepia(65%) saturate(332%) hue-rotate(0deg)
       brightness(104%) contrast(96%);
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
     filter: invert(30%) sepia(30%) saturate(2132%) hue-rotate(241deg)
       brightness(96%) contrast(88%);
   }
@@ -138,7 +152,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   100% {
-    transform: translateY(0px) translateX(35%);
+    transform: translateY(0) translateX(35%);
   }
 }
 
@@ -152,7 +166,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
