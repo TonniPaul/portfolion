@@ -6,6 +6,8 @@
     "@emailjs/browser": "^3.11.0",
     "@formspree/react": "^2.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@sanity/client": "^6.15.3",
+    "@sanity/image-url": "^1.0.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
