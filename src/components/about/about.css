@@ -12,6 +12,12 @@
   color: var(--black);
 }
 
+@media (max-width: 37.5em) {
+  .about-container {
+    font-size: 1.3rem;
+  }
+}
+
 #dark .about-container {
   color: var(--white);
 }
@@ -24,12 +30,14 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 1.6rem;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-size: 1.6rem;
 }
 
 .abt-image-div {

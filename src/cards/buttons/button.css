@@ -9,10 +9,21 @@
   justify-content: center;
   gap: 1rem;
   width: max-content;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 37.5em) {
   .btn {
     font-size: 1.3rem;
+  }
+}
+
+.isBigger {
+  font-size: 1.6rem !important;
+}
+
+@media (max-width: 37.5em) {
+  .isBigger {
+    font-size: 1.3rem !important;
   }
 }
