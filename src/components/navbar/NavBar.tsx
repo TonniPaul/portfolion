@@ -1,12 +1,12 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useState } from 'react';
 
-import "./navBar.css";
+import './navBar.css';
 
-import navData from "../../Object Files/nav";
+import navData from '../../Object Files/nav';
 
 interface INavbarProps {
   onClick: () => void;
-  children: ReactNode
+  children: ReactNode;
 }
 
 const NavBar = ({ onClick, children }: INavbarProps) => {
@@ -20,9 +20,9 @@ const NavBar = ({ onClick, children }: INavbarProps) => {
     <nav className="nav-cont">
       <a href="/" className="logo">
         <img
-          src='/assets/tonnipaul_.png'
+          src="/assets/tonnipaul_.png"
           alt="TonniPaul"
-          className=" circle-card-cont logo_img"
+          className="circle-card-cont logo_img"
         />
         <span className="logo_text">TonniPaul</span>
       </a>
@@ -31,7 +31,7 @@ const NavBar = ({ onClick, children }: INavbarProps) => {
       </div>
 
       <div
-        className={`links-container ${isOpen && "show-tab"} `}
+        className={`links-container ${isOpen && 'show-tab'} `}
         onClick={handleIsOpen}
       >
         {navData.map((items) => {
@@ -51,7 +51,7 @@ const NavBar = ({ onClick, children }: INavbarProps) => {
       </div>
 
       <div
-        className={`tab-icon ${isOpen && "dark-tab-icon"} `}
+        className={`tab-icon ${isOpen && 'dark-tab-icon'} `}
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? (
