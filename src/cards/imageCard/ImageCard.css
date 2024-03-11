@@ -1,24 +1,24 @@
 .card-image-div {
-   width: 450px;
-   margin: 0;
-   max-height: 400px;
-   padding: 5px;
-   box-shadow: var(--box-shadow);
-   border-radius: 7px;
+  width: 45rem;
+  margin: 0;
+  max-height: 40rem;
+  padding: 5px;
+  box-shadow: var(--box-shadow);
+  border-radius: 7px;
 }
 
 #dark .card-image-div {
-   box-shadow: var(--box-shadow-dark);
+  box-shadow: var(--box-shadow-dark);
 }
 
 .card-img {
-   width: 100%;
-   height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-@media (max-width : 600px) {
-   .card-image-div {
-      width: 100%;
-      height: auto;
-   }
+@media (max-width: 37.5em) {
+  .card-image-div {
+    width: 100%;
+    height: auto;
+  }
 }

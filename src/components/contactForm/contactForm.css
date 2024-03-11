@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 3rem;
   color: var(--primary-bg);
   border-radius: inherit;
 }
@@ -15,8 +15,8 @@
 }
 
 .contact_img_div {
-  width: 150px !important;
-  height: 150px !important;
+  width: 15rem !important;
+  height: 15rem !important;
 }
 
 .right_hr {
@@ -32,7 +32,7 @@
 }
 
 .contact-head-text {
-  font-size: 40px;
+  font-size: 4rem;
   text-transform: capitalize;
   z-index: 2;
 }
@@ -41,13 +41,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
   position: relative;
   z-index: 3;
 }
 
 .contact-sub-div::after {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 100%;
@@ -69,7 +69,7 @@
 .my-form {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 4rem;
   padding: 2rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@
 }
 
 .my-form::after {
-  content: "";
+  content: '';
   position: absolute;
   background: url(../../../public/assets/hero.png);
   background-size: cover;
@@ -103,10 +103,10 @@
   position: absolute;
   top: 0px;
   transform: translateY(30%);
-  left: 10px;
-  font-size: 16px;
+  left: 1rem;
+  font-size: 1.6rem;
   width: max-content;
-  padding: 0.5rem 24px;
+  padding: 0.5rem 2.4rem;
   z-index: -1;
   transition: var(--transition);
 }
@@ -124,11 +124,11 @@ option {
 }
 
 :is(input:focus, input:valid, textarea:focus, textarea:valid) ~ label {
-  transform: translateY(-25px) translateX(-15px);
+  transform: translateY(-2.5rem) translateX(-1.5rem);
   display: flex;
   align-items: center;
   background: var(--primary-text);
-  font-size: 12px;
+  font-size: 1.2rem;
   z-index: 1;
   -webkit-appearance: none;
   appearance: none;
@@ -143,26 +143,21 @@ option {
   border-radius: 5px;
   background: inherit;
   color: var(--primary-bg);
-  font-size: 13px;
+  font-size: 1.3rem;
   font-family: inherit !important;
-  font-size: 14px;
+  font-size: 1.4rem;
   -webkit-appearance: none;
   appearance: none;
   resize: none;
 }
 
 .form-div textarea {
-  min-height: 100px;
-}
-
-.form-div > input:-webkit-autofill {
-  background-color: red;
+  min-height: 10rem;
 }
 
 .form-div input:focus,
 .form-div input:-webkit-autofill,
-.form-div input:-webkit-autofill:focus
-.form-div textarea:focus,
+.form-div input:-webkit-autofill:focus .form-div textarea:focus,
 .form-div input:valid,
 .form-div textarea:valid {
   outline: none;
@@ -178,8 +173,8 @@ option {
   padding: 1rem 3rem !important;
   background: inherit !important;
   color: var(--primary-bg) !important;
-  transform: translateY(-20px);
-  font-size: 16px;
+  transform: translateY(-2rem);
+  font-size: 1.6rem;
   font-weight: 600;
   border-radius: 5px;
   border: none;
@@ -192,7 +187,7 @@ option {
 
 .Message-me {
   text-align: right;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .contact-links,
@@ -241,7 +236,7 @@ option {
 .thank-you-home {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
   flex: 1;
 }
 
@@ -257,7 +252,7 @@ option {
 .thankyou_img {
   width: 100%;
   object-fit: contain;
-  max-height: 150px;
+  max-height: 15rem;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -277,14 +272,14 @@ option {
 
 .connect-text {
   text-align: left;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 600;
   z-index: 4;
 }
 
 .thank-you-desc {
   z-index: 3;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .center-div {
@@ -294,7 +289,9 @@ option {
 
 #light .thankyou_link,
 #dark .thankyou_link {
-  box-shadow: inset 1px 1px 10px #f3cc77, inset -1px -1px 10px #cfab5f !important;
+  box-shadow:
+    inset 1px 1px 1rem #f3cc77,
+    inset -1px -1px 1rem #cfab5f !important;
   color: var(--alt-text) !important;
 }
 
@@ -316,7 +313,7 @@ option {
   text-transform: lowercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25em) {
   .contact-form-cont {
     flex-direction: column;
     justify-content: flex-start;
@@ -335,7 +332,7 @@ option {
     padding: 1rem;
     gap: 2rem;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 4.8rem;
   }
 
   .center-it {
@@ -352,11 +349,11 @@ option {
   }
 
   .contact-head-text {
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   .Message-me {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   .left__align {
@@ -364,7 +361,7 @@ option {
   }
 
   .thank-you-home h1 {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   .left__align {
@@ -373,13 +370,13 @@ option {
 
   .thank-you-desc,
   .connect-text {
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .Message-me {
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 
   .form-div input,
@@ -388,7 +385,7 @@ option {
   }
 
   .form-div label {
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 
   .submit-btn {
@@ -412,7 +409,7 @@ option {
   }
 
   :is(input:focus, input:valid, textarea:focus, textarea:valid) ~ label {
-    transform: translateY(-13px) translateX(-10px);
-    font-size: 10px;
+    transform: translateY(-1.3rem) translateX(-1rem);
+    font-size: 1rem;
   }
 }

@@ -20,18 +20,18 @@
 }
 
 .logo_img {
-  height: 50px !important;
-  width: 50px !important;
+  height: 5rem !important;
+  width: 5rem !important;
   padding: 0 !important;
   border-radius: 50%;
   z-index: 2;
 }
 
 .logo_text {
-  padding: 0 5px 0 30px;
+  padding: 0 5px 0 3rem;
   box-shadow: var(--box-shadow);
   z-index: 1;
-  margin-left: -30px;
+  margin-left: -3rem;
   border-radius: 5px;
 }
 
@@ -40,19 +40,19 @@
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   position: relative;
 }
 
 .active {
   box-shadow: var(--inset-box) !important;
-  border-radius: 10px 30px 10px 30px;
+  border-radius: 1rem 3rem 1rem 3rem;
 }
 
 .links-container {
@@ -70,7 +70,7 @@
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   text-decoration: none;
   color: inherit;
 }
@@ -99,12 +99,12 @@ a {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5em) {
   .tab-icon {
     display: flex;
     z-index: 10;
     box-shadow: var(--box-shadow);
-    padding: 10px;
+    padding: 1rem;
     font-size: 15px;
     border-radius: 5px;
     transition: var(--transition);
@@ -129,8 +129,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    top: 63px;
+    gap: 3rem;
+    top: 6.3rem;
     right: 0%;
     width: 100%;
     background: var(--primary-bg);
@@ -159,18 +159,18 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .nav-cont {
     padding: 0.5rem 0.9rem;
   }
 
   .logo {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   .logo_img {
-    height: 40px !important;
-    width: 40px !important;
+    height: 4rem;
+    width: 4rem;
   }
 
   .links-container {
@@ -179,7 +179,7 @@ a {
 
   .links {
     width: 90vw;
-    justify-content: flex-start !important;
+    justify-content: flex-start;
     border-radius: 0;
   }
 }
