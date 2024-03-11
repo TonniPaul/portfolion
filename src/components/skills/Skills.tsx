@@ -42,7 +42,7 @@ const Skills = () => {
                 key={skill._id}
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.2, staggerChildren: 0.2 }}
+                transition={{ duration: 0.1, staggerChildren: 0.2 }}
               >
                 <CircleCard
                   skillImage={imageSource(skill.skillImage).url()}
