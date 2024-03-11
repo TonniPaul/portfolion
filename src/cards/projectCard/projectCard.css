@@ -70,7 +70,6 @@
 .project--title {
   font-size: 1.8rem;
   font-weight: bold;
-  flex: 1;
 }
 
 .project-links-cont::before {
@@ -95,6 +94,7 @@
 .project-links-cont {
   padding: 8px 0;
   position: relative;
+  margin-top: auto;
   justify-content: space-between;
 }
 
@@ -119,6 +119,7 @@
 
 .project--title {
   font-size: 1.7rem;
+  text-transform: uppercase;
 }
 
 .project-desc {
