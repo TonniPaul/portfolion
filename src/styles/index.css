@@ -34,19 +34,19 @@ button {
 
 @media (min-width: 93.75em) {
   section {
-    padding: 10rem 0 5rem;
+    padding: 6rem 0 5rem;
     height: max-content;
   }
 }
 
 @media (max-width: 1440px) {
   section {
-    padding: 7rem 2rem;
+    padding: 5rem 2rem;
   }
 }
 
 @media (max-width: 37.5em) {
   section {
-    padding: 6rem 0;
+    padding: 4rem 0;
   }
 }

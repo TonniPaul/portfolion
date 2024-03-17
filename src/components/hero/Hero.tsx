@@ -53,7 +53,7 @@ const Hero = ({ onClick }: IHeroProps) => {
             <p>
               Hello <span className="wave">👋</span> ,
             </p>
-            <div className="flex left_align">
+            <div className="flex left_align hero-center-item">
               I am
               <span className="alt-text-yellow">
                 <Typewriter
@@ -66,12 +66,12 @@ const Hero = ({ onClick }: IHeroProps) => {
                 />
               </span>
             </div>
-            <h1 className="hero-main-text ">
+            <h1 className="hero-main-text">
               I create <span className="alt-text">beautiful</span> and
               <span className="alt-text"> interactive</span> user interfaces
             </h1>
 
-            <div className="btn-div">
+            <div className="btn-div hero-center-item">
               <button className="btn" onClick={onClick}>
                 Get in touch!
               </button>

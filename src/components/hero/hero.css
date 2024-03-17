@@ -20,10 +20,16 @@
   justify-content: center;
   max-width: 144rem;
   overflow: hidden;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.hero-flex > div {
+  flex-basis: 50%;
 }
 
 .hero-main-text {
-  font-size: 5.4rem;
+  font-size: 4.8rem;
 }
 
 .hero-img {
@@ -71,25 +77,36 @@
   margin-top: 1rem;
 }
 
+.btn-div > button {
+  padding: 1rem 3rem;
+  font-weight: 700;
+}
+
 .wave {
   font-size: 4rem;
 }
 
 @media (max-width: 62.5em) {
   .hero-main-text {
-    font-size: 3.5rem;
-  }
-
-  .hero-flex {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 37.5em) {
   .hero-flex {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-content: center;
     padding: 4rem 0 0;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .hero-sub-cont-1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-center-item {
+    margin: auto;
   }
 
   .wave {
@@ -97,7 +114,7 @@
   }
 
   .hero-main-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   x .what_am_i {
     font-size: 1.5rem;
