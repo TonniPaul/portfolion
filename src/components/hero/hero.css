@@ -9,12 +9,8 @@
   align-self: start;
   margin-top: 6rem;
   justify-content: center;
-  box-shadow: var(--inset-box);
+  box-shadow: var(--inset-box-shadow);
   border-radius: 20px;
-}
-
-#dark .hero-main-cont {
-  box-shadow: var(--inset-box-dark);
 }
 
 .hero-flex {
@@ -24,7 +20,6 @@
   justify-content: center;
   max-width: 144rem;
   overflow: hidden;
-  transition: var(--transition);
 }
 
 .hero-main-text {
@@ -51,10 +46,6 @@
   font-size: 1.5rem;
 }
 
-#dark .hero-subtext {
-  color: var(--yellow);
-}
-
 .what_am_i {
   font-size: 2rem;
 }
@@ -62,16 +53,6 @@
 .head-span-text {
   color: var(--alt-text);
   font-size: 1.3rem;
-}
-.btn {
-  background: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  border: none;
-  cursor: pointer;
-}
-#dark .btn {
-  box-shadow: var(--box-shadow-dark);
 }
 
 .btn:visited,

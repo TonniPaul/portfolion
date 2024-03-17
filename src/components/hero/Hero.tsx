@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 
-import Button from '../../cards/buttons/Button';
-
 import './hero.css';
 
 interface IHeroProps {
@@ -43,21 +41,21 @@ const Hero = ({ onClick }: IHeroProps) => {
   };
 
   return (
-    <section id='home'>
-      <div className='hero-main-cont'>
+    <section id="home">
+      <div className="hero-main-cont">
         <motion.div
-          className='hero-flex'
+          className="hero-flex"
           initial={'hidden'}
           whileInView={'show'}
           transition={{ staggerChildren: 0.2 }}
         >
-          <motion.div className='hero-sub-cont-1' variants={leftVariant}>
+          <motion.div className="hero-sub-cont-1" variants={leftVariant}>
             <p>
-              Hello <span className='wave'>👋</span> ,
+              Hello <span className="wave">👋</span> ,
             </p>
-            <div className='flex left_align'>
+            <div className="flex left_align">
               I am
-              <span className='alt-text-yellow'>
+              <span className="alt-text-yellow">
                 <Typewriter
                   options={{
                     strings: ['TonniPaul'],
@@ -68,27 +66,19 @@ const Hero = ({ onClick }: IHeroProps) => {
                 />
               </span>
             </div>
-            <h1 className='hero-main-text '>
-              I create <span className='alt-text'>beautiful</span> and
-              <span className='alt-text'> interactive</span> user interfaces
+            <h1 className="hero-main-text ">
+              I create <span className="alt-text">beautiful</span> and
+              <span className="alt-text"> interactive</span> user interfaces
             </h1>
 
-            <div className='btn-div'>
-              <button className='btn' onClick={onClick}>
-                Hire Me
+            <div className="btn-div">
+              <button className="btn" onClick={onClick}>
+                Get in touch!
               </button>
-              <Button
-                href='https://1drv.ms/b/s!AqOoOpxoiQY4gRrIPX5ofiVuX5RY?e=n5e2Pl'
-                className='btn'
-                target='blank'
-              >
-                Download CV
-                <i className='fa-solid fa-download'></i>
-              </Button>
             </div>
           </motion.div>
-          <motion.div className='hero-sub-cont' variants={rightVariant}>
-            <img src='/assets/hero.png' alt='3D icon' className='hero-img' />
+          <motion.div className="hero-sub-cont" variants={rightVariant}>
+            <img src="/assets/hero.png" alt="3D icon" className="hero-img" />
           </motion.div>
         </motion.div>
       </div>
