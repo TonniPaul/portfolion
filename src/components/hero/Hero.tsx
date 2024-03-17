@@ -78,7 +78,11 @@ const Hero = ({ onClick }: IHeroProps) => {
             </div>
           </motion.div>
           <motion.div className="hero-sub-cont" variants={rightVariant}>
-            <img src="/assets/hero.png" alt="3D icon" className="hero-img" />
+            <img
+              src="/assets/dev-hero.png"
+              alt="3D icon"
+              className="hero-img"
+            />
           </motion.div>
         </motion.div>
       </div>
