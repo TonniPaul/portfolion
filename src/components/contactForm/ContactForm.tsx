@@ -1,10 +1,13 @@
-import FlatCard from '../../cards/flatcard/FlatCard';
-import './contactForm.css';
-import myLinks from '../../Object Files/links';
-import Form from './Form';
-import { motion } from 'framer-motion';
 import { LegacyRef, useRef } from 'react';
+import { motion } from 'framer-motion';
+
+import myLinks from '../../data/links';
+
 import SvgIcon from '../svg-icon/svg-icon';
+import FlatCard from '../../cards/flatcard/FlatCard';
+import Form from './Form';
+
+import './contactForm.css';
 
 interface IContactProps {
   contactRef: LegacyRef<HTMLElement> | null;

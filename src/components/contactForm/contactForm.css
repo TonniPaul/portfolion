@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  color: var(--primary-bg);
+  color: var(--white);
   border-radius: inherit;
 }
 
@@ -197,7 +197,7 @@ option {
 .contact-links {
   background-color: var(--primary-bg) !important;
   box-shadow: var(--purple-box-shadow) !important;
-  color: var(--color-brand-a);
+  color: var(--white);
   display: block;
 }
 
