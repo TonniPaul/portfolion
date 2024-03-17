@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-position-y: 100%;
   background-size: 20%;
-  transition: var(--transition);
 }
 
 .my-skills-container {
