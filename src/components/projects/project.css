@@ -1,3 +1,7 @@
+#project {
+  padding-bottom: 0;
+}
+
 .project-container {
   display: flex;
   flex-wrap: wrap;
