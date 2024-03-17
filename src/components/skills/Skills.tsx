@@ -12,17 +12,20 @@ interface ISkillsProps {
 
 const Skills = () => {
   const [skillsData, setSkillsData] = useState<ISkillsProps[]>([]);
+  const fetchSkills = async () => {
+    const data = await client?.fetch(`*[_type == "skill"] | order(order asc)`);
+
+    setSkillsData(data);
+  };
 
   useEffect(() => {
-    client
-      ?.fetch(`*[_type == "skill"] | order(order asc)`)
-      .then((data) => setSkillsData(data));
+    fetchSkills();
   }, []);
 
   return (
     <section id="skill">
       <div className="skills-container">
-        <div className="flex">
+        <div className="section-header-flex-container">
           <div className="abt-image-div">
             <img
               src="/assets/tool.png"
@@ -31,7 +34,7 @@ const Skills = () => {
             />
           </div>
           <div>
-            <h1 className="project-head-text alt-text"> Skills and Tools</h1>
+            <h2 className="section-header-text"> Skills and Tools</h2>
             <hr className="short-hr project-hr" />
           </div>
         </div>

@@ -33,24 +33,21 @@
   font-size: 1.6rem;
 }
 
-.column {
+.about-header-text-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   font-size: 1.6rem;
 }
 
+.about-header-text-container > P:first-of-type {
+  font-weight: 700;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 .abt-image-div {
   width: 8rem;
   height: 8rem;
-}
-
-.abt-header {
-  font-weight: 800;
-}
-
-.alt-text {
-  color: var(--alt-text);
 }
 
 .about-sub-cont {

@@ -7,14 +7,10 @@ import ScrollToTop from './components/ScrollToTop';
 import ErrorPage from './components/Error/Error';
 import Main from './pages/Main';
 
-import './App.css';
-
 function App() {
   // Toggle Theme Function
   const [theme, setTheme] = useState(
-    localStorage.getItem('themeColor')
-      ? localStorage.getItem('themeColor').toString()
-      : 'light'
+    localStorage.getItem('themeColor') ?? 'light'
   );
 
   const toggleTheme = () => {
@@ -27,15 +23,12 @@ function App() {
 
   return (
     <div className="App" id={theme}>
-      <NavBar onClick={toggleTheme}>
-        <img
-          src={theme === 'light' ? '/assets/sun.png' : '/assets/moon.png'}
-          alt=""
-          className="switchIcon"
-          width={20}
-          height={20}
-        />
-      </NavBar>
+      <img
+        src="/assets/bubbles.png"
+        alt="background-image"
+        className="background-image"
+      />
+      <NavBar onClick={toggleTheme} theme={theme} />
 
       <Routes>
         <Route path="/" element={<Main />} />
@@ -44,12 +37,13 @@ function App() {
 
       {/* SCROLL TO TOP ICON  */}
       <ScrollToTop />
-      <footer className="flex column footer">
-        <small> &copy; {new Date().getFullYear()}, all rights reserved</small>
-        <small>
+
+      <footer>
+        <p> &copy; {new Date().getFullYear()}, all rights reserved</p>
+        <p>
           Designed & Built by{' '}
           <span className="alt-text TNP">TonniPaul&#xae;</span>
-        </small>
+        </p>
       </footer>
       <Analytics />
     </div>

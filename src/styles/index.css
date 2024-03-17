@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+.switchIcon {
+  width: max-content;
+}
+
+.switchIcon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (min-width: 93.75em) {
+  section {
+    padding: 10rem 0 5rem;
+    height: max-content;
+  }
+}
+
+@media (max-width: 1440px) {
+  section {
+    padding: 7rem 2rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  section {
+    padding: 6rem 0;
+  }
+}

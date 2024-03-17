@@ -1,8 +1,7 @@
 .btn {
   text-decoration: none;
-  color: inherit;
   box-shadow: var(--box-shadow);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -10,6 +9,14 @@
   gap: 1rem;
   width: max-content;
   font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  color: var(--primary-text);
+}
+
+.btn > svg {
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (max-width: 37.5em) {

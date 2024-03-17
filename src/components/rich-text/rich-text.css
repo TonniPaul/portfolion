@@ -1,0 +1,8 @@
+.rich-text-ul {
+  column-count: 2;
+  -webkit-column-count: 2;
+}
+
+.rich-text-ul > li {
+  list-style: inside;
+}

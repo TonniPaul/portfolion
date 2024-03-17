@@ -1,42 +1,36 @@
+header {
+  background: var(--primary-bg-color);
+  color: var(--primary-text);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .nav-cont {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  padding: 1rem 1.5rem;
-  user-select: none;
-  position: sticky;
-  top: 0;
-  background: var(--primary-bg);
-  left: 0;
+  padding: 1.5rem 2rem;
   box-shadow: var(--box-shadow);
-  transition: var(--transition);
-  z-index: 100;
-}
-
-#dark .nav-cont {
-  background: var(--primary-bg-dark);
-  box-shadow: var(--box-shadow-dark);
 }
 
 .logo_img {
-  height: 5rem !important;
   width: 5rem !important;
+  height: 5rem !important;
+  aspect-ratio: 1 !important;
   padding: 0 !important;
   border-radius: 50%;
   z-index: 2;
 }
 
 .logo_text {
-  padding: 0 5px 0 3rem;
+  padding: 5px 1rem;
   box-shadow: var(--box-shadow);
   z-index: 1;
-  margin-left: -3rem;
   border-radius: 5px;
-}
-
-#dark .logo_text {
-  box-shadow: var(--box-shadow-dark);
+  font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 .logo {
@@ -59,7 +53,6 @@
   display: flex;
   gap: 1.25rem;
   list-style: none;
-  transition: var(--transition);
 }
 
 .links {
@@ -80,18 +73,9 @@ a {
   text-decoration: none;
 }
 
-#dark .links {
-  box-shadow: var(--box-shadow-dark);
-}
-
 .links:focus,
 .links:active {
-  box-shadow: var(--inset-box);
-}
-
-#dark .links:focus,
-#dark .links:active {
-  box-shadow: var(--inset-box-dark);
+  box-shadow: var(--inset-box-shadow);
 }
 
 .tab-icon {
@@ -107,20 +91,11 @@ a {
     padding: 1rem;
     font-size: 15px;
     border-radius: 5px;
-    transition: var(--transition);
     font-weight: 900;
   }
 
-  #dark .tab-icon {
-    box-shadow: var(--box-shadow-dark);
-  }
-
   .dark-tab-icon {
-    box-shadow: var(--inset-box) !important;
-  }
-
-  #dark .dark-tab-icon {
-    box-shadow: var(--inset-box-dark) !important;
+    box-shadow: var(--inset-box-shadow) !important;
   }
 
   .links-container {
@@ -133,17 +108,12 @@ a {
     top: 6.3rem;
     right: 0%;
     width: 100%;
-    background: var(--primary-bg);
+    background: var(--primary-bg-color);
     opacity: 0;
     transform: translateY(-200%);
     transition: var(--transition);
     padding: 2rem;
     box-shadow: var(--box-shadow);
-  }
-
-  #dark .links-container {
-    background: var(--primary-bg-dark);
-    box-shadow: var(--box-shadow-dark);
   }
 
   .show-tab {

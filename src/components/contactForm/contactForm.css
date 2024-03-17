@@ -1,17 +1,18 @@
 .contact-form-cont {
-  background: var(--primary-text);
-  padding: 1rem;
+  background: var(--color-brand-a);
+  padding: 1rem 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  color: var(--primary-bg);
+  color: var(--white);
   border-radius: inherit;
 }
 
 #contact {
   padding: 4rem 2rem;
+  display: block;
 }
 
 .contact_img_div {
@@ -127,7 +128,7 @@ option {
   transform: translateY(-2.5rem) translateX(-1.5rem);
   display: flex;
   align-items: center;
-  background: var(--primary-text);
+  background: var(--color-brand-a);
   font-size: 1.2rem;
   z-index: 1;
   -webkit-appearance: none;
@@ -174,6 +175,9 @@ option {
   background: inherit !important;
   color: var(--primary-bg) !important;
   transform: translateY(-2rem);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
   font-size: 1.6rem;
   font-weight: 600;
   border-radius: 5px;
@@ -190,16 +194,17 @@ option {
   font-size: 1.8rem;
 }
 
-.contact-links,
-#dark .contact-links {
+.contact-links {
   background-color: var(--primary-bg) !important;
   box-shadow: var(--purple-box-shadow) !important;
-  color: var(--primary-text);
+  color: var(--white);
+  display: block;
 }
 
-.thankyou_link,
-#dark .thankyou_link {
-  color: red !important;
+.contact-links > svg {
+  fill: currentColor;
+  width: 2rem;
+  height: 2rem;
 }
 
 .error_message {
@@ -287,17 +292,15 @@ option {
   justify-content: center;
 }
 
-#light .thankyou_link,
-#dark .thankyou_link {
+.thankyou_link {
   box-shadow:
     inset 1px 1px 1rem #f3cc77,
     inset -1px -1px 1rem #cfab5f !important;
-  color: var(--alt-text) !important;
 }
 
-.thank_you_main,
-#dark .thank_you_main {
-  width: 80%;
+.thank_you_main {
+  width: 100%;
+  max-width: 50rem;
 }
 
 .xxx {
@@ -342,10 +345,6 @@ option {
 
   .my-form {
     padding: 1rem !important;
-  }
-
-  .purple {
-    margin: auto;
   }
 
   .contact-head-text {
