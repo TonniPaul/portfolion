@@ -37,12 +37,13 @@ function App() {
 
       {/* SCROLL TO TOP ICON  */}
       <ScrollToTop />
-      <footer className="flex column footer">
-        <small> &copy; {new Date().getFullYear()}, all rights reserved</small>
-        <small>
+
+      <footer>
+        <p> &copy; {new Date().getFullYear()}, all rights reserved</p>
+        <p>
           Designed & Built by{' '}
           <span className="alt-text TNP">TonniPaul&#xae;</span>
-        </small>
+        </p>
       </footer>
       <Analytics />
     </div>
