@@ -3,11 +3,35 @@ import ImageCard from '../../cards/imageCard/ImageCard';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import Button from '../../cards/buttons/Button';
+import { PortableText } from '@portabletext/react';
+import RichTextComponent from '../rich-text/rich-text';
+import { useEffect, useState } from 'react';
+import { IAboutTypes } from '../../types/about.types';
+import { client } from '../../sanity/client.config';
+
+const defaultData: IAboutTypes = {
+  name: '',
+  description: '',
+  image: '',
+  about: {
+    _type: 'block',
+    children: [],
+  },
+  interest: [],
+};
 
 const About = () => {
-  const handleClick = () => {
-    window.location.hash = '#name';
+  const [aboutData, setAboutData] = useState<IAboutTypes>(defaultData);
+
+  const fetchedData = async () => {
+    const data = await client?.fetch(`*[_type == "about"] | order(order asc)`);
+
+    setAboutData(data[0]);
   };
+
+  useEffect(() => {
+    fetchedData();
+  }, []);
 
   //framer motion animation variants
   const leftAboutVariant = {
@@ -43,6 +67,7 @@ const About = () => {
       },
     },
   };
+
   return (
     <section id="about">
       <motion.div
@@ -73,40 +98,26 @@ const About = () => {
                 />
               </div>
 
-              <h1 className="abt-header alt-text">About Me</h1>
+              <h2 className="section-header-text">About Me</h2>
             </div>
 
-            <div className="column">
-              <p>Paul Oluwatoni Ariyo-Adeoye</p>
-              <p className="alt-text"> Frontend Developer </p>
+            <div className="about-header-text-container">
+              <p>{aboutData.name}</p>
+              <p className="alt-text">{aboutData.description}</p>
             </div>
 
             <hr className="short-hr" />
 
-            <p className="about-me-text">
-              I have a degree in Library and Information Science, I have over 22
-              months experience using frontend technologies.I am passionate
-              about creating beautiful, functional websites that provide a great
-              user experience. I am constantly learning and pushing myself to
-              improve my skills and stay up-to-date with the latest web
-              development trends. If you're looking for a skilled and dedicated
-              frontend developer, please don't hesitate to{' '}
-              <span className="get-in-touch-btn" onClick={handleClick}>
-                get in touch!
-              </span>
-            </p>
+            <PortableText
+              value={aboutData.about}
+              components={RichTextComponent}
+            />
 
             <div className="flex left_align">
               Interests:
               <Typewriter
                 options={{
-                  strings: [
-                    '🎶 Music',
-                    '🕴️ Fashion',
-                    '⚽ Football',
-                    '🎥 Movies',
-                    '🎮 Game',
-                  ],
+                  strings: aboutData.interest,
                   autoStart: true,
                   loop: true,
                   cursor: '✍️',
