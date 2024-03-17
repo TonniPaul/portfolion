@@ -1,13 +1,20 @@
-import { ChangeEvent, FormEvent, LegacyRef, useRef, useState } from 'react';
-import ThankYou from './ThankYou';
-import emailjs from '@emailjs/browser';
+import { ChangeEvent, FC, FormEvent, LegacyRef, useRef, useState } from 'react';
 import Typewriter from 'typewriter-effect';
+import emailjs from '@emailjs/browser';
+
+import {
+  EMAIL_JS_PUBLIC_KEY,
+  EMAIL_JS_SERVICE_ID,
+  EMAIL_JS_TEMPLATE_ID,
+} from '../../data/constants';
+
+import ThankYou from './ThankYou';
 
 interface IFormProps {
-  nameRef: LegacyRef<HTMLInputElement> | undefined;
+  nameInputRef: LegacyRef<HTMLInputElement> | null;
 }
 
-const Form = ({ nameRef }: IFormProps) => {
+const Form: FC<IFormProps> = ({ nameInputRef }) => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -24,9 +31,6 @@ const Form = ({ nameRef }: IFormProps) => {
   });
 
   const form = useRef<HTMLFormElement>(null);
-  const emailJsServiceId = process.env.REACT_APP_EMAILJS_SERVICE_ID as string;
-  const emailJsTemplateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID as string;
-  const emailJsPublicKey = process.env.REACT_APP_EMAILJS_PUBLIC_K as string;
 
   const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
     setUsername(e.target.value);
@@ -74,10 +78,10 @@ const Form = ({ nameRef }: IFormProps) => {
     if (form.current) {
       emailjs
         .sendForm(
-          emailJsServiceId,
-          emailJsTemplateId,
+          EMAIL_JS_SERVICE_ID,
+          EMAIL_JS_TEMPLATE_ID,
           form.current,
-          emailJsPublicKey
+          EMAIL_JS_PUBLIC_KEY
         )
         .then(() => {
           setIsEmailSent(true);
@@ -126,7 +130,8 @@ const Form = ({ nameRef }: IFormProps) => {
             id="name"
             value={username}
             onChange={handleNameChange}
-            ref={nameRef}
+            ref={nameInputRef}
+            required
           />
           <label htmlFor="name"> Name </label>
           {errors.username && (
