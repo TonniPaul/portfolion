@@ -1,0 +1,42 @@
+:root {
+  --font_clash: 'Clash Display', sans-serif;
+  --primary-bg-color: hsl(0, 0%, 88%);
+  --color-brand-a: #7d44a8;
+  --primary-text: var(--color-brand-a);
+  --color-error: #ff0000;
+
+  --inset-box-shadow: inset 5px 1rem 8px #b5b5b5, inset -5px -5px 8px #fff;
+
+  --alt-text: #76b0ef;
+  --box-shadow: 5px 5px 1rem #b5b5b5, -2px -2px 1rem #fff;
+  --inset-box: inset 5px 1rem 8px #b5b5b5, inset -5px -5px 8px #fff;
+  --transition: 0.1s ease-in-out;
+  --black: #636363;
+  --purple-box-shadow: 1px 1px 1rem #301645, -1px -1px 1rem #7e45aa;
+  --purple-inset-box: inset 1px 1px 1rem #44255c, inset -1px -1px 1rem #7e45aa;
+  --white: #e4d8d8;
+  --yellow: #fabb37;
+
+  /* DARK THEME VARIABLE */
+  --primary-bg-dark: #241e1e;
+  --box-shadow-dark: 5px 5px 5px #171414, -2px -2px 5px #171414;
+  --inset-box-dark: inset 5px 1px 1.5rem #110d0d, inset -3px -5px 1.5rem #110d0d;
+
+  /* filter */
+  --purple-filter: invert(33%) sepia(16%) saturate(2999%) hue-rotate(235deg)
+    brightness(94%) contrast(92%);
+  --white-filter: invert(100%) sepia(0%) saturate(3498%) hue-rotate(177deg)
+    brightness(108%) contrast(76%);
+
+  --max-width: 140rem;
+  --extra-width: calc(100% - var(--max-width));
+}
+
+#dark {
+  --primary-bg-color: #241e1e;
+  --primary-text: var(--white);
+
+  --box-shadow: 5px 5px 5px #171414, -2px -2px 5px #171414;
+  --inset-box-shadow: inset 5px 1px 1.5rem #110d0d,
+    inset -3px -5px 1.5rem #110d0d;
+}
