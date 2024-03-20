@@ -22,7 +22,9 @@ const NavBar = ({ onClick, theme }: INavbarProps) => {
     <header className="full-bleed">
       <nav className="nav-cont">
         <Link to="/" className="logo">
-          <span className="logo_text">tonniPaul</span>
+          <span className="logo_text">
+            {'<'} tonniPaul {'/>'}
+          </span>
         </Link>
 
         <button className="switch" aria-label="toggle theme" onClick={onClick}>
