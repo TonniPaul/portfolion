@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 header {
   background: var(--primary-bg-color);
   color: var(--primary-text);
@@ -30,7 +32,7 @@ header {
   box-shadow: var(--box-shadow);
   z-index: 1;
   border-radius: 5px;
-  font-family: 'Montserrat Subrayada', sans-serif;
+  font-family: 'Sacramento', cursive;
 }
 
 .logo {
@@ -42,6 +44,7 @@ header {
   align-items: center;
   gap: 1rem;
   position: relative;
+  padding: 8px 2rem;
 }
 
 .active {
