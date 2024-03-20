@@ -30,7 +30,7 @@ header {
   box-shadow: var(--box-shadow);
   z-index: 1;
   border-radius: 5px;
-  font-family: 'Montserrat Subrayada', sans-serif;
+  font-family: 'Sacramento', cursive;
 }
 
 .logo {
@@ -42,6 +42,7 @@ header {
   align-items: center;
   gap: 1rem;
   position: relative;
+  padding: 8px 2rem;
 }
 
 .active {

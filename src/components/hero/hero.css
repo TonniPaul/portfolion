@@ -22,6 +22,7 @@
   overflow: hidden;
   gap: 2rem;
   padding: 1rem 2rem;
+  padding-bottom: 2rem;
 }
 
 .hero-flex > div {
@@ -66,8 +67,8 @@
   box-shadow: var(--inset-box);
 }
 
-#dark .btn:visited,
-#dark .btn:focus {
+.btn:visited,
+.btn:focus {
   box-shadow: var(--inset-box-dark);
 }
 

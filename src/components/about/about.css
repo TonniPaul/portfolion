@@ -70,6 +70,7 @@
 
 .about-me-text {
   max-width: 60rem;
+  text-align: justify;
   text-justify: inter-word;
   margin-bottom: 1rem;
   font-size: 1.6rem;
