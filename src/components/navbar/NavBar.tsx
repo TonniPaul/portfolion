@@ -23,7 +23,7 @@ const NavBar = ({ onClick, theme }: INavbarProps) => {
       <nav className="nav-cont">
         <Link to="/" className="logo">
           <span className="logo_text">
-            {'<'} tonniPaul {'/>'}
+            {'< '}tonniPaul{' />'}
           </span>
         </Link>
 
