@@ -1,8 +1,26 @@
-.rich-text-ul {
-  column-count: 2;
-  -webkit-column-count: 2;
+.rich-text-ul > li {
+  display: flex;
+  align-items: center;
 }
 
-.rich-text-ul > li {
-  list-style: inside;
+.rich-text-ul > li::before {
+  margin-right: 8px;
+  content: '▹';
+  color: var(--color-brand-a);
+  font-size: 1.6rem;
+}
+
+#dark .rich-text-ul > li::before {
+  color: var(--yellow);
+}
+
+@media screen and (min-width: 28.1875em) {
+  .rich-text-ul {
+    column-count: 2;
+    -webkit-column-count: 2;
+  }
+
+  .rich-text-ul > li::before {
+    font-size: 2rem;
+  }
 }
