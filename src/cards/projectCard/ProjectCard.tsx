@@ -35,7 +35,7 @@ const ProjectCard = ({
         <p className="project-desc">{description}</p>
 
         <p className="stacks_description_cont">
-          DESIGN: <span className="stacks_description">{design}</span>
+          DESIGNED BY: <span className="stacks_description">{design}</span>
         </p>
 
         <div className="flex stacks_description_cont">
