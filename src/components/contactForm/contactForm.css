@@ -326,8 +326,8 @@ option {
   }
 
   .contact-sub-div {
-    justify-content: center !important;
-    text-align: center !;
+    justify-content: center;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -348,7 +348,7 @@ option {
   }
 
   .my-form {
-    padding: 1rem !important;
+    padding: 1rem;
   }
 
   .contact-head-text {
