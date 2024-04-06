@@ -338,6 +338,10 @@ option {
     margin-bottom: 4.8rem;
   }
 
+  .contact-sub-div > button {
+    margin: 2rem auto;
+  }
+
   .center-it {
     justify-content: center;
     text-align: center;
