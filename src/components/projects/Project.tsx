@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { IProjectTypes } from '../../types/project.type';
@@ -13,6 +13,7 @@ const Project = () => {
   const [projects, setProjects] = useState<IProjectTypes[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const projectRef = useRef<HTMLElement>(null);
 
   const ITEMS_PER_PAGE = 6;
 
@@ -25,6 +26,7 @@ const Project = () => {
         } | order(order asc) [${offset}...${offset + ITEMS_PER_PAGE}]`
     );
     setProjects(data);
+    projectRef?.current?.scrollIntoView({ behavior: 'smooth' });
 
     // get total projects
     const totalCount = await client?.fetch(`count(*[_type == "project"])`);
@@ -36,7 +38,7 @@ const Project = () => {
   }, [currentPage]);
 
   return (
-    <section id="project">
+    <section id="project" ref={projectRef}>
       <div>
         <div className="section-header-flex-container">
           <div className="abt-image-div">
