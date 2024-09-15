@@ -26,8 +26,6 @@ const Project = () => {
         } | order(order asc) [${offset}...${offset + ITEMS_PER_PAGE}]`
     );
     setProjects(data);
-    projectRef?.current?.scrollIntoView({ behavior: 'smooth' });
-
     // get total projects
     const totalCount = await client?.fetch(`count(*[_type == "project"])`);
     setTotalPages(Math.ceil(totalCount / ITEMS_PER_PAGE));
@@ -36,6 +34,10 @@ const Project = () => {
   useEffect(() => {
     fetchProjectsData();
   }, [currentPage]);
+
+  const handleScroll = () => {
+    projectRef?.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <section id="project" ref={projectRef}>
@@ -76,7 +78,10 @@ const Project = () => {
           <button
             className="next-prev-btn"
             aria-label="previous-projects"
-            onClick={() => setCurrentPage((prev) => prev - 1)}
+            onClick={() => {
+              setCurrentPage((prev) => prev - 1);
+              handleScroll();
+            }}
             disabled={currentPage === 1}
           >
             <span>
@@ -88,7 +93,10 @@ const Project = () => {
           <button
             className="next-prev-btn"
             aria-label="previous-projects"
-            onClick={() => setCurrentPage((prev) => prev + 1)}
+            onClick={() => {
+              setCurrentPage((prev) => prev + 1);
+              handleScroll();
+            }}
             disabled={currentPage === totalPages}
           >
             <p className="btn pagination-btn-text next">Next</p>
