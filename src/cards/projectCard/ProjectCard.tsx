@@ -1,3 +1,4 @@
+import ShowView from '../../components/show-view/show-view';
 import { IStacksProp } from '../../types/project.type';
 import './projectCard.css';
 
@@ -34,9 +35,11 @@ const ProjectCard = ({
 
         <p className="project-desc">{description}</p>
 
-        <p className="stacks_description_cont">
-          DESIGNED BY: <span className="stacks_description">{design}</span>
-        </p>
+        <ShowView when={!!design}>
+          <p className="stacks_description_cont">
+            DESIGNED BY: <span className="stacks_description">{design}</span>
+          </p>
+        </ShowView>
 
         <div className="flex stacks_description_cont">
           STACKS USED:
